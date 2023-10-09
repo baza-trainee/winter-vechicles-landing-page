@@ -1,0 +1,43 @@
+@import "../../../styles/vars";
+
+.card {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  max-width: 360px;
+  padding: 10px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row-reverse;
+    min-width: 100%;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image {
+    border-radius: 10px;
+  }
+  .desc {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: 36px;
+    letter-spacing: 1.8;
+    padding: 12px;
+  }
+}
+
+.row {
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

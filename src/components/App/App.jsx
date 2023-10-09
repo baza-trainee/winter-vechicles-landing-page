@@ -1,11 +1,11 @@
-import './App.module.scss'
+import './App.module.scss';
 import Container from '../Container/Container';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
+import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBlock';
 
 function App() {
-
   return (
     <>
       <header>
@@ -17,6 +17,7 @@ function App() {
         <Container>
           <Hero />
         </Container>
+        <WhyIsItImportantBlock />
       </main>
       <footer>
         <Container>
@@ -27,4 +28,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
