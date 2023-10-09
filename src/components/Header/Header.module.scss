@@ -1,0 +1,141 @@
+@import "../../index.scss";
+
+.header {
+	background-color: #131313;
+}
+
+@media screen and (min-width: $mobile) and (max-width: 1279.98px) {
+	.header {
+		padding: 10px 0;
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.header {
+		padding: 14px 0;
+	}
+}
+
+// .container {
+// 	padding-left: 16px;
+// 	padding-right: 16px;
+// 	margin: 0 auto;
+// }
+
+// @media screen and (min-width: 320px) and (max-width: 1279.98px) {
+// 	.container {
+// 		width: 320px;
+// 	}
+// }
+
+// @media screen and (min-width: 1280px) {
+// 	.container {
+// 		width: 1280px;
+// 		padding-left: 80px;
+// 		padding-right: 80px;
+// 	}
+// }
+
+.containerHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	@media screen and (min-width: $mobile) and (max-width: 1279.98px) {
+		max-width: 100px;
+		height: 40px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		max-width: 168px;
+		height: 60px;
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.nav {
+		display: flex;
+		align-items: center;
+	}
+
+	.list {
+		display: flex;
+		margin-left: 216px;
+	}
+
+	.item + .item {
+		margin-left: 36px;
+	}
+}
+
+.link {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: $primary-white-color;
+	font-size: 18px;
+	font-family: "Dela Gothic One", sans-serif;
+	line-height: 1.5;
+	text-transform: capitalize;
+	transition-property: color;
+	transition: color $transition-duration;
+}
+
+.link:hover,
+.link:focus {
+	color: $accent-orange-color;
+}
+
+.langWrapper {
+	position: relative;
+	cursor: pointer;
+	font-family: "Dela Gothic One", sans-serif;
+	text-transform: uppercase;
+}
+
+.selectedLanguage {
+	display: flex;
+	align-items: center;
+	/* padding: 0 10px; */
+}
+
+.currentLang {
+	color: $accent-orange-color;
+	padding: 10px;
+	margin-right: 4px;
+}
+
+.imgThumb {
+	padding: 10px;
+}
+
+.imgThumbRotate {
+	transform: rotate(180deg);
+}
+
+.changeLangWrapper {
+	position: absolute;
+	background-color: #131313;
+	width: 100%;
+}
+
+.changLang {
+	display: block;
+	color: $primary-white-color;
+	padding: 10px;
+	transition-property: color;
+	transition: color $transition-duration;
+}
+
+.changLang:hover,
+.changLang:focus {
+	color: $accent-orange-color;
+}
+
+.currentLang,
+.changLang {
+	font-size: 18px;
+	line-height: 1.5;
+}

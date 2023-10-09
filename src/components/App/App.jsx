@@ -1,18 +1,14 @@
-import './App.module.scss'
 import Container from '../Container/Container';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 
-function App() {
+import './App.module.scss';
 
+function App() {
   return (
     <>
-      <header>
-        <Container>
-          <Header />
-        </Container>
-      </header>
+      <Header />
       <main>
         <Container>
           <Hero />
@@ -27,4 +23,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
