@@ -1,11 +1,13 @@
 @import '../../styles/vars';
 
 .container{
-    max-width: $mobile-wide;
+    max-width: $mobile;
     margin: 0px auto 0px;
-    // @media screen and (min-width: 420px) {
-        //     width: $mobile-wide;
-        // }
+    
+    @media screen and (min-width: 420px) {
+            max-width: none;
+            width: $mobile-wide;
+        }
         
     @media screen and (min-width: 768px) {
         width: $tablet;
@@ -13,7 +15,7 @@
     }
     
     @media screen and (min-width: 1024px) {
-    width: $desktop;
+         width: $desktop;
     }
 
     @media screen and (min-width: 1680px) {
