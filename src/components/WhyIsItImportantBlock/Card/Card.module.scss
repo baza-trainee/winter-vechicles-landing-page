@@ -4,18 +4,17 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  max-width: 360px;
-  padding: 10px;
 
   @media (min-width: $tablet) {
-    flex-direction: row-reverse;
-    min-width: 100%;
-    align-items: flex-start;
-  }
-
-  @media (min-width: $desktop) {
     flex-direction: column;
     align-items: flex-start;
+    width: 270px;
+  }
+
+  @media (min-width: $desktop-wide) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 359px;
   }
 
   .image {
@@ -25,19 +24,20 @@
     font-size: 20px;
     font-style: normal;
     font-weight: $medium;
-    line-height: 36px;
     letter-spacing: 1.8;
-    padding: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px 0;
   }
 }
 
 .row {
   @media (min-width: $tablet) {
-    flex-direction: row;
+    //flex-direction: row;
   }
 
-  @media (min-width: $desktop) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  // @media (min-width: $desktop) {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
 }
