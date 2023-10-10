@@ -1,0 +1,31 @@
+@import "../../styles/vars";
+
+.container {
+    position: sticky;
+    z-index: 50;
+    bottom: 50px;
+    padding-right: 20px;
+    text-align: end;
+    button{
+        border-radius: 50%;
+        border-style: solid;
+        border-color: $accent-orange-color;
+        height: 55px;
+        width: 55px;
+    }
+    button:hover,:focus,:active{
+        .arrow{
+                color: $primary-white-color;
+         }
+    background-color: $accent-orange-color;
+    }
+    .arrow{
+        color: $accent-orange-color;
+    }
+    @media (min-width: $desktop) {
+        button{
+            height: 75px;
+            width: 75px;
+        }
+    }
+}
