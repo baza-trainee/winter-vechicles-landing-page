@@ -5,6 +5,7 @@ import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBlock';
 import Scroll from '../ScrollToTop/ScrollToTop';
+import RunningText from '../RunningText/RunningText';
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
       </header>
       
       <main>
-        <Container>
           <Hero />
-        </Container>
+        <RunningText />
+        <RunningText />
         <WhyIsItImportantBlock />
         <Scroll/>
       </main>

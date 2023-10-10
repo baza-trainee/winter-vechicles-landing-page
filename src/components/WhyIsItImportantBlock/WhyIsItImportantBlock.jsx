@@ -1,10 +1,12 @@
 import Card from './Card/Card';
 import styles from './WhyIsItImportantBlock.module.scss';
 import { data } from './data';
+import Container from '../Container/Container';
 
 const WhyIsItImportantBlock = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.wrapper}>
+      <Container>
       <p className={styles.title}>Чому це важливо</p>
       <div className={styles.cards}>
         {!!data.length &&
@@ -15,8 +17,9 @@ const WhyIsItImportantBlock = () => {
               </div>
             );
           })}
-      </div>
-    </div>
+        </div>
+        </Container>
+    </section>
   );
 };
 export default WhyIsItImportantBlock;
