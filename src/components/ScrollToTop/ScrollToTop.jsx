@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {AiOutlineArrowUp} from  'react-icons/ai'
 import styles from './ScrollToTop.module.scss'
-export const Scroll = () => {
+const Scroll = () => {
     const [ScrollToTop, setScrollToTop] = useState(false);
 
     useEffect(()=>{
