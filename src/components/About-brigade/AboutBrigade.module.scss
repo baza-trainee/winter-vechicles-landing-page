@@ -58,20 +58,19 @@
         }
 }
 
-.img {
+img {
     display: block;
     width: 287px;
-    height: 193px;
+    height: 100%;
     margin: 0 auto;
     display: block;
+    border-radius: 10px;
 
     @media (min-width: $tablet) {
            width: 688px;
-           height: 458px;
-        }
+    }
 
     @media (min-width: $desktop) {
     width: 550px;
-    height: 524px;    
     }   
 }
