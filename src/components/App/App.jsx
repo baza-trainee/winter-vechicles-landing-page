@@ -17,6 +17,7 @@ function App() {
       <main>
         <Container>
           <Hero />
+          <AboutBrigade />
           <WhyIsItImportantBlock />
         </Container>
       </main>
