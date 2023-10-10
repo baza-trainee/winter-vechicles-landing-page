@@ -16,8 +16,8 @@ function App() {
       <main>
         <Container>
           <Hero />
+          <WhyIsItImportantBlock />
         </Container>
-        <WhyIsItImportantBlock />
       </main>
       <footer>
         <Container>
