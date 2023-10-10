@@ -16,7 +16,8 @@ function App() {
         </Container>
       </header>
       <main>
-          <Hero />
+        <Hero />
+        <AboutBrigade />
         <RunningText />
         <RunningText />
         <WhyIsItImportantBlock />
