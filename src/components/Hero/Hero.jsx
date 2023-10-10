@@ -1,6 +1,6 @@
 import Container from "../Container/Container";
 import style from './Hero.module.scss'
-import heroArrow from "./img/hero-arrow.svg";
+import heroArrow from "../../images/hero/hero-arrow.svg";
 
 const Hero = () => {
     return (
