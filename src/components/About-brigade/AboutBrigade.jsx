@@ -1,8 +1,11 @@
+import { ImgShown } from "./imgShown";
+import Container from "../Container/Container";
 import styles from "./AboutBrigade.module.scss";
-import {ImgShown} from "./imgShown";
 
 const AboutBrigade = () => {
-    return (<div className={styles.container}>
+    return (
+    <Container>
+        <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Про бригаду</h2>
         <div className={styles.content}>
             <div className={styles.aboutBrigadeText}>
@@ -22,7 +25,8 @@ const AboutBrigade = () => {
             </div>
             <div className={styles.img}><ImgShown/></div>    
         </div>
-    </div>);
+    </div>
+    </Container>);
 };
 
 export default AboutBrigade;

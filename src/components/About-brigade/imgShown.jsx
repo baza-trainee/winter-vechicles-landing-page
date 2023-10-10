@@ -1,6 +1,6 @@
-import imgMob from "./img/img-mobile.jpg";
-import imgTab from "./img/img-tablet.jpg";
-import imgDesk from "./img/img-desktop.jpg";
+import imgMob from "../../images/about-brigade/about-brigade-mobile.jpg";
+import imgTab from "../../images/about-brigade/about-brigade-tablet.jpg";
+import imgDesk from "../../images/about-brigade/about-brigade-desktop.jpg";
 
 export const ImgShown = () => {
   const windowWidth = window.innerWidth;
