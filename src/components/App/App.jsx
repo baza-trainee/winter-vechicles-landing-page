@@ -15,11 +15,10 @@ function App() {
         </Container>
       </header>
       <main>
-        <Container>
+        {/* <Container> */}
           <Hero />
           <AboutBrigade />
           <WhyIsItImportantBlock />
-        </Container>
       </main>
       <footer>
         <Container>
