@@ -2,11 +2,11 @@
 
 .wrapper {
   .title {
+    font-family: Dela Gothic One;
     font-size: 16px;
-    font-style: normal;
-    font-weight: $bold;
+    font-weight: $regular;
     line-height: 28px;
-    letter-spacing: 1.38;
+    letter-spacing: 0.35px;
     color: $primary-black-color;
     text-align: center;
 
@@ -22,7 +22,7 @@
 
     @media (min-width: $desktop) {
       font-size: 36px;
-      font-weight: $bold;
+      font-weight: $regular;
       padding: 60px 0;
     }
   }
