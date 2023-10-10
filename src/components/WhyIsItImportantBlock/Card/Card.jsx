@@ -6,7 +6,7 @@ const Card = ({ item }) => {
       <div>
         <img
           className={styles.image}
-          src={`src/images/${item.img}.png`}
+          src={`src/images/whyImportant/${item.img}.png`}
           alt={item.desc}
         />
       </div>

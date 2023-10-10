@@ -6,10 +6,15 @@ export const ImgShown = () => {
   const windowWidth = window.innerWidth;
 
   let imageToShow;
+  
+  const imageStyles = {
+    borderRadius: '10px', 
+  };
 
   if (windowWidth <= 320) {
     imageToShow = (
       <img
+        style={imageStyles}
         src={imgMob}
         alt="Private security service contractor in camouflage uniform posing"
       />
@@ -17,6 +22,7 @@ export const ImgShown = () => {
   } else if (windowWidth <= 768) {
     imageToShow = (
       <img
+                style={imageStyles}
         src={imgTab}
         alt="Private security service contractor in camouflage uniform posing"
       />
@@ -24,6 +30,7 @@ export const ImgShown = () => {
   } else {
     imageToShow = (
       <img
+        style={imageStyles}
         src={imgDesk}
         alt="Private security service contractor in camouflage uniform posing"
       />
