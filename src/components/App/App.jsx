@@ -15,12 +15,12 @@ function App() {
         </Container>
       </header>
       <main>
-        <Container>
           <Hero />
         </Container>
         <RunningText />
         <RunningText />
         <WhyIsItImportantBlock />
+        {/* </Container> */}
       </main>
       <footer>
         <Container>
