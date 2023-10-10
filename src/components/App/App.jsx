@@ -16,11 +16,9 @@ function App() {
       </header>
       <main>
           <Hero />
-        </Container>
         <RunningText />
         <RunningText />
         <WhyIsItImportantBlock />
-        {/* </Container> */}
       </main>
       <footer>
         <Container>
