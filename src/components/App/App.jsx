@@ -5,6 +5,8 @@ import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBlock';
 import RunningText from '../RunningText/RunningText';
+import Modal from '../Modal/Modal';
+
 
 function App() {
   return (
