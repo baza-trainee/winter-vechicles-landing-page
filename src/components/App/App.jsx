@@ -14,6 +14,7 @@ function App() {
           <Header />
         </Container>
       </header>
+      
       <main>
         <Container>
           <Hero />
