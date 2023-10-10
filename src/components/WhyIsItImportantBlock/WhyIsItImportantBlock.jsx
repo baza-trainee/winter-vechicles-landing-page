@@ -7,7 +7,7 @@ const WhyIsItImportantBlock = () => {
   return (
     <section className={styles.wrapper}>
       <Container>
-      <p className={styles.title}>Чому це важливо</p>
+      <h2 className={styles.title}>Чому це важливо</h2>
       <div className={styles.cards}>
         {!!data.length &&
           data.map(item => {
