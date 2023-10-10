@@ -14,10 +14,10 @@ function App() {
         </Container>
       </header>
       <main>
-        <Container>
+        {/* <Container> */}
           <Hero />
+        {/* </Container> */}
           <WhyIsItImportantBlock />
-        </Container>
       </main>
       <footer>
         <Container>
