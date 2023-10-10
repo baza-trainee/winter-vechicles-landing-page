@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBlock';
+import RunningText from '../RunningText/RunningText';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Container>
           <Hero />
         </Container>
+        <RunningText />
+        <RunningText />
         <WhyIsItImportantBlock />
       </main>
       <footer>
