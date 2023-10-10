@@ -2,6 +2,7 @@ import Container from '../Container/Container';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
+import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBlock';
 
 import './App.module.scss';
 
@@ -13,6 +14,7 @@ function App() {
         <Container>
           <Hero />
         </Container>
+        <WhyIsItImportantBlock />
       </main>
       <footer>
         <Container>
