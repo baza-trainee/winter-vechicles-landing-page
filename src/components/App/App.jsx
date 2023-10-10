@@ -7,6 +7,8 @@ import Footer from '../Footer/Footer';
 import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBlock';
 import Scroll from '../ScrollToTop/ScrollToTop';
 import RunningText from '../RunningText/RunningText';
+import Modal from '../Modal/Modal';
+
 
 function App() {
   return (
