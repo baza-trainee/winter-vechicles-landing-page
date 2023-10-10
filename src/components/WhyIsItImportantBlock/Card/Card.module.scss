@@ -4,40 +4,38 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  max-width: 360px;
-  padding: 10px;
 
   @media (min-width: $tablet) {
-    flex-direction: row-reverse;
-    min-width: 100%;
+    flex-direction: column;
     align-items: flex-start;
+    width: 300px;
   }
 
   @media (min-width: $desktop) {
     flex-direction: column;
     align-items: flex-start;
+    width: 359px;
   }
 
   .image {
     border-radius: 10px;
   }
   .desc {
-    font-size: 20px;
     font-style: normal;
     font-weight: $medium;
-    line-height: 36px;
-    letter-spacing: 1.8;
-    padding: 12px;
-  }
-}
+    letter-spacing: 0.35px;
+    font-size: 16px;
+    line-height: $secondary-line-height;
+    padding: 24px 0;
 
-.row {
-  @media (min-width: $tablet) {
-    flex-direction: row;
-  }
+    @media (min-width: $tablet) {
+      font-size: 18px;
+      letter-spacing: 0.35px;
+    }
 
-  @media (min-width: $desktop) {
-    flex-direction: column;
-    align-items: flex-start;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      letter-spacing: 0.35px;
+    }
   }
 }
