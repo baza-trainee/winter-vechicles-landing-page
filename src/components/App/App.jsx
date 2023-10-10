@@ -5,6 +5,7 @@ import Hero from '../Hero/Hero';
 import AboutBrigade from '../About-brigade/AboutBrigade';
 import Footer from '../Footer/Footer';
 import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBlock';
+import RunningText from '../RunningText/RunningText';
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
         </Container>
       </header>
       <main>
-        {/* <Container> */}
           <Hero />
-          <AboutBrigade />
-          <WhyIsItImportantBlock />
+        <RunningText />
+        <RunningText />
+        <WhyIsItImportantBlock />
       </main>
       <footer>
         <Container>
