@@ -1,0 +1,95 @@
+@import '../../styles/vars';
+
+.container {
+    min-width: 320px;
+    max-width: 1279px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+
+    @media (min-width: 320px) {
+        // padding: 40px 16px 24px 16px;
+    }
+                
+    @media (min-width: $tablet) {        
+        // padding: 80px 40px 32px 40px;
+    }
+                
+    @media (min-width: $desktop) {
+        gap: 60px;
+    }                        
+}
+
+.sectionTitle {
+    font-family: Dela Gothic One;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    color: $primary-black-color;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 36px;
+    }
+}
+
+.aboutBrigadeText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    color: $primary-black-color;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    @media (min-width: $desktop) {
+        gap: 20px;
+        font-size: 20px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+        @media (min-width: $desktop) {
+        display: flex;
+        flex-direction: row;
+        gap: 19px;
+        }
+}
+
+.img {
+    width: 287px;
+    height: 193px;
+    margin: 0 auto;
+    display: block;
+
+    @media (min-width: $tablet) {
+           width: 688px;
+           height: 458px;
+        }
+
+    @media (min-width: $desktop) {
+    width: 550px;
+    height: 524px;
+    margin: unset;
+    }   
+}
