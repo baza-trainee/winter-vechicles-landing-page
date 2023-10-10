@@ -1,6 +1,6 @@
-import imgMob from "./img/img-mobile.png";
-import imgTab from "./img/img-tablet.png";
-import imgDesk from "./img/img-desktop.png";
+import imgMob from "./img/img-mobile.jpg";
+import imgTab from "./img/img-tablet.jpg";
+import imgDesk from "./img/img-desktop.jpg";
 
 export const ImgShown = () => {
   const windowWidth = window.innerWidth;
