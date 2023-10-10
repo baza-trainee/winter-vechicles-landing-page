@@ -16,13 +16,8 @@ function App() {
       <main>
         {/* <Container> */}
           <Hero />
-
         {/* </Container> */}
-        <WhyIsItImportantBlock />
-
           <WhyIsItImportantBlock />
-        </Container>
-
       </main>
       <footer>
         <Container>
