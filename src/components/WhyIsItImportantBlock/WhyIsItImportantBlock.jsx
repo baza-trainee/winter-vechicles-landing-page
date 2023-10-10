@@ -4,7 +4,7 @@ import { data } from './data';
 
 const WhyIsItImportantBlock = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.wrapper}>
       <p className={styles.title}>Чому це важливо</p>
       <div className={styles.cards}>
         {!!data.length &&
@@ -16,7 +16,7 @@ const WhyIsItImportantBlock = () => {
             );
           })}
       </div>
-    </div>
+    </section>
   );
 };
 export default WhyIsItImportantBlock;
