@@ -14,9 +14,9 @@ function App() {
         </Container>
       </header>
       <main>
-        <Container>
+        {/* <Container> */}
           <Hero />
-        </Container>
+        {/* </Container> */}
         <WhyIsItImportantBlock />
       </main>
       <footer>
