@@ -1,0 +1,88 @@
+@import "../../../index.scss";
+
+.mobileMenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: $primary-black-color;
+	z-index: 100;
+
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transform: translateX(100%);
+
+	transition-property: opasity, visibility, transform;
+
+	transition:
+		opasity $transition-duration,
+		visibility $transition-duration,
+		transform $transition-duration;
+}
+
+.mobileMenu.isOpen {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: initial;
+	transform: translateX(0);
+}
+
+.mobileMenuContainer {
+	position: relative;
+	height: 100%;
+	padding-top: 60px;
+
+	@media screen and (min-width: $tablet) and (max-width: $desktop) {
+		padding-top: 56px;
+	}
+}
+
+.mobileMenuCLoseBtn {
+	position: absolute;
+	top: 16px;
+	right: 0;
+	padding: 0;
+	line-height: 0;
+	border: none;
+	background-color: transparent;
+
+	transition-property: stroke;
+	transition: stroke $transition-duration;
+
+	&:hover path,
+	&:focus path {
+		stroke: $accent-orange-color;
+	}
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.item:not(:last-child) {
+	margin-bottom: 24px;
+
+	@media screen and (min-width: $tablet) and (max-width: $desktop) {
+		margin-bottom: 22px;
+	}
+}
+
+.link {
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: $primary-white-color;
+	font-family: "Dela Gothic One", sans-serif;
+	font-size: 16px;
+	line-height: 1.68;
+	transition-property: color;
+	transition: color $transition-duration;
+}
+
+.link:hover,
+.link:focus {
+	color: $accent-orange-color;
+}

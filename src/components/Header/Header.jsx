@@ -1,181 +1,91 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import logo from '../../assets/header/logo-desktop.svg';
-import arrowDown from '../../assets/header/arrow-lang.svg';
+// import { Link } from 'react-router-dom';
+// import { Link as ScrollLink} from 'react-scroll';
+
+import Container from '../Container/Container';
+import LogoComponent from './LogoComponent/LogoComponent';
+import LangSwitcher from './LangSwitcher/LangSwitcher';
+import BurgerSvg from './BurgerSvg/BurgerSvg';
+import MobileMenu from './MobileMenu/MobileMenu';
 
 import styles from './header.module.scss';
-import Container from '../Container/Container';
 
 const Header = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const [mobileMenu, setMobileMenu] = useState(false);
 
-  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-  console.log(selectedLanguage);
-  const [isOpenChangeLangWrapper, setisOpenChangeLangWrapper] = useState(false);
-
-  const languages = [
-    { code: 'en', label: 'en' },
-    { code: 'ua', label: 'ua' },
-    { code: 'pl', label: 'pl' },
-  ];
-
-  const onLangWrapperClick = () =>
-    setisOpenChangeLangWrapper(!isOpenChangeLangWrapper);
-
-  const handleChangeLanguage = languageCode => {
-    setSelectedLanguage(languageCode);
-    i18n.changeLanguage(languageCode);
-    setisOpenChangeLangWrapper(!isOpenChangeLangWrapper);
-  };
-
-  const availableLanguages = languages.filter(
-    language => language.code !== selectedLanguage
-  );
-
-  //   const onCurrentLangClick = () =>
-  //     setisOpenChangeLangWrapper(!isOpenChangeLangWrapper);
-
-  //   const onChangeLang = () => {
-  //     if (currentLang === "ukr") {
-  //       setCurrentLang("eng" || "pln");
-  //     } else if (currentLang === "eng") {
-  //       setCurrentLang("ukr" || "pln");
-  //     } else {
-  //       setCurrentLang("eng" || "pln");
-  //     }
-  //     setisOpenChangeLangWrapper(false);
-  //   };
-
-  //   const onChangeLang = e => {
-  //     console.dir(e);
-  //     if (e.target.texcontent === 'ukr') {
-  //       setCurrentLang('ukr');
-  //     } else if (e.target.texcontent === 'eng') {
-  //       setCurrentLang('eng');
-  //     } else {
-  //       setCurrentLang('pln');
-  //     }
-  //     setisOpenChangeLangWrapper(false);
-  //   };
-
-  //   useEffect(() => {
-  //     const closeLangWrapper = () => {
-  //       setisOpenChangeLangWrapper(true);
-  //     };
-  //     if (isOpenChangeLangWrapper) {
-  //       document.addEventListener("click", closeLangWrapper);
-  //     }
-
-  //     return () => {
-  //       document.removeEventListener("click", closeLangWrapper);
-  //     };
-  //   }, [isOpenChangeLangWrapper]);
+  const onOpenMobileMenu = () => setMobileMenu(!mobileMenu);
 
   return (
     <header className={styles.header}>
       <Container>
         <div className={styles.containerHeader}>
-          {/* бургер меню */}
-          {/* <button style={{ width: 40, height: 40 }}>x</button> */}
+          <LogoComponent />
           <nav className={styles.nav}>
-            <a href="/">
-              <img className={styles.logo} src={logo} alt="logo" />
-            </a>
-
             <ul className={styles.list}>
               <li className={styles.item}>
-                <a className={styles.link} href="#">
+                <a
+                  className={styles.link}
+                  href="/"
+                  aria-label="Move to Goal section"
+                >
                   {t('header.goal')}
                 </a>
               </li>
               <li className={styles.item}>
-                <a className={styles.link} href="#">
+                <a
+                  className={styles.link}
+                  href="/#about"
+                  aria-label="Move to About section"
+                >
                   {t('header.about')}
                 </a>
               </li>
               <li className={styles.item}>
-                <a className={styles.link} href="#">
+                <a
+                  className={styles.link}
+                  href="/#important"
+                  aria-label="Move to Why it`s important section"
+                >
                   {t('header.important')}
                 </a>
               </li>
               <li className={styles.item}>
-                <a className={styles.link} href="#">
-                  {t('header.count')}
+                <a
+                  className={styles.link}
+                  href="/#fundraising"
+                  aria-label="Move to Fundraising section"
+                >
+                  {t('header.fundraising')}
                 </a>
+
+                {/* <ScrollLink
+                  className={styles.link}
+                  smooth={true}
+                  duration={250}
+                  to="fundraising"
+                  aria-label="Move to Fundraising section"
+                >
+                  {t('header.fundraising')}
+                </ScrollLink> */}
               </li>
             </ul>
           </nav>
-
-          <div className={styles.langWrapper}>
-            <div
-              className={styles.selectedLanguage}
-              // onClick={() => handleChangeLanguage(availableLanguages[0].label)}
-              onClick={() => onLangWrapperClick()}
-            >
-              <span className={styles.currentLang}>
-                {t(`${selectedLanguage}`)}
-              </span>
-              <div
-                className={`${styles.imgThumb} ${
-                  isOpenChangeLangWrapper ? styles.imgThumbRotate : ''
-                }`}
-              >
-                <img src={arrowDown} alt="arrow down" width={12} height={6} />
-              </div>
-            </div>
-            {isOpenChangeLangWrapper && (
-              <div className={styles.changeLangWrapper}>
-                {/* <a href="#" onClick={() => onChangeLang()}>
-                  <span className={styles.changLang}>
-                    eng */}
-                {/* ЧЕРЕЗ ФИЛЬТР МАССИВ */}
-                {/* {currentLang === "ukr" ? "eng" || "pln" : "ukr"} */}
-                {/* </span>
-                </a> */}
-
-                {availableLanguages.map(language => (
-                  <a
-                    className={styles.changLang}
-                    href="#"
-                    key={language.code}
-                    onClick={() => handleChangeLanguage(language.code)}
-                  >
-                    {t(`${language.label}`)}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+          <LangSwitcher />
+          <button
+            type="button"
+            className={styles.burgerMenuOpen}
+            onClick={() => onOpenMobileMenu()}
+          >
+            <BurgerSvg />
+          </button>
         </div>
+        <MobileMenu setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />
       </Container>
     </header>
   );
 };
-
-{
-  /* <div>
-  <div className="language-dropdown">
-    <div
-      className="selected-language"
-      onClick={() => handleChangeLanguage(availableLanguages[0].code)}
-    >
-      {t(`language.${selectedLanguage}`)}
-    </div>
-    <div className="language-menu">
-      {availableLanguages.map(language => (
-        <div
-          key={language.code}
-          onClick={() => handleChangeLanguage(language.code)}
-        >
-          {t(`language.${language.code}`)}
-        </div>
-      ))}
-    </div>
-  </div>
-  <h1>{t('title')}</h1>
-  <p>{t('content')}</p>
-</div>; */
-}
 
 export default Header;
