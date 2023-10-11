@@ -18,9 +18,9 @@
 
 .popupContent {
     position: relative;
-    background-color: #F8F7F7;
+    background-color: $primary-white-color;
     width: 524px;
-    padding: 0 15px;
+    padding: 0 10px;
     margin: 0 15px;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    cursor: pointer;
+    cursor: pointer;   
 }
 .popupLine{
     position: absolute;
@@ -46,13 +46,13 @@
     height: 1px;
     display: block;
     background-color: $primary-grey-color;
-    bottom: 335px;
+    bottom: 326px;
 }
 .popupTitle {
     font-family: 'Dela Gothic One';
     font-size: 1.5rem;
     font-weight: $regular;
-    line-height: 1.75rem;
+    line-height: $primary-line-height;
     margin-top: 48px;
     margin-bottom: 16px;
 }
@@ -71,10 +71,11 @@
     }
 }
 .popupSocialLink {
-    height: 56px;
-    transition: .2s;
-    
-
+    transition: $transition-duration;
+    img{
+        height: 56px;
+        width: 56px;
+    }
 
     &:hover, &:focus{
         transform: scale(0.9);
@@ -94,7 +95,7 @@
     gap: 4px;
     letter-spacing: 0.35px;
     margin-bottom: 40px;
-    transition: .2s;
+    transition: $transition-duration;
 
     &::after{
         content: '';
