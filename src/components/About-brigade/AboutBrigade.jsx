@@ -1,4 +1,4 @@
-import { ImgShown } from "./imgShown";
+import {ImgShown}  from "./imgShown";
 import Container from "../Container/Container";
 import styles from "./AboutBrigade.module.scss";
 
