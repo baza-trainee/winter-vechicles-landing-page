@@ -23,7 +23,7 @@ const Modal = () => {
                         <a href="#" className={styles.popupSocialLink}><img src={linkedin} alt="linkedin"/></a>
                     </div>
                     <p className={styles.popupText}>або скопіюйте лінк</p>
-                    <button onclick="myFunction()" className={styles.popupCopyText}>Скопіювати посилання 
+                    <button onClick={"myFunction()"} className={styles.popupCopyText}>Скопіювати посилання 
                     <GoShareAndroid size="24"/>
                     </button >
                 </div>
