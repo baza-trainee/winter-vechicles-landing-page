@@ -10,9 +10,9 @@ export const ImgShown = () => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
 
-      if (windowWidth <= 320) {
+      if (windowWidth <= 767) {
         setImageToShow(imgMob);
-      } else if (windowWidth <= 768) {
+      } else if (windowWidth <= 1279) {
         setImageToShow(imgTab);
       } else {
         setImageToShow(imgDesk);
@@ -26,7 +26,7 @@ export const ImgShown = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [setImageToShow]);
 
   return (
     <div>      
