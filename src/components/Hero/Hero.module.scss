@@ -3,6 +3,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 59%;
+    max-width: 320px;
+    margin: 0px auto 0px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: none;
+    }
+
+    @media screen and (min-width: 1680px) {
+        max-width: 1680px;
+    }
 
     &__cover {
         display: flex;
@@ -48,6 +62,16 @@
         }
     }
 
+    &__arrow {
+        display: block;
+        height: 100%;
+        width: 24px;
+
+        @media screen and (min-width: 768px) {
+            width: 31px;
+        }
+    }
+
     &__label {
         display: inline-block;
         color: var(--White, #F8F7F7);
@@ -74,7 +98,7 @@
     &__text {
         color: var(--White, #F8F7F7);
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 24px;
         letter-spacing: 0.35px;
         margin-bottom: 6px;
