@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBlock';
 import Scroll from '../ScrollToTop/ScrollToTop';
 import RunningText from '../RunningText/RunningText';
+import ProgressBar from '../ProgressBar/ProgressBar';
 // import Modal from '../Modal/Modal';
 
 
@@ -22,6 +23,7 @@ function App() {
       <main>
         <Hero />
         <RunningText />
+        <ProgressBar/>
         <AboutBrigade />
         <RunningText />
         <WhyIsItImportantBlock />
