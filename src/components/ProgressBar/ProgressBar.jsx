@@ -13,7 +13,7 @@ const ProgressBar = () => {
         </div>
         <div className={styles.ProgressBar}>
             <div className={styles.img}>
-            <img src='src/components/ProgressBar/img.png' alt='heart'/>
+            <img src='src/images/progress-bar/img.png' alt='heart'/>
             </div>
             <div className={styles.bar}>
                 <div  className={styles.fill} style={{width: '5%'}}></div>

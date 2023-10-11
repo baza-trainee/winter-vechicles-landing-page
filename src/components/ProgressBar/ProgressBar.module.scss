@@ -36,6 +36,13 @@
     .ProgressBar{
         .img{
             margin-bottom: 5px;
+            margin: 0;
+            img{
+              height: 109px;
+              width: 96px;
+              margin: 0;
+              margin-bottom: 15px;
+            }
         }
         .bar{
             position: relative;
