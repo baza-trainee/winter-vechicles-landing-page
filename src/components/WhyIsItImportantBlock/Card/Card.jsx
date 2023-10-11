@@ -2,13 +2,9 @@ import styles from './Card.module.scss';
 
 const Card = ({ item }) => {
   return (
-    <div className={`${styles.card} ${item.id === 1 ? styles.row : ''}`}>
+    <div className={styles.card}>
       <div>
-        <img
-          className={styles.image}
-          src={`src/components/WhyIsItImportantBlock/images/${item.img}.png`}
-          alt=""
-        />
+        <img className={styles.image} src={item.img} alt={item.desc} />
       </div>
       <p className={styles.desc}>{item.desc}</p>
     </div>

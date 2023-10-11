@@ -1,11 +1,13 @@
 import Card from './Card/Card';
 import styles from './WhyIsItImportantBlock.module.scss';
 import { data } from './data';
+import Container from '../Container/Container';
 
 const WhyIsItImportantBlock = () => {
   return (
-    <div className={styles.container}>
-      <p className={styles.title}>Чому це важливо</p>
+    <section className={styles.wrapper}>
+      <Container>
+      <h2 className={styles.title}>Чому це важливо</h2>
       <div className={styles.cards}>
         {!!data.length &&
           data.map(item => {
@@ -15,8 +17,9 @@ const WhyIsItImportantBlock = () => {
               </div>
             );
           })}
-      </div>
-    </div>
+        </div>
+        </Container>
+    </section>
   );
 };
 export default WhyIsItImportantBlock;

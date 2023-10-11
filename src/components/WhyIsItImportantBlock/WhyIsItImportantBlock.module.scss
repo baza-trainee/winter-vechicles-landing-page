@@ -1,41 +1,45 @@
 @import "../../styles/vars";
 
-.container {
-  min-width: 320px;
-  max-width: 1279px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 80px;
-  margin: 0 auto;
-
-  @media (min-width: 320px) {
-    padding: 24px 16px;
-  }
-
+.wrapper {
   .title {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: $bold;
-    line-height: 50px;
-    letter-spacing: 1.38;
+    font-family: Dela Gothic One;
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 28px;
+    letter-spacing: 0.35px;
     color: $primary-black-color;
     text-align: center;
+
+    @media (min-width: $mobile) {
+      font-size: 24px;
+      padding-top: 40px;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 24px;
+      padding: 32px 0;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 36px;
+      font-weight: $regular;
+      padding: 60px 0;
+    }
   }
 
   .cards {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: center;
+    width: 100%;
 
     @media (min-width: $tablet) {
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      padding: 0 80px;
-    }
-
-    @media (min-width: $desktop) {
       flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
   }
 }
