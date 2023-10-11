@@ -12,9 +12,7 @@ const Modal = () => {
         <div className={styles.popup}>
             <div className={styles.popupBody}>
                 <div className={styles.popupContent}>
-                    <div className={styles.popupClose}>
-                        <AiOutlineClose size="20" />
-                    </div>
+                        <AiOutlineClose className={styles.popupClose} />
                     <h3 className={styles.popupTitle}>Поділіться сайтом з друзями!</h3>
                     <hr className={styles.popupLine} />
                     <p className={styles.popupText}>Надішліть посилання на сайт <br />через cоціальні мережі</p>
