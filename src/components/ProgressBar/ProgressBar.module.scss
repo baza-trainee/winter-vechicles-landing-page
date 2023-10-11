@@ -38,8 +38,20 @@
             margin-bottom: 5px;
             margin: 0;
             img{
-              height: 109px;
-              width: 96px;
+              @media (min-width: $mobile) {
+                height: 60px;
+                width: 41px;
+              }
+          
+              @media (min-width: $tablet) {
+                height: 85px;
+                width: 70px;
+              }
+          
+              @media (min-width: $desktop) {
+                height: 109px;
+                width: 96px;
+              }
               margin: 0;
               margin-bottom: 15px;
             }
