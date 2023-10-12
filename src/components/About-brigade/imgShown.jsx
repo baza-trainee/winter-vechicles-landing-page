@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import imgMob from "../../images/about-brigade/about-brigade-mobile.jpg";
 import imgTab from "../../images/about-brigade/about-brigade-tablet.jpg";
 import imgDesk from "../../images/about-brigade/about-brigade-desktop.jpg";
@@ -19,18 +19,16 @@ export const ImgShown = () => {
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <div>      
-      {imageToShow && <img src={imageToShow} alt="Description" />}
-    </div>
+    <div>{imageToShow && <img src={imageToShow} alt="Description" />}</div>
   );
 };

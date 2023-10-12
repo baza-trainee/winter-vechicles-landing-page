@@ -8,7 +8,8 @@
   @media screen and (min-width: 768px) {
     max-width: none;
     width: $tablet;
-  padding: 0px 40px 0px;  }
+    padding: 0px 40px 0px;
+  }
 
   @media screen and (min-width: 1280px) {
     width: $desktop;
