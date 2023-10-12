@@ -1,20 +1,21 @@
 @import "../../styles/vars";
 
 .container {
-  max-width: $mobile;
-  margin: 0px auto 0px;
-  padding: 0px 16px 0px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: 0 auto;
+  	border: 2px red solid;
+	@media screen and (min-width: $mobile) and (max-width: 767.98px) {
+		width: $mobile;
+	}
 
-  @media screen and (min-width: 768px) {
-    max-width: none;
-    width: $tablet;
-    padding: 0px 40px 0px;
-  }
+	@media screen and (min-width: $tablet) {
+		width: $tablet;
+		padding: 0 40px;
+	}
 
-  @media screen and (min-width: 1280px) {
-    width: $desktop;
-    padding: 0px 80px 0px;
-  }
-
-  border: 2px red solid;
+	@media screen and (min-width: $desktop) {
+		width: $desktop;
+		padding: 0 80px;
+	}
 }

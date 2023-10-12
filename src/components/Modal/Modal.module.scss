@@ -16,43 +16,45 @@
 }
 
 .popupContent {
-  position: relative;
-  background-color: #f8f7f7;
-  width: 524px;
-  padding: 0 15px;
-  margin: 0 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  text-align: center;
-  border-radius: 8px;
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: $medium;
-  line-height: 28px;
+    position: relative;
+    background-color: $primary-white-color;
+    width: 524px;
+    padding: 0 10px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: $medium;
+    line-height: 28px;
+    
 }
 .popupClose {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer; 
+    font-size: 20px;  
 }
-.popupLine {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  display: block;
-  background-color: $primary-grey-color;
-  bottom: 335px;
+.popupLine{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: $primary-grey-color;
+    bottom: 326px;
 }
 .popupTitle {
-  font-family: "Dela Gothic One";
-  font-size: 1.5rem;
-  font-weight: $regular;
-  line-height: 1.75rem;
-  margin-top: 48px;
-  margin-bottom: 16px;
+    font-family: 'Dela Gothic One';
+    font-size: 1.5rem;
+    font-weight: $regular;
+    line-height: $primary-line-height;
+    margin-top: 48px;
+    margin-bottom: 16px;
 }
 .popupText {
   letter-spacing: 0.35px;
@@ -69,29 +71,32 @@
   }
 }
 .popupSocialLink {
-  height: 56px;
-  transition: 0.2s;
+    transition: $transition-duration;
+    img{
+        height: 56px;
+        width: 56px;
+    }
 
   &:hover,
   &:focus {
     transform: scale(0.9);
   }
 }
-.popupCopyText {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 236px;
-  gap: 4px;
-  letter-spacing: 0.35px;
-  margin-bottom: 40px;
-  transition: 0.2s;
+.popupCopyText{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    gap: 4px;
+    letter-spacing: 0.35px;
+    margin-bottom: 40px;
+    transition: $transition-duration;
 
   &::after {
     content: "";
