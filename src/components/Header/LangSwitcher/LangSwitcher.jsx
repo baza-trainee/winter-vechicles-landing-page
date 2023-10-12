@@ -9,7 +9,8 @@ import styles from './langSwitcher.module.scss';
 const LangSwitcher = () => {
   const { t, i18n } = useTranslation();
 
-  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+  //   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+  const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   const [isOpenChangeLangWrapper, setIsOpenLangSwitcher] = useState(false);
 
@@ -19,21 +20,21 @@ const LangSwitcher = () => {
     { code: 'pl', label: 'pl' },
   ];
 
-  useEffect(() => {
-    const closeLangWrapper = () => {
-      setIsOpenLangSwitcher(true);
-      console.log(setIsOpenLangSwitcher);
-      console.log(isOpenChangeLangWrapper);
-    };
+  //   useEffect(() => {
+  //     const closeLangWrapper = () => {
+  //       setIsOpenLangSwitcher(true);
+  //       console.log(setIsOpenLangSwitcher);
+  //       console.log(isOpenChangeLangWrapper);
+  //     };
 
-    if (isOpenChangeLangWrapper) {
-      document.addEventListener('click', closeLangWrapper);
-    }
+  //     if (isOpenChangeLangWrapper) {
+  //       document.addEventListener('click', closeLangWrapper);
+  //     }
 
-    return () => {
-      document.removeEventListener('click', closeLangWrapper);
-    };
-  }, [isOpenChangeLangWrapper]);
+  //     return () => {
+  //       document.removeEventListener('click', closeLangWrapper);
+  //     };
+  //   }, [isOpenChangeLangWrapper]);
 
   const onLangWrapperClick = () =>
     setIsOpenLangSwitcher(!isOpenChangeLangWrapper);
