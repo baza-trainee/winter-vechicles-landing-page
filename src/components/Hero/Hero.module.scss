@@ -11,11 +11,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: none;
-    }
-
-    @media screen and (min-width: 1680px) {
-        max-width: 1680px;
+        max-width: 1280px;
     }
 
     &__cover {
