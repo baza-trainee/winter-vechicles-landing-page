@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
-
+import { AiOutlineClose } from 'react-icons/ai';
 import Container from '../../Container/Container';
-import CloseBtnSvg from './CloseBtnSvg/CloseBtnSvg';
 
 import styles from './mobileMenu.module.scss';
 
@@ -18,7 +17,7 @@ const MobileMenu = ({ setMobileMenu, mobileMenu }) => {
             type="button"
             onClick={() => onCloseMobileMenu()}
           >
-            <CloseBtnSvg />
+            <AiOutlineClose className={styles.closeSvg} size={24} />
           </button>
         </div>
         <nav className={styles.navMobile} onClick={() => onCloseMobileMenu()}>

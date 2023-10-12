@@ -47,13 +47,13 @@
 	line-height: 0;
 	border: none;
 	background-color: transparent;
+	color: $primary-white-color;
+	transition-property: color;
+	transition: color $transition-duration;
 
-	transition-property: stroke;
-	transition: stroke $transition-duration;
-
-	&:hover path,
-	&:focus path {
-		stroke: $accent-orange-color;
+	&:hover .closeSvg,
+	&:focus .closeSvg {
+		color: $accent-orange-color;
 	}
 }
 
