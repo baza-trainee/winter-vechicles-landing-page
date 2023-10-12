@@ -33,7 +33,7 @@ export const ImgShown = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [setImageToShow]);
 
   return (
     <div>
