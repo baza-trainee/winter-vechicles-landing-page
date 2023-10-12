@@ -15,21 +15,16 @@
 .selectedLanguage {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding: 5px 10px;
 	color: $primary-white-color;
 
 	transition-property: color;
-	transition:
-		color $transition-duration,
-		stroke $transition-duration;
+	transition: color $transition-duration;
 
 	&:hover,
 	&:focus {
 		color: $accent-orange-color;
-
-		& path {
-			stroke: currentColor;
-		}
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -42,10 +37,12 @@
 }
 
 .imgThumb {
-	padding: 6px;
+	display: flex;
+	align-items: center;
+	padding: 0 6px;
 
 	@media screen and (min-width: $tablet) {
-		padding: 10px;
+		padding: 0 10px;
 	}
 }
 

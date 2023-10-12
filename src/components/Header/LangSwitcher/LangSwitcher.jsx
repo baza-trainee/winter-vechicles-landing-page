@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
+import { IoIosArrowDown } from 'react-icons/io';
 
-import ArrowSvg from './ArrowSvg/ArrowSvg';
+// import ArrowSvg from './ArrowSvg/ArrowSvg';
 
 import styles from './langSwitcher.module.scss';
 
@@ -60,7 +61,7 @@ const LangSwitcher = () => {
             isOpenChangeLangWrapper ? styles.imgThumbRotate : ''
           }`}
         >
-          <ArrowSvg width={12} height={6} />
+          <IoIosArrowDown className={styles.arrowSvg} size={24} />
         </div>
       </div>
       {isOpenChangeLangWrapper && (
