@@ -1,8 +1,56 @@
 { 
 "header": {
+	"logo-1": "Fast",
+	"logo-2": "Wh",
+	"logo-3": "els",
 	"goal": "Goal",
 	"about": "About brigade",
 	"important": "Why it is important",
 	"fundraising": "Fundraising"
+},
+
+"hero": {
+"title": "Fast wheels",
+"subcription": "Cars are ready for the cold - enemies have no chance at all!",
+"our-goal": "Our goal",
+"sum": "50 000 UAH.",
+"for": "For the 59th Brigade named after Yakiv Handziuk for the purchase of car details",
+"btn": "Help"
+},
+
+"running-line": {
+"support": "Support our people now",
+"victory": "Together to a victorious winter"
+},
+"progressBar": {
+"Preparing": "Preparing together for our victorious winter",
+"already": "Already collected",
+"sum-start": "0 UAH.",
+"our-goal": "Our goal",
+"sum": "50 000 UAH."
+},
+"About": {
+"title": "About brigade",
+"text-1": "The 59th Separate Motorized Infantry Brigade named after Yakiv Handziuk was formed after the beginning of Russian aggression, at the end of 2014. It consisted of three battalions: 9th, 10th and 11th battalions. The brigade is named in honor of Yakiv Handziuk, a Ukrainian military leader during the First Liberation Movement.",
+"text-2": "We are raising funds to purchase the necessary auto details. It is very important to prepare military vehicles for the winter now, so that nothing prevents our defenders from performing their military tasks at the front line and bringing our victory closer.",
+"btn": "Help"
+},
+"important": {
+"title": "Why it is important",
+"text-1": "With high-quality car details, our defenders become invincible.",
+"text-2": "They can quickly and efficiently reach any military location.",
+"text-3": "The most important, it will save the lives of our defenders and protectresses."
+},
+"strength": {
+"title": "The strength is in unity!",
+"sharing": "Help others learn about our  fundraising",
+"btn": "Share"
+},
+"footer": "Developed by Baza Trainee Ukraine 2023 © All rights reserved",
+"modal": {
+"title": "Share the site with your friends!",
+"text-send": "Send a link to the site through social networks",
+"text-copy": "or copy the link",
+"btnCopy": "Copy the link"
 }
 }
