@@ -28,7 +28,7 @@ function App() {
       <footer>
         <Container>
           <Footer />
-          <Modal/>
+          {/* <Modal/> */}
         </Container>
       </footer>
     </>
