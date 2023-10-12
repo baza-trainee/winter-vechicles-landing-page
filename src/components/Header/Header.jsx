@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-// import { Link } from 'react-router-dom';
-// import { Link as ScrollLink} from 'react-scroll';
-
 import Container from '../Container/Container';
 import LogoComponent from './LogoComponent/LogoComponent';
 import LangSwitcher from './LangSwitcher/LangSwitcher';
@@ -60,16 +57,6 @@ const Header = () => {
                 >
                   {t('header.fundraising')}
                 </a>
-
-                {/* <ScrollLink
-                  className={styles.link}
-                  smooth={true}
-                  duration={250}
-                  to="fundraising"
-                  aria-label="Move to Fundraising section"
-                >
-                  {t('header.fundraising')}
-                </ScrollLink> */}
               </li>
             </ul>
           </nav>

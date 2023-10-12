@@ -33,13 +33,17 @@
 }
 
 .currentLang {
-	margin-right: 16px;
+	margin-right: 6px;
+
+	@media screen and (min-width: $desktop) {
+		margin-right: 16px;
+	}
 }
 
 .imgThumb {
 	display: flex;
 	align-items: center;
-	padding: 0 6px;
+	padding: 0 0 0 6px;
 
 	@media screen and (min-width: $tablet) {
 		padding: 0 10px;

@@ -3,12 +3,16 @@
 .header {
 	background-color: #131313;
 
-	@media screen and (min-width: $mobile) and (max-width: 1279.98px) {
+	@media screen and (min-width: $mobile) and (max-width: 767.98px) {
 		padding: 16px 0;
 	}
 
+	@media screen and (min-width: $tablet) and (max-width: 1279.98px) {
+		padding: 8px 0 8px 0;
+	}
+
 	@media screen and (min-width: $desktop) {
-		padding: 14px 0;
+		padding: 8px 0 16px 0;
 	}
 }
 
@@ -72,17 +76,3 @@
 		display: none;
 	}
 }
-
-// .burgerSvg {
-// 	// outline: none;
-
-// 	& path {
-// 		transition-property: fill;
-// 		transition: fill $transition-duration;
-// 	}
-
-// 	&:hover path,
-// 	&:focus path {
-// 		fill: $accent-orange-color;
-// 	}
-// }
