@@ -6,7 +6,7 @@ const Scroll = () => {
 
     useEffect(()=>{
         window.addEventListener('scroll',()=>{
-            if(window.scrollY>15){
+            if(window.scrollY>800){
                 setScrollToTop(true);
             }
             else {
