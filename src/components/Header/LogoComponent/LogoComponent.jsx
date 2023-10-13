@@ -1,6 +1,6 @@
-import LogoSvg from './LogoSvg/LogoSvg';
+import LogoSvg from "./LogoSvg/LogoSvg";
 
-import styles from './logoComponent.module.scss';
+import styles from "./logoComponent.module.scss";
 
 const LogoComponent = () => {
   return (

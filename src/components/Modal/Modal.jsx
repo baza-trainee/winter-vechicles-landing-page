@@ -1,3 +1,4 @@
+
 import styles from './Modal.module.scss';
 import facebook from "../../images/modal/fb.svg";
 import telegram from "../../images/modal/tg.svg";
@@ -5,6 +6,7 @@ import instagram from "../../images/modal/instagram.svg";
 import linkedin from "../../images/modal/linkedin.svg";
 import { GoShareAndroid } from "react-icons/go";
 import { AiOutlineClose } from "react-icons/ai";
+
 
 const Modal = () => {
     return <>
@@ -27,19 +29,8 @@ const Modal = () => {
                     </button >
                 </div>
             </div>
-            <p className={styles.popupText}>або скопіюйте лінк</p>
-            <button onclick="myFunction()" className={styles.popupCopyText}>
-              Скопіювати посилання
-              <img src={share} alt="share" />
-            </button>
-          </div>
         </div>
-      </div>
     </>
-  );
 };
 
 export default Modal;
-
-
-

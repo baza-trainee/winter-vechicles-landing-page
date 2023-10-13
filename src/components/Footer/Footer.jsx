@@ -1,16 +1,20 @@
 import styles from "./Footer.module.scss";
 import ShareButton from "../Button/ShareButton";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
-    <section id="footer" className={styles.footerContainer}>
-      <h2 className={styles.footerTitle}>У єднанні - сила!</h2>
+    <section id="fundraising" className={styles.footerContainer}>
       <h2 className={styles.footerTitle}>
-        Допоможи іншим дізнатися про наш збір
+        {t("strength.title")}
       </h2>
-      <ShareButton />
+      <h2 className={styles.footerTitle}>
+        {t("strength.sharing")}
+      </h2>
+      <div className={styles.shareButton}><ShareButton /></div>
       <p className={styles.copyright}>
-        Розробка Baza Trainee Ukraine 2023 © Всі права захищені
+        {t("footer")}
       </p>
     </section>
   );

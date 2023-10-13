@@ -3,8 +3,10 @@ import Button from "./ButtonModel/Button";
 import Modal from "../Modal/Modal";
 import { GoShareAndroid } from "react-icons/go";
 import style from "./ButtonModel/Button.module.scss";
+import { useTranslation } from "react-i18next";
 
 const ShareButton = () => {
+  const { t } = useTranslation();
   const [isOpen, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -14,9 +16,8 @@ const ShareButton = () => {
   return (
     <div>
       <Button
-        className={style.button__center}
         onClick={handleClick}
-        text="Поділитися"
+        text={t("strength.btn")}
         icon={<GoShareAndroid />}
       />
       {isOpen && <Modal />}

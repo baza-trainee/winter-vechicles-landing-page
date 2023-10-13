@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
-import { AiOutlineClose } from 'react-icons/ai';
-import Container from '../../Container/Container';
+import { useTranslation } from "react-i18next";
+import { AiOutlineClose } from "react-icons/ai";
+import Container from "../../Container/Container";
 
-import styles from './mobileMenu.module.scss';
+import styles from "./mobileMenu.module.scss";
 
 const MobileMenu = ({ setMobileMenu, mobileMenu }) => {
   const { t } = useTranslation();
@@ -24,17 +24,17 @@ const MobileMenu = ({ setMobileMenu, mobileMenu }) => {
           <ul className={styles.list}>
             <li className={styles.item}>
               <a className={styles.link} href="/">
-                {t('header.goal')}
+                {t("header.goal")}
               </a>
             </li>
             <li className={styles.item}>
               <a className={styles.link} href="/#about">
-                {t('header.about')}
+                {t("header.about")}
               </a>
             </li>
             <li className={styles.item}>
               <a className={styles.link} href="/#important">
-                {t('header.important')}
+                {t("header.important")}
               </a>
             </li>
             <li className={styles.item}>
@@ -43,7 +43,7 @@ const MobileMenu = ({ setMobileMenu, mobileMenu }) => {
                 href="/#fundraising"
                 aria-label="Move to Fundraising section"
               >
-                {t('header.fundraising')}
+                {t("header.fundraising")}
               </a>
             </li>
           </ul>

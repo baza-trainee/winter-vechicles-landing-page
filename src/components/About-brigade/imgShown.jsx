@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import imgMob1x from "../../images/about-brigade/about-brigade-mobile-1x.jpg";
 import imgMob2x from "../../images/about-brigade/about-brigade-mobile-2x.jpg";
 import imgTab1x from "../../images/about-brigade/about-brigade-tablet-1x.jpg";
@@ -37,7 +37,9 @@ export const ImgShown = () => {
 
   return (
     <div>
-      {imageToShow && <img src={imageToShow} alt="Description" loading="lazy" />}
+      {imageToShow && (
+        <img src={imageToShow} alt="Description" loading="lazy" />
+      )}
     </div>
   );
 };

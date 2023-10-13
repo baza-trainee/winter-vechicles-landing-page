@@ -1,15 +1,15 @@
 @import "../../../index.scss";
 
 .logo {
-	margin-right: auto;
+  margin-right: auto;
 
-	@media screen and (min-width: $mobile) and (max-width: 1279.98px) {
-		max-width: 100px;
-		height: 40px;
-	}
+  @media screen and (min-width: $mobile) and (max-width: 1279.98px) {
+    max-width: 100px;
+    height: 40px;
+  }
 
-	@media screen and (min-width: $desktop) {
-		max-width: 168px;
-		height: 60px;
-	}
+  @media screen and (min-width: $desktop) {
+    max-width: 168px;
+    height: 60px;
+  }
 }

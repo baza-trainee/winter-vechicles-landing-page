@@ -41,25 +41,17 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
-      font-size: 24px;
-      margin-bottom: 28px;
-    }
-  }
-
-  &__text {
-    color: var(--White, #f8f7f7);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.35px;
-    margin-bottom: 6px;
-
-    @media screen and (min-width: 768px) {
-      font-size: 18px;
-      line-height: 36px;
-      margin-bottom: 14px;
-    }
+    &__title {
+        color: var(--White, #F8F7F7);
+        font-family: 'Dela Gothic One', sans-serif;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0.35px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        margin-bottom: 6px;
+        line-height: 28px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         @media screen and (min-width: $tablet) {
             margin-bottom: 28px;
@@ -105,22 +97,21 @@
             font-size: 24px;
             margin-bottom: 28px;
         }
-      }
+    }
 
-      span:last-child {
-        color: var(--Orange, #f29544);
-        font-family: "Dela Gothic One", sans-serif;
+    &__text {
+        color: var(--White, #F8F7F7);
         font-size: 16px;
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0.35px;
+        margin-bottom: 6px;
 
         @media screen and (min-width: $tablet) {
             font-size: 18px;
             line-height: 36px;
             margin-bottom: 14px;
         }
-      }
 
         @media screen and (min-width: $desktop) {
             font-size: 20px;
@@ -169,8 +160,7 @@
             }
         }
     }
-  }
 
-  &__buttonCover {
-  }
+    &__buttonCover {}
+
 }
