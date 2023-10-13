@@ -1,3 +1,4 @@
+
 import styles from './Modal.module.scss';
 import facebook from "../../images/modal/fb.svg";
 import telegram from "../../images/modal/tg.svg";
