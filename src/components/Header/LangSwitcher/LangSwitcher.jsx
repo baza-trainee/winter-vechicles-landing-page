@@ -1,21 +1,23 @@
-import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
-import { IoIosArrowDown } from 'react-icons/io';
+import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+import styles from "./langSwitcher.module.scss";
 
-import styles from './langSwitcher.module.scss';
 
 const LangSwitcher = () => {
   const { t, i18n } = useTranslation();
 
+
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
   //   const [selectedLanguage, setSelectedLanguage] = useState('en');
+
 
   const [isOpenChangeLangWrapper, setIsOpenLangSwitcher] = useState(false);
 
   const languages = [
-    { code: 'en', label: 'en' },
-    { code: 'ua', label: 'ua' },
-    { code: 'pl', label: 'pl' },
+    { code: "en", label: "en" },
+    { code: "ua", label: "ua" },
+    { code: "pl", label: "pl" },
   ];
 
   //   useEffect(() => {
@@ -37,14 +39,14 @@ const LangSwitcher = () => {
   const onLangWrapperClick = () =>
     setIsOpenLangSwitcher(!isOpenChangeLangWrapper);
 
-  const handleChangeLanguage = languageCode => {
+  const handleChangeLanguage = (languageCode) => {
     setSelectedLanguage(languageCode);
     i18n.changeLanguage(languageCode);
     setIsOpenLangSwitcher(!isOpenChangeLangWrapper);
   };
 
   const availableLanguages = languages.filter(
-    language => language.code !== selectedLanguage
+    (language) => language.code !== selectedLanguage,
   );
 
   return (
@@ -57,7 +59,7 @@ const LangSwitcher = () => {
         <div className={styles.currentLang}>{t(`${selectedLanguage}`)}</div>
         <div
           className={`${styles.imgThumb} ${
-            isOpenChangeLangWrapper ? styles.imgThumbRotate : ''
+            isOpenChangeLangWrapper ? styles.imgThumbRotate : ""
           }`}
         >
           <IoIosArrowDown />
@@ -65,7 +67,7 @@ const LangSwitcher = () => {
       </div>
       {isOpenChangeLangWrapper && (
         <div className={styles.changeLangWrapper}>
-          {availableLanguages.map(language => (
+          {availableLanguages.map((language) => (
             <a
               className={styles.changLang}
               href="#"

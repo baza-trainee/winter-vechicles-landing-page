@@ -1,0 +1,40 @@
+@import "../../../styles/vars";
+
+.button {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $accent-orange-color;
+  color: $secondary-white-color;
+  box-shadow: none;
+  border: none;
+  border-radius: 8px;
+  height: 52px;
+  width: 236px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $dark-orange-color;
+  }
+  &:disabled {
+    background-color: $grey-color;
+    color: $dark-grey-color;
+    border: 2px solid $dark-grey-color;
+  }
+
+  &__text,
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 100%;
+  }
+
+  &__icon {
+    font-size: 1.5em;
+  }
+}

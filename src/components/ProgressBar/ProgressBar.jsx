@@ -1,12 +1,10 @@
-import styles from './ProgressBar.module.scss';
-import Container from '../Container/Container';
-
+import styles from "./ProgressBar.module.scss";
+import Container from "../Container/Container";
 
 const ProgressBar = () => {
-
-    return (
+  return (
     <div className={styles.wrapper}>
-        <Container>
+      <Container>
         <div className={styles.title}>
             Готуємось разом до нашої переможної зими
         </div>
@@ -27,10 +25,11 @@ const ProgressBar = () => {
                     <h4>50 000 грн.</h4>
                 </div>
             </div>
+          </div>
         </div>
-        </Container>
+      </Container>
     </div>
-  )
-}
+  );
+};
 
-export default ProgressBar
+export default ProgressBar;
