@@ -9,7 +9,7 @@
 	}
 
 	@media screen and (min-width: $tablet) and (max-width: 1279.98px) {
-		padding: 8px 0 8px 0;
+		padding: 8px 0;
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -57,17 +57,26 @@
 }
 
 .burgerMenuOpen {
-  padding: 8px 0;
-  line-height: 0;
-  border: none;
-  background-color: transparent;
-  transition-property: fill;
-  transition: fill $transition-duration;
 
-  &:hover path,
-  &:focus path {
-    fill: $accent-orange-color;
-  }
+	font-size: 24px;
+	padding: 8px 0;
+	line-height: 0;
+	border: none;
+	color: $primary-white-color;
+	background-color: transparent;
+	transition-property: color;
+	transition: color $transition-duration;
+
+	&:hover,
+	&:focus {
+		color: $accent-orange-color;
+	}
+
+	@media screen and (min-width: $tablet) {
+		font-size: 32px;
+		margin-left: 60px;
+	}
+
 
   @media screen and (min-width: $tablet) {
     margin-left: 60px;
