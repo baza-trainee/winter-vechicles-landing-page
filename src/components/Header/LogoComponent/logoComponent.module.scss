@@ -1,15 +1,42 @@
 @import "../../../index.scss";
 
 .logo {
-  margin-right: auto;
 
-  @media screen and (min-width: $mobile) and (max-width: 1279.98px) {
-    max-width: 100px;
-    height: 40px;
-  }
+	flex-basis: 184px;
+	margin-right: auto;
+	color: $primary-white-color;
+	font-family: "Dela Gothic One", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition-property: color;
+	transition: color $transition-duration;
 
-  @media screen and (min-width: $desktop) {
-    max-width: 168px;
-    height: 60px;
-  }
+	&:hover,
+	&:focus {
+		color: $accent-orange-color;
+	}
+
+	@media screen and (min-width: $tablet) {
+		font-size: 18px;
+	}
+}
+
+.logo1 {
+	display: block;
+	margin-bottom: -10px;
+}
+
+.spanWrapper {
+	display: flex;
+	align-items: center;
+}
+
+.spanLeft {
+	margin-right: -4px;
+}
+
+.spanRight {
+	margin-left: -4px;
 }

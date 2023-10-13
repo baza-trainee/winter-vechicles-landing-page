@@ -1,5 +1,6 @@
 @import "../../styles/vars";
 
+
 .wrapper {
   @media (min-width: $mobile) {
     padding-bottom: 24px;
@@ -28,6 +29,7 @@
       padding-top: 100px;
     }
     text-align: center;
+
     font-family: Dela Gothic One;
     font-style: normal;
     font-weight: 400;
@@ -124,6 +126,7 @@
       font-style: normal;
       font-weight: 700;
       color: $accent-orange-color;
+      
     }
   }
 }

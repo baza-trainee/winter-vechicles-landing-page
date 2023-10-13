@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import styles from "./ScrollToTop.module.scss";
 const Scroll = () => {
+
   const [ScrollToTop, setScrollToTop] = useState(false);
 
   useEffect(() => {
@@ -19,6 +20,7 @@ const Scroll = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <div className={styles.container}>
       {ScrollToTop && (
