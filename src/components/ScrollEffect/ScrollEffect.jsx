@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./ScrollEffect.module.scss";
 
-const ScrollEffect = (props) => {
+const ScrollEffect = ({children}) => {
   const [isVisible, setVisible] = useState(false);
   const documentRef = useRef();
 
@@ -21,7 +21,7 @@ const ScrollEffect = (props) => {
       ref={documentRef}
       className={`${styles.fadeInSection} ${visibleSection}`}
     >
-      {props.children}
+      {children}
     </div>
   );
 };

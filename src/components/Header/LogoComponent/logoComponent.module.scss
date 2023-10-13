@@ -1,10 +1,9 @@
-@import "../../../index.scss";
+@import "../../../styles/vars";
 
 .logo {
 	margin-right: auto;
 	color: $primary-white-color;
 	font-family: "Dela Gothic One", sans-serif;
-	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 1px;
 	text-transform: uppercase;

@@ -1,4 +1,4 @@
-@import "../../../index.scss";
+@import "../../../styles/vars";
 
 .mobileMenu {
   position: fixed;
@@ -80,9 +80,8 @@
   line-height: 1.68;
   transition-property: color;
   transition: color $transition-duration;
-}
-
-.link:hover,
-.link:focus {
-  color: $accent-orange-color;
+  &:hover,
+  &:focus {
+    color: $accent-orange-color;
+  }
 }
