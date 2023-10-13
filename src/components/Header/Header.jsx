@@ -64,7 +64,7 @@ const Header = () => {
             className={styles.burgerMenuOpen}
             onClick={() => onOpenMobileMenu()}
           >
-            <BurgerSvg />
+            <FiMenu />
           </button>
         </div>
         <MobileMenu setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />

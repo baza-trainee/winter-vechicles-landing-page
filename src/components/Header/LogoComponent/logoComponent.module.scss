@@ -1,8 +1,6 @@
 @import "../../../styles/vars";
 
 .logo {
-
-	flex-basis: 184px;
 	margin-right: auto;
 	color: $primary-white-color;
 	font-family: "Dela Gothic One", sans-serif;
@@ -25,7 +23,11 @@
 
 .logo1 {
 	display: block;
-	margin-bottom: -10px;
+	margin-bottom: -9px;
+
+	@media screen and (min-width: $tablet) {
+		margin-bottom: -11px;
+	}
 }
 
 .spanWrapper {
@@ -34,9 +36,5 @@
 }
 
 .spanLeft {
-	margin-right: -4px;
-}
-
-.spanRight {
-	margin-left: -4px;
+	margin-right: -0.5px;
 }
