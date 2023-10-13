@@ -1,7 +1,7 @@
-@import "../../index.scss";
+@import "../../styles/vars";
 
 .header {
-  background-color: #131313;
+  background-color: $primary-black-color;
 
 
 	@media screen and (min-width: $mobile) and (max-width: 767.98px) {

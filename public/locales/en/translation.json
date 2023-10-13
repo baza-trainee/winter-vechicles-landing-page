@@ -13,7 +13,7 @@
     "title": "Fast wheels",
     "subcription": "Cars are ready for the cold - enemies have no chance at all!",
     "our-goal": "Our goal",
-    "sum": "50 000 UAH.",
+    "sum": "50 000 UAH",
     "for": "For the 59th Brigade named after Yakiv Handziuk for the purchase of car details",
     "btn": "Help"
   },
@@ -25,9 +25,9 @@
   "progressBar": {
     "Preparing": "Preparing together for our victorious winter",
     "already": "Already collected",
-    "sum-start": "0 UAH.",
+    "sum-start": "0 UAH",
     "our-goal": "Our goal",
-    "sum": "50 000 UAH."
+    "sum": "50 000 UAH"
   },
   "About": {
     "title": "About brigade",
