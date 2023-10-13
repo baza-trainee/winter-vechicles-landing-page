@@ -1,5 +1,5 @@
-import Marquee from 'react-fast-marquee';
-import styles from './RunningText.module.scss';
+import Marquee from "react-fast-marquee";
+import styles from "./RunningText.module.scss";
 
 const RunningText = () => {
   return (

@@ -4,6 +4,7 @@ import Container from '../Container/Container';
 import { data } from './data';
 import styles from './WhyIsItImportantBlock.module.scss';
 
+
 const WhyIsItImportantBlock = () => {
   const { t } = useTranslation();
   return (
@@ -13,6 +14,7 @@ const WhyIsItImportantBlock = () => {
         <div className={styles.cards}>
           {!!data.length &&
             data.map(item => {
+
               return (
                 <div key={item.id} className={styles.card}>
                   <Card item={item} />
