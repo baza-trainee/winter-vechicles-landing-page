@@ -28,7 +28,6 @@ function App() {
       <footer>
         <Container>
           <Footer />
-          <Modal/> 
         </Container>
       </footer>
     </>
