@@ -1,11 +1,12 @@
 @import "../../styles/vars";
+@import "../../styles/base";
+@import "../../styles/animations";
 
 .hero {
   background-image: url("../../images/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 59%;
-
   margin: 0px auto 0px;
 
   @media screen and (min-width: $tablet) {
@@ -14,37 +15,31 @@
 
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
-
   }
 
   &__cover {
     display: flex;
     flex-direction: column;
-
-    margin-top: 24px;
+    margin-top: 18px;
     padding-bottom: 24px;
-    row-gap: 38px;
-
+    row-gap: 45px;
 
     @media screen and (min-width: $tablet) {
       max-width: 486px;
       margin-top: 60px;
-
-      padding-bottom: 42px;
-      row-gap: 32px;
-
+      padding-bottom: 40px;
+      row-gap: 34px;
     }
 
     @media screen and (min-width: $desktop) {
       row-gap: 60px;
-      margin-top: 218px;
+      margin-top: 215px;
       padding-bottom: 105px;
     }
   }
 
   &__title {
     color: $primary-white-color;
-
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Dela Gothic One", sans-serif;
     font-size: 24px;
@@ -54,27 +49,21 @@
     letter-spacing: 0.35px;
     margin-bottom: 6px;
 
-
     @media screen and (min-width: $tablet) {
       margin-bottom: 28px;
       font-size: 40px;
-      line-height: 40px;
     }
 
     @media screen and (min-width: $desktop) {
       font-size: 48px;
-
-      margin-bottom: 28px;
     }
   }
 
   &__arrow {
     display: block;
 
-
     @media screen and (min-width: $tablet) {
       height: 100%;
-
       width: 31px;
     }
   }
@@ -84,7 +73,6 @@
     color: $primary-white-color;
     font-family: "Dela Gothic One", sans-serif;
     font-size: 16px;
-
     line-height: 28px;
     letter-spacing: 0.35px;
     margin-bottom: 6px;
@@ -114,10 +102,7 @@
     @media screen and (min-width: $tablet) {
       font-size: 18px;
       line-height: 36px;
-
     }
-  }
-
 
     @media screen and (min-width: $desktop) {
       font-size: 20px;
@@ -155,101 +140,19 @@
         font-family: "Dela Gothic One", sans-serif;
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $regular;
         line-height: 50px;
         letter-spacing: 0.35px;
-
-        animation-name: changeFontSize;
-        animation-duration: 3500ms;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-
-        @keyframes changeFontSize {
-          0% {
-            font-size: 16px;
-          }
-
-          12.5% {
-            font-size: 16px;
-          }
-
-          25% {
-            font-size: 20px;
-          }
-
-          37.5% {
-            font-size: 20px;
-          }
-
-          50% {
-            font-size: 20px;
-          }
-
-          62.5% {
-            font-size: 20px;
-          }
-
-          75% {
-            font-size: 16px;
-          }
-
-          87.5% {
-            font-size: 16px;
-          }
-
-          100% {
-            font-size: 16px;
-          }
-        }
-      }
-
-
-        @media screen and (min-width: $tablet) {
-          font-size: 36px;
-
-          @keyframes changeFontSize {
-            0% {
-              font-size: 36px;
-            }
-
-            12.5% {
-              font-size: 36px;
-            }
-
-            25% {
-              font-size: 40px;
-            }
-
-            37.5% {
-              font-size: 40px;
-            }
-
-            50% {
-              font-size: 40px;
-            }
-
-            62.5% {
-              font-size: 40px;
-            }
-
-            75% {
-              font-size: 36px;
-            }
-
-            87.5% {
-              font-size: 36px;
-            }
-
-            100% {
-              font-size: 36px;
-            }
-          }
-        }
-
       }
     }
   }
 
   &__buttonCover {
+    & button {
+      width: 100%;
+      @media screen and (min-width: $tablet) {
+        width: 236px;
+      }
+    }
   }
 }
