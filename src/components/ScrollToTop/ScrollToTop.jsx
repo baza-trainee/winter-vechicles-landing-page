@@ -3,10 +3,9 @@ import {AiOutlineArrowUp} from  'react-icons/ai'
 import styles from './ScrollToTop.module.scss'
 const Scroll = () => {
     const [ScrollToTop, setScrollToTop] = useState(false);
-
     useEffect(()=>{
         window.addEventListener('scroll',()=>{
-            if(window.scrollY>15){
+            if(window.scrollY>800){
                 setScrollToTop(true);
             }
             else {
