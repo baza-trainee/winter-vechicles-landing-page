@@ -11,6 +11,7 @@ import { createPortal } from 'react-dom';
 
 
 const Modal = () => {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const [isCopied, setIsCopied] = useState(false); // for future copied status
     // const currentUrl = window.location.href; //original URL
@@ -45,9 +46,9 @@ const Modal = () => {
                 <div className={styles.popupBody} onClick={handleModal}>
                     <div className={styles.popupContent}>
                             <AiOutlineClose className={styles.popupClose}/>
-                        <h3 className={styles.popupTitle}>Поділіться сайтом з друзями!</h3>
+                        <h3 className={styles.popupTitle}>{t('modal.title')}</h3>
                         <hr className={styles.popupLine} />
-                        <p className={styles.popupText}>Надішліть посилання на сайт <br />через cоціальні мережі</p>
+                        <p className={styles.popupText}>{t('modal.text-send')}</p>
                         <div className={styles.popupSocial}>
                             <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`} className={styles.popupSocialLink}>
                                 <img src={facebook} alt="facebook" />
@@ -61,9 +62,9 @@ const Modal = () => {
                             </a>
                             <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`} className={styles.popupSocialLink}><img src={linkedin} alt="linkedin"/></a>
                         </div>
-                        <p className={styles.popupText}>або скопіюйте лінк</p>
+                        <p className={styles.popupText}>{t('modal.text-copy')}</p>
                         <button className={styles.popupCopyText} onClick={copyToClipboard}>
-                            Скопіювати посилання 
+                        {t('modal.btnCopy')}
                             <GoShareAndroid size="24"/>
                         </button >
                     </div>
