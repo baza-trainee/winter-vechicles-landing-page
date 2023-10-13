@@ -2,17 +2,7 @@
 
 
 .wrapper {
-  @media (min-width: $mobile) {
-    padding-bottom: 24px;
-  }
 
-  @media (min-width: $tablet) {
-    padding-top: 30px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-top: 40px;
-  }
   .title {
     @media (min-width: $mobile) {
       font-size: 16px;
@@ -65,7 +55,6 @@
       height: 35px;
       border-radius: 5px;
       background-color: #eee;
-      border-color: black;
     }
     .fill {
       position: relative;

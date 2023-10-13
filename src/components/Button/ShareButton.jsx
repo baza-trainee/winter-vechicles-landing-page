@@ -2,7 +2,6 @@ import * as React from "react";
 import Button from "./ButtonModel/Button";
 import Modal from "../Modal/Modal";
 import { GoShareAndroid } from "react-icons/go";
-import style from "./ButtonModel/Button.module.scss";
 import { useTranslation } from "react-i18next";
 
 const ShareButton = () => {

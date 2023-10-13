@@ -18,19 +18,19 @@ function App() {
       <main>
         <Hero />
         <RunningText />
-        <ProgressBar/>
+        <ProgressBar />
         <AboutBrigade />
         <RunningText />
         <WhyIsItImportantBlock />
-        <Scroll />
       </main>
 
       <footer>
         <Container>
           <Footer />
-          <Modal/>
         </Container>
       </footer>
+      <Modal />
+      <Scroll />
     </>
   );
 }

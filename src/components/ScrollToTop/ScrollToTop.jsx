@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import styles from "./ScrollToTop.module.scss";
 const Scroll = () => {
@@ -14,6 +14,7 @@ const Scroll = () => {
       }
     });
   }, []);
+  
   const ScrollUp = () => {
     window.scrollTo({
       top: 0,

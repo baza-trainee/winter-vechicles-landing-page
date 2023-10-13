@@ -1,4 +1,4 @@
-@import "../../../index.scss";
+@import "../../../styles/vars";
 
 .langWrapper {
   position: relative;
@@ -33,23 +33,24 @@
 }
 
 .currentLang {
-  
-	margin-right: 6px;
+	margin-right: 10px;
 
-	@media screen and (min-width: $desktop) {
-		margin-right: 16px;
+	@media screen and (min-width: $tablet) {
+		margin-right: 26px;
 	}
 }
 
 .imgThumb {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	font-size: 21px;
 	padding: 0 0 0 6px;
 
+	@media screen and (min-width: $tablet) {
+		font-size: 28px;
+	}
 
-  @media screen and (min-width: $tablet) {
-    padding: 0 10px;
-  }
 }
 
 .imgThumbRotate {
