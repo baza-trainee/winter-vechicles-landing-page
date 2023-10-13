@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import LogoSvg from "./LogoSvg/LogoSvg";
 import styles from "./logoComponent.module.scss";
 
