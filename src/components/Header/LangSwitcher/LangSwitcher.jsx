@@ -60,7 +60,7 @@ const LangSwitcher = () => {
             isOpenChangeLangWrapper ? styles.imgThumbRotate : ''
           }`}
         >
-          <IoIosArrowDown className={styles.arrowSvg} size={24} />
+          <IoIosArrowDown />
         </div>
       </div>
       {isOpenChangeLangWrapper && (

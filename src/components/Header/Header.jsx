@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FiMenu } from 'react-icons/fi';
 
 import Container from '../Container/Container';
 import LogoComponent from './LogoComponent/LogoComponent';
 import LangSwitcher from './LangSwitcher/LangSwitcher';
-import BurgerSvg from './BurgerSvg/BurgerSvg';
 import MobileMenu from './MobileMenu/MobileMenu';
 
 import styles from './header.module.scss';
@@ -66,7 +66,7 @@ const Header = () => {
             className={styles.burgerMenuOpen}
             onClick={() => onOpenMobileMenu()}
           >
-            <BurgerSvg />
+            <FiMenu />
           </button>
         </div>
         <MobileMenu setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />
