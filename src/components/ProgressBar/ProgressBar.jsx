@@ -26,7 +26,6 @@ const ProgressBar = () => {
                 </div>
             </div>
           </div>
-        </div>
       </Container>
     </div>
   );

@@ -1,13 +1,12 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import Container from "../Container/Container";
-import LogoComponent from "./LogoComponent/LogoComponent";
-import LangSwitcher from "./LangSwitcher/LangSwitcher";
-import BurgerSvg from "./BurgerSvg/BurgerSvg";
-import MobileMenu from "./MobileMenu/MobileMenu";
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Container from '../Container/Container';
+import LogoComponent from './LogoComponent/LogoComponent';
+import LangSwitcher from './LangSwitcher/LangSwitcher';
+import BurgerSvg from './BurgerSvg/BurgerSvg';
+import MobileMenu from './MobileMenu/MobileMenu';
 
-
-import styles from "./header.module.scss";
+import styles from './header.module.scss';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -28,7 +27,7 @@ const Header = () => {
                   href="/"
                   aria-label="Move to Goal section"
                 >
-                  {t("header.goal")}
+                  {t('header.goal')}
                 </a>
               </li>
               <li className={styles.item}>
@@ -37,7 +36,7 @@ const Header = () => {
                   href="/#about"
                   aria-label="Move to About section"
                 >
-                  {t("header.about")}
+                  {t('header.about')}
                 </a>
               </li>
               <li className={styles.item}>
@@ -46,7 +45,7 @@ const Header = () => {
                   href="/#important"
                   aria-label="Move to Why it`s important section"
                 >
-                  {t("header.important")}
+                  {t('header.important')}
                 </a>
               </li>
               <li className={styles.item}>
@@ -55,7 +54,7 @@ const Header = () => {
                   href="/#fundraising"
                   aria-label="Move to Fundraising section"
                 >
-                  {t("header.fundraising")}
+                  {t('header.fundraising')}
                 </a>
               </li>
             </ul>
