@@ -1,30 +1,30 @@
 @import-normalize;
 
 @font-face {
-	font-family: "Dela Gothic One";
-	src:
-		url("../src/fonts/DelaGothicOne-Regular.woff2") format("woff2"),
-		url("../src/src/fonts/DelaGothicOne-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Dela Gothic One";
+  src:
+    url("../src/fonts/DelaGothicOne-Regular.woff2") format("woff2"),
+    url("../src/src/fonts/DelaGothicOne-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: "Montserrat";
-	src:
-		url("../src/fonts/Montserrat-Regular.woff2") format("woff2"),
-		url("../src/fonts/Montserrat-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Montserrat";
+  src:
+    url("../src/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../src/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: "Montserrat";
-	src:
-		url("../src/fonts/Montserrat-SemiBold.woff2") format("woff2"),
-		url("../src/fonts/Montserrat-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
+  font-family: "Montserrat";
+  src:
+    url("../src/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../src/fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @import "./styles/vars";

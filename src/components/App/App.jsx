@@ -1,3 +1,4 @@
+
 import Container from '../Container/Container';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
@@ -7,10 +8,8 @@ import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBloc
 import Scroll from '../ScrollToTop/ScrollToTop';
 import RunningText from '../RunningText/RunningText';
 import ProgressBar from '../ProgressBar/ProgressBar';
-// import Modal from '../Modal/Modal';
-
-
-import './App.module.scss';
+import Modal from '../Modal/Modal';
+import "./App.module.scss";
 
 function App() {
   return (
@@ -25,10 +24,11 @@ function App() {
         <WhyIsItImportantBlock />
         <Scroll />
       </main>
+
       <footer>
         <Container>
           <Footer />
-          {/* <Modal/> */}
+          <Modal/>
         </Container>
       </footer>
     </>

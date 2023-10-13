@@ -1,64 +1,61 @@
 @import "../../styles/vars";
-@import "../../styles/base";
-
 
 .popupBody {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(217, 217, 217, 0.60);
-    color: $primary-black-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(217, 217, 217, 0.6);
+  color: $primary-black-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
 .popupContent {
-    position: relative;
-    background-color: $primary-white-color;
-    width: 524px;
-    padding: 0 10px;
-    margin: 0 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    text-align: center;
-    border-radius: 8px;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: $medium;
-    line-height: 28px;
-    
+  position: relative;
+  background-color: $primary-white-color;
+  width: 524px;
+  padding: 0 10px;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: $medium;
+  line-height: 28px;
 }
 .popupClose {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    cursor: pointer; 
-    font-size: 20px;  
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 20px;
 }
-.popupLine{
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    display: block;
-    background-color: $primary-grey-color;
-    bottom: 326px;
+.popupLine {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: $primary-grey-color;
+  bottom: 326px;
 }
 .popupTitle {
-    font-family: 'Dela Gothic One';
-    font-size: 1.5rem;
-    font-weight: $regular;
-    line-height: $primary-line-height;
-    margin-top: 48px;
-    margin-bottom: 16px;
+  font-family: "Dela Gothic One";
+  font-size: 1.5rem;
+  font-weight: $regular;
+  line-height: $primary-line-height;
+  margin-top: 48px;
+  margin-bottom: 16px;
 }
 .popupText {
-    letter-spacing: 0.35px;
+  letter-spacing: 0.35px;
 }
 
 .popupSocial {
@@ -72,44 +69,46 @@
     }
 }
 .popupSocialLink {
-    transition: $transition-duration;
-    img{
-        height: 56px;
-        width: 56px;
-    }
+  transition: $transition-duration;
+  img {
+    height: 56px;
+    width: 56px;
+  }
 
-    &:hover, &:focus{
-        transform: scale(0.9);
-    }
+  &:hover,
+  &:focus {
+    transform: scale(0.9);
+  }
 }
-.popupCopyText{
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 236px;
-    gap: 4px;
-    letter-spacing: 0.35px;
-    margin-bottom: 40px;
-    transition: $transition-duration;
+.popupCopyText {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 236px;
+  gap: 4px;
+  letter-spacing: 0.35px;
+  margin-bottom: 40px;
+  transition: $transition-duration;
 
-    &::after{
-        content: '';
-        height: 1px;
-        width: 100%;
-        background-color: $primary-black-color;
-        display: block;
-        position: absolute;
-        bottom: -4px;
-    }
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $primary-black-color;
+    display: block;
+    position: absolute;
+    bottom: -4px;
+  }
 
-    &:hover, &:focus{
-        cursor: pointer;
-        transform: scale(1.1);
-    }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }

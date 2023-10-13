@@ -1,88 +1,88 @@
 @import "../../index.scss";
 
 .header {
-	background-color: #131313;
+  background-color: #131313;
 
-	@media screen and (min-width: $mobile) and (max-width: 1279.98px) {
+
+	@media screen and (min-width: $mobile) and (max-width: 767.98px) {
 		padding: 16px 0;
 	}
 
+	@media screen and (min-width: $tablet) and (max-width: 1279.98px) {
+		padding: 8px 0;
+	}
+
 	@media screen and (min-width: $desktop) {
-		padding: 14px 0;
+		padding: 8px 0 16px 0;
 	}
 }
 
 .containerHeader {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .list {
-	display: none;
+  display: none;
 
-	@media screen and (min-width: $desktop) {
-		display: flex;
-	}
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 
-	.item + .item {
-		margin-left: 36px;
-	}
+  .item + .item {
+    margin-left: 36px;
+  }
 }
 
 .link {
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: $primary-white-color;
-	font-family: "Dela Gothic One", sans-serif;
-	font-size: 18px;
-	line-height: 1.5;
-	transition-property: color;
-	transition: color $transition-duration;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $primary-white-color;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  transition-property: color;
+  transition: color $transition-duration;
 }
 
 .link:hover,
 .link:focus {
-	color: $accent-orange-color;
+  color: $accent-orange-color;
 }
 
 .burgerMenuOpen {
+
+	font-size: 24px;
 	padding: 8px 0;
 	line-height: 0;
 	border: none;
+	color: $primary-white-color;
 	background-color: transparent;
-	transition-property: fill;
-	transition: fill $transition-duration;
+	transition-property: color;
+	transition: color $transition-duration;
 
-	&:hover path,
-	&:focus path {
-		fill: $accent-orange-color;
+	&:hover,
+	&:focus {
+		color: $accent-orange-color;
 	}
 
 	@media screen and (min-width: $tablet) {
+		font-size: 32px;
 		margin-left: 60px;
 	}
 
-	@media screen and (min-width: $desktop) {
-		display: none;
-	}
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
-
-// .burgerSvg {
-// 	// outline: none;
-
-// 	& path {
-// 		transition-property: fill;
-// 		transition: fill $transition-duration;
-// 	}
-
-// 	&:hover path,
-// 	&:focus path {
-// 		fill: $accent-orange-color;
-// 	}
-// }
