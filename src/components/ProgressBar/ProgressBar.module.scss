@@ -1,129 +1,114 @@
 @import "../../styles/vars";
 
 .wrapper{
+  @media (min-width: $mobile) {
+    padding-bottom: 24px;
+  }
+  @media (min-width: $tablet) {
+    padding-top: 30px;
+  }
+  @media (min-width: $desktop) {
+    padding-top: 40px;
+  }
+  .title{
     @media (min-width: $mobile) {
-        padding-bottom: 24px;
-      }
-  
-      @media (min-width: $tablet) {
-        padding-top: 30px;
-      }
-  
-      @media (min-width: $desktop) {
-        padding-top: 40px;
-      }
-    .title{
-        @media (min-width: $mobile) {
-            font-size: 16px;
-            padding-top: 40px;
-          }
-      
-          @media (min-width: $tablet) {
-            font-size: 24px;
-            padding-top: 70px;
-          }
-      
-          @media (min-width: $desktop) {
-            font-size: 36px;
-            padding-top: 100px;
-          }
-        text-align: center;
-        font-family: Dela Gothic One; 
-        font-style: normal;
-        font-weight: 400; 
-        padding-bottom: 24px;
+      font-size: 16px;
+      padding-top: 40px;
+    }
+    @media (min-width: $tablet) {
+      font-size: 24px;
+      padding-top: 70px;
+    }
+    @media (min-width: $desktop) {
+      font-size: 36px;
+      padding-top: 100px;
+    }
+    text-align: center;
+    font-family: Dela Gothic One; 
+    font-style: normal;
+    font-weight: 400; 
+    padding-bottom: 24px;
     }
     .ProgressBar{
-        .img{
-            margin-bottom: 5px;
-            margin: 0;
-            img{
-              @media (min-width: $mobile) {
-                height: 60px;
-                width: 41px;
-              }
-          
-              @media (min-width: $tablet) {
-                height: 85px;
-                width: 70px;
-              }
-          
-              @media (min-width: $desktop) {
-                height: 109px;
-                width: 96px;
-              }
-              margin: 0;
-              margin-bottom: 15px;
-            }
+      .img{
+        margin-bottom: 5px;
+        margin: 0;
+        img{
+          @media (min-width: $mobile) {
+            height: 60px;
+            width: 41px;
+          }
+          @media (min-width: $tablet) {
+            height: 85px;
+            width: 70px;
+          }
+          @media (min-width: $desktop) {
+            height: 109px;
+            width: 96px;
+          }
+          margin: 0;
+          margin-bottom: 15px;
         }
-        .bar{
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 35px;
-            border-radius: 5px;
-            background-color: #eee;
-            border-color: black;
+      }
+      .bar{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        background-color: #eee;
+        border-color: black;
+      }
+      .fill{
+        position: relative;
+        overflow: hidden;
+        height: 35px;
+        border-radius: 5px;
+        background-color: $accent-orange-color;
+      }
+      .text {
+        .second{
+          text-align: right;
         }
-        .fill{
-            position: relative;
-            overflow: hidden;
-            height: 35px;
-            border-radius: 5px;
-            background-color: $accent-orange-color;
+        display: flex;
+        .first{
+          @media (max-width: 319px) {
+            margin-right: 100px;
+          }  
+          @media (min-width: $mobile) {
+            margin-right: 120px;
+          }
+          @media (min-width: $tablet) {
+            margin-right: 470px;
+          }
+          @media (min-width: $desktop) {
+            margin-right: 860px;
+          }
         }
-        .text {
-            .second{
-                text-align: right;
-            }
-            display: flex;
-            .first{
-            @media (max-width: 319px) {
-                    margin-right: 100px;
-                  }  
-            @media (min-width: $mobile) {
-                margin-right: 120px;
-              }
-          
-            @media (min-width: $tablet) {
-                margin-right: 470px;
-              }
-          
-            @media (min-width: $desktop) {
-                margin-right: 860px;
-              }
-            }
+      }
+      .text h3{
+        @media (min-width: $mobile) {
+          font-size: 12px;
         }
-        .text h3{
-            @media (min-width: $mobile) {
-                font-size: 12px;
-            }
-          
-              @media (min-width: $tablet) {
-                font-size: 16px;
-            }
-          
-              @media (min-width: $desktop) {
-                font-size: 16px;
-            }
-            font-style: normal;
-            font-weight: 600; 
+        @media (min-width: $tablet) {
+          font-size: 16px;
         }
-        .text h4{
-            @media (min-width: $mobile) {
-                font-size: 14px;
-            }
-          
-              @media (min-width: $tablet) {
-                font-size: 18px;
-            }
-          
-              @media (min-width: $desktop) {
-                font-size: 24px;
-            }
-            font-style: normal;
-            font-weight: 700; 
-            color: $accent-orange-color;
+        @media (min-width: $desktop) {
+          font-size: 16px;
         }
+        font-style: normal;
+        font-weight: 600; 
+      }
+      .text h4{
+        @media (min-width: $tablet) {
+          font-size: 18px;
+        }
+        @media (min-width: $desktop) {
+          font-size: 24px;
+        }
+        font-style: normal;
+        font-weight: 700; 
+        color: $accent-orange-color;
+      }
     }
 }
