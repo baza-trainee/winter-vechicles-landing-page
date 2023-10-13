@@ -12,13 +12,15 @@
         border-color: $accent-orange-color;
         height: 55px;
         width: 55px;
+        box-shadow: 0px 4px 4px #474747;
     }
     
     button:hover,:focus,:active{
         .arrow{
                 color: $primary-white-color;
          }
-    background-color: $accent-orange-color;
+        background-color: $accent-orange-color;
+        transition: $transition-duration;
     }
     .arrow{
         color: $accent-orange-color;

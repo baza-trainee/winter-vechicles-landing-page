@@ -1,45 +1,42 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-
-
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: $regular;
-  line-height: $primary-line-height;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: $regular;
+	line-height: $primary-line-height;
 
-  color: $primary-black-color;
-  background-color: $main-bg-color;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-y: scroll;
-  overflow-x: hidden;
+	color: $primary-black-color;
+	background-color: $main-bg-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-y: scroll;
+	overflow-x: hidden;
 
-  // @media screen and (min-width: 768px) {
-  //     font-size: 16px;
-  //     line-height: 1.37;
-  // }
+	// @media screen and (min-width: 768px) {
+	//     font-size: 16px;
+	//     line-height: 1.37;
+	// }
 
-  // &.is-open {
-  //     padding-right: calc(-1 * (100vw - 100%));
-  //     overflow-y: hidden;
-  // }
+	// &.is-open {
+	//     padding-right: calc(-1 * (100vw - 100%));
+	//     overflow-y: hidden;
+	// }
 
-  // @media screen and (min-width: 1440px) {
-  //     &.is-open {
-  //         padding-right: 10px;
-  //     }
-  // }
+	// @media screen and (min-width: 1440px) {
+	//     &.is-open {
+	//         padding-right: 10px;
+	//     }
+	// }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 h1,
@@ -49,37 +46,37 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  transition: color 250ms linear;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: color 250ms linear;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 address {
-  font-style: normal;
+	font-style: normal;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
