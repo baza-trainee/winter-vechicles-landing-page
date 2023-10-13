@@ -1,5 +1,6 @@
 import Container from "../Container/Container";
 import { BsArrowRight } from "react-icons/bs";
+
 import style from './Hero.module.scss'
 
 const Hero = () => {
@@ -9,17 +10,16 @@ const Hero = () => {
                 <Container>
                     <div className={style.hero__cover}>
                         <div className={style.hero__info}>
-                            <h1 className={style.hero__title}>“Швидкі колеса”</h1>
+                            <h1 className={style.hero__title}>Швидкі колеса</h1>
                             <span className={style.hero__label}>До зими авто підготував - ворогу шансів не дав!</span>
                             <p className={style.hero__text}>
-                                <span>Наша мета<BsArrowRight preserveAspectRatio="none" className={style.hero__arrow} /></span><span>50 000 грн.</span>
+                                <span>Наша мета<BsArrowRight preserveAspectRatio="none" className={style.hero__arrow} /></span><span>50 000 грн</span>
                             </p>
                             <p className={style.hero__text}>
-                                Для 59 бригади ЗСУ на придбання комплектуючих для авто.
+                                Для 59 бригади ім. Якова Гандзюка на придбання комплектуючих для авто
                             </p>
                         </div>
                         <div className={style.hero__buttonCover}>
-                        
                             {/* Замінити тег button компонентом Button  */}
                             <button style={{
                                 'borderRadius': '8px',
