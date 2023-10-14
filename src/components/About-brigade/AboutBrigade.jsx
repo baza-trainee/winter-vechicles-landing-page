@@ -9,7 +9,7 @@ const AboutBrigade = () => {
     <Container>
       <section id="about">
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>{t('About.title')}</h2>
+          <h2 className={styles.sectionTitle}>{t('about.title')}</h2>
           <div className={styles.content}>
             <div className={styles.aboutBrigadeText}>
               <p>{t('about.text-1')}</p>

@@ -23,9 +23,9 @@
 	"progressBar": {
 		"Preparing": "Wspólnie przygotowujemy się na zwycięską zimę",
 		"already": "Już zebraliśmy",
-		"sum-start": "UAH",
+		"sum-start": "0 UAH",
 		"our-goal": "Nasz cel",
-		"sum": "UAH"
+		"sum": "50 000 UAH"
 	},
 	"about": {
 		"title": "O brygadzie",
