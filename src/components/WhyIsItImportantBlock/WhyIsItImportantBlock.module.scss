@@ -33,12 +33,12 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    align-items: center;
+    align-items: stretch;
     width: 100%;
 
     @media (min-width: $tablet) {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
   }
