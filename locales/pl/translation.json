@@ -1,0 +1,54 @@
+{ 
+	"header": {
+		"logo-1": "Szybkie",
+		"logo-2": "K",
+		"logo-3": "łka",
+		"goal": "Cel",
+		"about": "O brygadzie",
+		"important": "Dlaczego to jest ważne",
+		"fundraising": "Zbiórka"
+	},
+	"hero": {
+		"title": "Szybkie kółka",
+		"subcription": "Samochód na zimę przygotowałeś - wrogowi szansy nie dałeś!",
+		"our-goal": "Nasz cel",
+		"sum": "50 000 UAH",
+		"for": "Dla 59 brygady im. Jakowa Handziuka na zakup części samochodowych",
+		"btn": "Pomóc"
+	},
+	"running-line": {
+		"support": "Wesprzyj Ukrainę już teraz",
+		"victory": "Wspólnie do zwycięskiej zimy"
+	},
+	"progressBar": {
+		"Preparing": "Wspólnie przygotowujemy się na zwycięską zimę",
+		"already": "Już zebraliśmy",
+		"sum-start": "0 UAH",
+		"our-goal": "Nasz cel",
+		"sum": "50 000 UAH"
+	},
+	"about": {
+		"title": "O brygadzie",
+		"text-1": "59 Oddzielna Brygada Piechoty Zmotoryzowanej im. Jakowa Handziuka powstała już po rozpoczęciu rosyjskiej agresji, pod koniec 2014 roku. W jej skład weszły trzy bataliony: 9, 10 i 11. Brygada nosi imię Jakowa Handziuka, ukraińskiego przywódcy wojskowego z czasów Wojny ukraińsko-radzieckiej.",
+		"text-2": "Zbieramy środki na zakup niezbędnych części do samochodów. Bardzo ważne jest teraz przygotować pojazdy wojskowe do zimy, aby nic nie stało na przeszkodzie naszym obrońcom w realizacji zadań na linii frontu i przybliżeniu naszego zwycięstwa.",
+		"btn": "Pomóc"
+	},
+	"important": {
+		"title": "Dlaczego to jest ważne",
+		"text-1": "Posiadając wysokiej jakości komponenty do samochodów, nasi obrońcy stają się niepokonani.",
+		"text-2": "Mogą szybko i skutecznie dotrzeć do dowolnej lokalizacji wojskowej.",
+		"text-3": "Najważniejsze, że uratuje życie naszym obrońcom."
+	},
+	"strength": {
+		"title": "W jedności siła!",
+		"sharing": "Pomóż innym dowiedzieć się o naszej zbórce",
+		"btn": "Udostępnić"
+	},
+	"footer": "Dorobek Baza Trainee Ukraine 2023 © Wszelkie prawa zastrzeżone",
+	"modal": {
+		"title": "Udostępnij stronę swoim znajomym!",
+		"text-send": "Wyślij link do strony internetowej za pośrednictwem media społecznościowych",
+		"text-copy": "lub skopiuj link",
+		"btnCopy": "Skopiuj link"
+	}
+}
