@@ -12,7 +12,7 @@
 		"title": "Szybkie kółka",
 		"subcription": "Samochód na zimę przygotowałeś - wrogowi szansy nie dałeś!",
 		"our-goal": "Nasz cel",
-		"sum": "UAH",
+		"sum": "50 000 UAH",
 		"for": "Dla 59 brygady im. Jakowa Handziuka na zakup części samochodowych",
 		"btn": "Pomóc"
 	},
@@ -23,9 +23,9 @@
 	"progressBar": {
 		"Preparing": "Wspólnie przygotowujemy się na zwycięską zimę",
 		"already": "Już zebraliśmy",
-		"sum-start": "UAH",
+		"sum-start": "0 UAH",
 		"our-goal": "Nasz cel",
-		"sum": "UAH"
+		"sum": "50 000 UAH"
 	},
 	"about": {
 		"title": "O brygadzie",

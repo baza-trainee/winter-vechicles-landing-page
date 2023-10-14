@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { BsArrowRight } from 'react-icons/bs';
 
+import HelpButton from '../Button/HelpButton';
 import Container from '../Container/Container';
 
 import style from './Hero.module.scss';
@@ -28,20 +29,9 @@ const Hero = () => {
               </p>
               <p className={style.hero__text}>{t('hero.for')}</p>
             </div>
-            <div className={style.hero__buttonCover}>
-              {/* Замінити тег button компонентом Button   */}
-              <button
-                style={{
-                  borderRadius: '8px',
-                  background: 'var(--Orange, #F29544)',
-                  color: '#F1F1F1',
-                  padding: '15px 63.5px',
-                }}
-              >
-                {' '}
-                {t('hero.btn')}
-              </button>
-            </div>
+            {/* <div className={style.hero__buttonCover}> */}
+              {/* <HelpButton /> */}
+            {/* </div> */}
           </div>
         </Container>
       </section>

@@ -9,8 +9,10 @@ const Button = (props) => {
       onClick={props.onClick}
       disabled={props.disabled}
     >
-      <span className={style.button__text}>{props.text}</span>
-      <span className={style.button__icon}>{props.icon}</span>
+      <span className={style.button__content}>
+        {props.text}
+        {props.icon}
+      </span>
     </button>
   );
 };

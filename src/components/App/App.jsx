@@ -1,4 +1,3 @@
-
 import Container from '../Container/Container';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
@@ -9,7 +8,7 @@ import Scroll from '../ScrollToTop/ScrollToTop';
 import RunningText from '../RunningText/RunningText';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import Modal from '../Modal/Modal';
-import "./App.module.scss";
+import './App.module.scss';
 
 function App() {
   return (
@@ -18,19 +17,18 @@ function App() {
       <main>
         <Hero />
         <RunningText />
-        <ProgressBar />
-        <AboutBrigade />
+        <ProgressBar/>
+        <AboutBrigade /> 
         <RunningText />
         <WhyIsItImportantBlock />
       </main>
-
       <footer>
         <Container>
           <Footer />
         </Container>
       </footer>
-      <Modal />
       <Scroll />
+      <Modal/>
     </>
   );
 }
