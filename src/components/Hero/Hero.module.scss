@@ -3,6 +3,7 @@
 @import "../../styles/animations";
 
 .hero {
+  max-width: $mobile;
   background-image: url("../../images/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,31 +11,28 @@
   margin: 0px auto 0px;
 
   @media screen and (min-width: $tablet) {
-    max-width: none;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    max-width: none;
   }
 
   &__cover {
     display: flex;
     flex-direction: column;
-    margin-top: 18px;
-    padding-bottom: 24px;
+    padding: 18px 0 24px;
     row-gap: 45px;
 
     @media screen and (min-width: $tablet) {
       max-width: 486px;
-      margin-top: 60px;
-      padding-bottom: 40px;
+      padding: 60px 0 40px;
       row-gap: 34px;
     }
 
     @media screen and (min-width: $desktop) {
       row-gap: 60px;
-      margin-top: 215px;
-      padding-bottom: 105px;
+      padding: 215px 0 105px;
     }
   }
 
@@ -143,15 +141,15 @@
         font-weight: $regular;
         line-height: 50px;
         letter-spacing: 0.35px;
-    }
-    
+      }
 
-
-  &__buttonCover {
-    & button {
-      width: 100%;
-      @media screen and (min-width: $tablet) {
-        width: 236px;
+      &__buttonCover {
+        & button {
+          width: 100%;
+          @media screen and (min-width: $tablet) {
+            width: 236px;
+          }
+        }
       }
     }
   }
