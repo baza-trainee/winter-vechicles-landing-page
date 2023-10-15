@@ -7,7 +7,6 @@ import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBloc
 import Scroll from '../ScrollToTop/ScrollToTop';
 import RunningText from '../RunningText/RunningText';
 import ProgressBar from '../ProgressBar/ProgressBar';
-import Modal from '../Modal/Modal';
 import './App.module.scss';
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
         </Container>
       </footer>
       <Scroll />
-      <Modal/>
     </>
   );
 }

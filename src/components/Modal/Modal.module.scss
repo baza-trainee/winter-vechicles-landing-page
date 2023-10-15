@@ -1,6 +1,6 @@
 @import "../../styles/vars";
 
-.popupBody {
+.popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,103 +11,125 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
-}
+  z-index: 100;
 
-.popupContent {
-  position: relative;
-  background-color: $primary-white-color;
-  width: 524px;
-  padding: 0 10px;
-  margin: 0 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  text-align: center;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: $medium;
-  line-height: 28px;
-}
-.popupClose {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  cursor: pointer;
-  font-size: 20px;
-}
-.popupLine {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  display: block;
-  background-color: $primary-grey-color;
-  bottom: 326px;
-}
-.popupTitle {
-  font-family: "Dela Gothic One";
-  font-size: 1.5rem;
-  font-weight: $regular;
-  line-height: $primary-line-height;
-  margin-top: 48px;
-  margin-bottom: 16px;
-}
-.popupText {
-  letter-spacing: 0.35px;
-}
-
-.popupSocial {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  @media screen and (min-width: $mobile) {
+  &Content {
+    position: relative;
+    background-color: $primary-white-color;
+    width: 524px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 32px;
-  }
-}
-.popupSocialLink {
-  transition: $transition-duration;
-  img {
-    height: 56px;
-    width: 56px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: $medium;
+    line-height: 28px;
+    padding-bottom: 40px;
   }
 
-  &:hover,
-  &:focus {
-    transform: scale(0.9);
-  }
-}
-.popupCopyText {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 236px;
-  gap: 4px;
-  letter-spacing: 0.35px;
-  margin-bottom: 40px;
-  transition: $transition-duration;
-
-  &::after {
-    content: "";
-    height: 1px;
+  &Title {
+    font-family: "Dela Gothic One";
+    font-size: 1.5rem;
+    font-weight: $regular;
+    line-height: $primary-line-height;
     width: 100%;
-    background-color: $primary-black-color;
-    display: block;
-    position: absolute;
-    bottom: -4px;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -15px;
+      left: 0;
+      background-color: $primary-grey-color;
+    }
   }
 
-  &:hover,
-  &:focus {
+  &Copy {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &Text {
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 236px;
+      gap: 4px;
+      letter-spacing: 0.35px;
+      transition: $transition-duration;
+    
+      &::after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $primary-black-color;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+      }
+    
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &Text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+  }
+
+  &Copied {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
     cursor: pointer;
-    transform: scale(1.1);
+    font-size: 20px;
+  }
+
+  &Social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    @media screen and (min-width: $mobile) {
+      gap: 32px;
+    }
+
+    &Link {
+      transition: $transition-duration;
+      img {
+        height: 56px;
+        width: 56px;
+      }
+    
+      &:hover,
+      &:focus {
+        transform: scale(0.9);
+      }
+    }
   }
 }

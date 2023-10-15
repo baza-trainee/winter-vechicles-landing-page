@@ -1,13 +1,15 @@
 import styles from "./Footer.module.scss";
 import ShareButton from "../Button/ShareButton";
 import { useTranslation } from "react-i18next";
-import Modal from "../Modal/Modal";
+import { ModalContext } from "../../contexts/ModalContext";
+import { useState } from "react";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section id="fundraising" className={styles.footerContainer}>
-      <Modal/>
       <h2 className={styles.footerTitle}>
         {t("strength.title")}
       </h2>
@@ -15,7 +17,9 @@ const Footer = () => {
         {t("strength.sharing")}
       </h2>
       <div className={styles.shareButton}>
-        <ShareButton />
+        <ModalContext.Provider value={{isOpen, setIsOpen}}>
+          <ShareButton />
+        </ModalContext.Provider>
       </div>
       <p className={styles.copyright}>
         {t("footer")}
