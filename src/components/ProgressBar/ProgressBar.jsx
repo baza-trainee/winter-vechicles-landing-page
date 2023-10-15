@@ -5,18 +5,27 @@ import styles from './ProgressBar.module.scss';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 
+const formatBalance = (balance = 0) => {
+  if (balance < 1000) {
+    return balance.toString();
+  } else {
+    return balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  }
+};
+
 const ProgressBar = () => {
   const { t } = useTranslation();
   const { data: balance } = useQuery(['accountBalance'], fetchAccountBalance, {
     refetchInterval: 60000,
   });
-  
+
   const width = balance ? `${Math.floor((balance / 50000) * 100)}%` : '0%';
   let margin =
     balance > 7500 ? `${Math.floor((balance / 50000) * 100 - 8)}%` : '0%';
   if (balance > 42500) {
     margin = '85%';
   }
+  const formattedBalance = formatBalance(balance);
 
   return (
     <div className={styles.wrapper}>
@@ -32,7 +41,9 @@ const ProgressBar = () => {
           <div className={styles.text}>
             <div className={styles.first}>
               <h3>{t('progressBar.already')}</h3>
-              <h4>{`${balance || 0} ${t('progressBar.sum-start')}`}</h4>
+              <h4>{`${formattedBalance || 0} ${t(
+                'progressBar.sum-start'
+              )}`}</h4>
             </div>
             <div className={styles.second}>
               <h3>{t('progressBar.our-goal')}</h3>
