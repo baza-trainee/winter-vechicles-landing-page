@@ -39,7 +39,7 @@ export const ImgShown = () => {
   return (
     <div>
       {imageToShow && (
-        <img src={imageToShow} alt="Description" loading="lazy" />
+        <img src={imageToShow} alt="Description" loading="lazy"/>
       )}
     </div>
   );
