@@ -25,7 +25,7 @@ const ProgressBar = () => {
           </div>
           <div className={styles.text}>
             <div className={styles.first}>
-              <h3>`${balance || 0}${t('progressBar.already')}`</h3>
+              <h3>{`${balance || 0} ${t('progressBar.already')}`}</h3>
               <h4>{t('progressBar.sum-start')}</h4>
             </div>
             <div className={styles.second}>

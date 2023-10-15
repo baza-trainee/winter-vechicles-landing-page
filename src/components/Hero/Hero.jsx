@@ -29,9 +29,9 @@ const Hero = () => {
               </p>
               <p className={style.hero__text}>{t('hero.for')}</p>
             </div>
-            {/* <div className={style.hero__buttonCover}> */}
-              {/* <HelpButton /> */}
-            {/* </div> */}
+            <div className={style.hero__buttonCover}>
+              <HelpButton />
+            </div>
           </div>
         </Container>
       </section>
