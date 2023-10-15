@@ -1,4 +1,5 @@
 import { ImgShown } from './imgShown';
+import  HelpButton  from '../Button/HelpButton';
 import { useTranslation } from 'react-i18next';
 import Container from '../Container/Container';
 import styles from './AboutBrigade.module.scss';
@@ -18,6 +19,9 @@ const AboutBrigade = () => {
             <div className={styles.img}>
               <ImgShown />
             </div>
+          </div>
+          <div className={styles.button}>
+            <HelpButton />
           </div>
         </div>
       </section>
