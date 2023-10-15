@@ -54,18 +54,19 @@
   margin-bottom: 16px;
 }
 .popupText {
+  width: 265px;
   letter-spacing: 0.35px;
 }
 
 .popupSocial {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  @media screen and (min-width: $mobile) {
-    gap: 32px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    @media screen and (min-width: 360px) {
+            gap: 32px;
+    }
 }
 .popupSocialLink {
   transition: $transition-duration;
