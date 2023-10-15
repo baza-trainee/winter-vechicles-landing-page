@@ -1,11 +1,13 @@
 @import "../../../styles/vars";
 
 .logo {
+	padding-top: 10px;
 	margin-right: auto;
 	color: $primary-white-color;
 	font-family: "Dela Gothic One", sans-serif;
-	line-height: 1.5;
-	letter-spacing: 1px;
+	font-size: 20px;
+	line-height: 1px;
+	letter-spacing: 0.35px;
 	text-transform: uppercase;
 	transition-property: color;
 	transition: color $transition-duration;
@@ -16,24 +18,20 @@
 	}
 
 	@media screen and (min-width: $tablet) {
-		font-size: 18px;
+		font-size: 22px;
 	}
 }
 
 .logo1 {
 	display: block;
-	margin-bottom: -9px;
+	margin-bottom: 11px;
 
 	@media screen and (min-width: $tablet) {
-		margin-bottom: -11px;
+		margin-bottom: 16px;
 	}
 }
 
 .spanWrapper {
 	display: flex;
 	align-items: center;
-}
-
-.spanLeft {
-	margin-right: -0.5px;
 }
