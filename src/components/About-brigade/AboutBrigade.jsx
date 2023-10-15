@@ -1,8 +1,8 @@
 import { ImgShown } from './imgShown';
-import  HelpButton  from '../Button/HelpButton';
 import { useTranslation } from 'react-i18next';
 import Container from '../Container/Container';
 import styles from './AboutBrigade.module.scss';
+import Button from '../Button/Button';
 
 const AboutBrigade = () => {
   const { t } = useTranslation();
@@ -21,7 +21,11 @@ const AboutBrigade = () => {
             </div>
           </div>
           <div className={styles.button}>
-            <HelpButton />
+            <a href="https://www.monobank.com.ua/" /*!!Замінити лінк*/
+              target="_blank"
+              rel="noopener noreferrer">
+              <Button text={t("hero.btn")} />
+            </a>
           </div>
         </div>
       </section>
