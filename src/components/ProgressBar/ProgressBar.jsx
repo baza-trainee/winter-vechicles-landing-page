@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { fetchAccountBalance } from '../../fetchAccountBalance';
 import { useQuery } from '@tanstack/react-query';
 import Container from "../Container/Container";
+import image from '../../images/progress-bar/img.png';
 import styles from "./ProgressBar.module.scss";
 
 const ProgressBar = () => {
@@ -17,7 +18,7 @@ const ProgressBar = () => {
         <div className={styles.title}>{t('progressBar.Preparing')}</div>
         <div className={styles.ProgressBar}>
           <div className={styles.img}>
-            <img src="src/images/progress-bar/img.png" alt="heart" />
+            <img src={image} alt="heart" />
           </div>
           <div className={styles.bar}>
             <div className={styles.fill} style={{ width: { width } }}></div>
