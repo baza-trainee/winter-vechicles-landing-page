@@ -49,6 +49,7 @@
 		"title": "Udostępnij stronę swoim znajomym!",
 		"text-send": "Wyślij link do strony internetowej za pośrednictwem media społecznościowych",
 		"text-copy": "lub skopiuj link",
-		"btnCopy": "Skopiuj link"
+		"btnCopy": "Skopiuj link",
+		"copied": "Link skopiowano"
 	}
 }

@@ -17,5 +17,5 @@ export const fetchAccountBalance = async () => {
     // const balance = Math.floor(
     //     (data.accounts[0].balance - data.accounts[0].creditLimit) / 100
     // );
-    return balance;
+    // return balance;
 };

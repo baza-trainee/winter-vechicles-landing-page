@@ -1,6 +1,6 @@
 @import "../../styles/vars";
 
-.popupBody {
+.popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,14 +11,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 100;
 }
-
 .popupContent {
   position: relative;
   background-color: $primary-white-color;
   width: 524px;
-  padding: 0 10px;
   margin: 0 15px;
   display: flex;
   flex-direction: column;
@@ -29,6 +27,7 @@
   font-size: 16px;
   font-weight: $medium;
   line-height: 28px;
+  padding-bottom: 40px;
 }
 .popupClose {
   position: absolute;
@@ -37,25 +36,32 @@
   cursor: pointer;
   font-size: 20px;
 }
-.popupLine {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  display: block;
-  background-color: $primary-grey-color;
-  bottom: 326px;
-}
+
 .popupTitle {
   font-family: "Dela Gothic One";
   font-size: 1.5rem;
   font-weight: $regular;
   line-height: $primary-line-height;
+  padding: 0 10px;
+  width: 100%;
   margin-top: 48px;
   margin-bottom: 16px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -15px;
+    left: 0;
+    background-color: $primary-grey-color;
+  }
 }
+
 .popupText {
-  width: 265px;
-  letter-spacing: 0.35px;
+  max-width: 265px;
+  font-weight: 600;
+  line-height: 1.75;
 }
 
 .popupSocial {
@@ -68,6 +74,7 @@
             gap: 32px;
     }
 }
+
 .popupSocialLink {
   transition: $transition-duration;
   img {
@@ -80,6 +87,20 @@
     transform: scale(0.9);
   }
 }
+
+.popupCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.popupCopied {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
 .popupCopyText {
   padding: 0;
   border: none;
@@ -93,7 +114,6 @@
   width: 236px;
   gap: 4px;
   letter-spacing: 0.35px;
-  margin-bottom: 40px;
   transition: $transition-duration;
 
   &::after {
