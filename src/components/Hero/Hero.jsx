@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { BsArrowRight } from 'react-icons/bs';
 
-import HelpButton from '../Button/HelpButton';
 import Container from '../Container/Container';
 
 import style from './Hero.module.scss';
+import Button from '../Button/Button';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -29,9 +29,15 @@ const Hero = () => {
               </p>
               <p className={style.hero__text}>{t('hero.for')}</p>
             </div>
-            {/* <div className={style.hero__buttonCover}> */}
+            {/* <div className={style.hero__bu  ttonCover}> */}
               {/* <HelpButton /> */}
             {/* </div> */}
+
+            <a href="https://www.monobank.com.ua/" /*!!Замінити лінк*/
+               target="_blank"
+               rel="noopener noreferrer">
+              <Button text={t("hero.btn")} />
+            </a>
           </div>
         </Container>
       </section>

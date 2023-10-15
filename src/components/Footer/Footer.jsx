@@ -1,12 +1,16 @@
 import styles from "./Footer.module.scss";
-import ShareButton from "../Button/ShareButton";
+import Modal from "../Modal/Modal";
 import { useTranslation } from "react-i18next";
-import { ModalContext } from "../../contexts/ModalContext";
 import { useState } from "react";
+import { createPortal } from 'react-dom';
+import Button from "../Button/Button";
+import { GoShareAndroid } from "react-icons/go";
 
 const Footer = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  
+  const handleOpenModal = () => setIsOpen(!isOpen);
 
   return (
     <section id="fundraising" className={styles.footerContainer}>
@@ -17,9 +21,15 @@ const Footer = () => {
         {t("strength.sharing")}
       </h2>
       <div className={styles.shareButton}>
-        <ModalContext.Provider value={{isOpen, setIsOpen}}>
-          <ShareButton />
-        </ModalContext.Provider>
+          <Button
+            onClick={handleOpenModal}
+            text={t("strength.btn")}
+            icon={ <GoShareAndroid style={{fontSize:"1.5em"}}/>}
+          />
+          {isOpen && createPortal(
+            <Modal onClose={handleOpenModal}/>,
+            document.body
+          )}
       </div>
       <p className={styles.copyright}>
         {t("footer")}
