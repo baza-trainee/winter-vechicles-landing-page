@@ -5,25 +5,26 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 0 0 2rem 0;
+  gap: 24px;
+  padding: 10px 0 20px 0;
 
   @media (min-width: $tablet) {
-    gap: 50px;
+    gap: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 60px;
   }
 
   .footerTitle {
     font-family: Dela Gothic One;
-    font-size: 16px;
     font-weight: $regular;
     color: $primary-black-color;
     letter-spacing: 0.35px;
-    line-height: 30px;
     text-align: center;
 
     @media (min-width: $tablet) {
       font-size: 24px;
-      line-height: 50px;
     }
 
     @media (min-width: $desktop) {
@@ -33,9 +34,9 @@
   }
 
   .shareButton {
-    margin: 1rem auto;
+    margin: 0 auto;
   }
- 
+
   .copyright {
     font-size: 12px;
     margin-top: 3rem;

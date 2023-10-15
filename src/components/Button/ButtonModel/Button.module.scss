@@ -14,6 +14,9 @@
   width: 236px;
   overflow: hidden;
   cursor: pointer;
+  transition-property: color, background-color;
+  transition: color, background-color $transition-duration;
+ 
 
   &:hover,
   &:active,
@@ -26,15 +29,16 @@
     border: 2px solid $dark-grey-color;
   }
 
-  &__text,
-  &__icon {
+  &__content {
     display: inline-flex;
     align-items: center;
+    gap:10px;
     padding: 0 8px;
     height: 100%;
   }
 
-  &__icon {
-    font-size: 1.5em;
+  @media (min-width: $tablet) {
+    height: 52px;
+    width: 288px;
   }
 }

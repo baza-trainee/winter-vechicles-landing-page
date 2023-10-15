@@ -8,7 +8,7 @@ import styles from './WhyIsItImportantBlock.module.scss';
 const WhyIsItImportantBlock = () => {
   const { t } = useTranslation();
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id='important'>
       <Container>
         <h2 className={styles.title}>{t('important.title')}</h2>
         <div className={styles.cards}>

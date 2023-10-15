@@ -2,25 +2,22 @@ import * as React from "react";
 import Button from "./ButtonModel/Button";
 import Modal from "../Modal/Modal";
 import { GoShareAndroid } from "react-icons/go";
-import style from "./ButtonModel/Button.module.scss";
 import { useTranslation } from "react-i18next";
 
 const ShareButton = () => {
   const { t } = useTranslation();
-  const [isOpen, setOpen] = React.useState(false);
+  const [modal, setModal] = React.useState(false);
 
-  const handleClick = () => {
-    setOpen(!isOpen);
-  };
-
+  const Toggle = () => setModal(!modal);
+ /*Переписати код на відкриття модального вікна у разі потреби*/
   return (
     <div>
       <Button
-        onClick={handleClick}
+        onClick={() => Toggle()}
         text={t("strength.btn")}
-        icon={<GoShareAndroid />}
+        icon={ <GoShareAndroid style={{fontSize:"1.5em"}}/>}
       />
-      {isOpen && <Modal />}
+      <Modal show={modal} close={Toggle}/>
     </div>
   );
 };
