@@ -1,11 +1,16 @@
 import { useTranslation } from 'react-i18next';
-import Container from '../Container/Container';
-import styles from './ProgressBar.module.scss';
+import { fetchAccountBalance } from '../../fetchAccountBalance';
+import { useQuery } from '@tanstack/react-query';
+import Container from "../Container/Container";
 import image from '../../images/progress-bar/img.png';
-
+import styles from "./ProgressBar.module.scss";
 
 const ProgressBar = () => {
   const { t } = useTranslation();
+  const { data: balance } = useQuery(['accountBalance'], fetchAccountBalance, {
+    refetchInterval: 60000,
+  });
+  const width = balance ? `${Math.floor((balance / 50000) * 100)}%` : '5%';
 
   return (
     <div className={styles.wrapper}>
@@ -16,11 +21,11 @@ const ProgressBar = () => {
             <img src={image} alt="heart" />
           </div>
           <div className={styles.bar}>
-            <div className={styles.fill} style={{ width: '5%' }}></div>
+            <div className={styles.fill} style={{ width: { width } }}></div>
           </div>
           <div className={styles.text}>
             <div className={styles.first}>
-              <h3>{t('progressBar.already')}</h3>
+              <h3>`${balance || 0}${t('progressBar.already')}`</h3>
               <h4>{t('progressBar.sum-start')}</h4>
             </div>
             <div className={styles.second}>
