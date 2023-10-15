@@ -1,41 +1,27 @@
 @import "../../styles/vars";
-// @import "../Button/ButtonModel/Button.module.scss";
 
-section {
-  padding: 40px 0;
-
-  @media (min-width: $tablet) {
-    padding: 80px 0;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 100px 0;
-  }
-}
-
-.sectionTitle {
+.aboutTitle {
   font-family: Dela Gothic One;
   font-size: 16px;
   font-weight: $regular;
   line-height: 28px;
   letter-spacing: 0.35px;
-  color: $primary-black-color;
   text-align: center;
-  margin-bottom: 24px;
+  margin: 40px 0 24px 0;
 
   @media (min-width: $tablet) {
     font-size: 24px;
     line-height: 50px;
-    margin-bottom: 32px;
+    margin: 80px 0 32px 0;
   }
 
   @media (min-width: $desktop) {
     font-size: 36px;
-    margin-bottom: 60px;
+    margin: 100px 0 60px 0;
   }
 }
 
-.aboutBrigadeText {
+.aboutText {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -56,7 +42,7 @@ section {
   }
 }
 
-.content {
+.aboutContent {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -74,9 +60,7 @@ section {
 }
 
 img {
-  display: block;
   width: 287px;
-  height: 100%;
   margin: 0 auto;
   border-radius: 10px;
 
@@ -90,12 +74,16 @@ img {
 }
 
 .button {
-  display: block;
   margin: 0 auto;
   width: 288px;
-  
+  margin-bottom: 40px;
+
   @media (min-width: $tablet) {
     width: 236px;
+    margin-bottom: 80px;
   }
 
+  @media (min-width: $desktop) {
+    margin-bottom: 100px;
+  }
 }
