@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import Container from "../Container/Container";
-import styles from "./ProgressBar.module.scss";
+import Container from '../Container/Container';
+import styles from './ProgressBar.module.scss';
+import image from '../../images/progress-bar/img.png';
+
 
 const ProgressBar = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className={styles.wrapper}>
@@ -11,7 +13,7 @@ const ProgressBar = () => {
         <div className={styles.title}>{t('progressBar.Preparing')}</div>
         <div className={styles.ProgressBar}>
           <div className={styles.img}>
-            <img src="src/images/progress-bar/img.png" alt="heart" />
+            <img src={image} alt="heart" />
           </div>
           <div className={styles.bar}>
             <div className={styles.fill} style={{ width: '5%' }}></div>
