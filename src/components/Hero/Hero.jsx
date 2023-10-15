@@ -29,15 +29,13 @@ const Hero = () => {
               </p>
               <p className={style.hero__text}>{t('hero.for')}</p>
             </div>
-            {/* <div className={style.hero__bu  ttonCover}> */}
-              {/* <HelpButton /> */}
-            {/* </div> */}
-
-            <a href="https://www.monobank.com.ua/" /*!!Замінити лінк*/
-               target="_blank"
-               rel="noopener noreferrer">
-              <Button text={t("hero.btn")} />
-            </a>
+            <div className={style.hero__buttonCover}>
+              <a href="https://www.monobank.com.ua/" /*!!Замінити лінк*/
+                target="_blank"
+                rel="noopener noreferrer">
+                <Button text={t("hero.btn")} />
+              </a>
+            </div>
           </div>
         </Container>
       </section>

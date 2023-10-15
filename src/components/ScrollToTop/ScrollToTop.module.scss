@@ -2,10 +2,10 @@
 
 .container {
   position: sticky;
+  float: right;
   z-index: 50;
   bottom: 175px;
-  padding-right: 20px;
-  text-align: end;
+  width: 80px;
   button {
     border-radius: 50%;
     border-style: solid;
