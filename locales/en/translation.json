@@ -51,6 +51,7 @@
     "title": "Share the site with your friends!",
     "text-send": "Send a link to the site through social networks",
     "text-copy": "or copy the link",
-    "btnCopy": "Copy the link"
+    "btnCopy": "Copy the link",
+    "copied": "Link copied"
   }
 }
