@@ -1,9 +1,7 @@
-import { useTranslation } from 'react-i18next';
-
-import Container from '../../Container/Container';
-import CloseBtnSvg from './CloseBtnSvg/CloseBtnSvg';
-
-import styles from './mobileMenu.module.scss';
+import { useTranslation } from "react-i18next";
+import { AiOutlineClose } from "react-icons/ai";
+import Container from "../../Container/Container";
+import styles from "./mobileMenu.module.scss";
 
 const MobileMenu = ({ setMobileMenu, mobileMenu }) => {
   const { t } = useTranslation();
@@ -18,24 +16,24 @@ const MobileMenu = ({ setMobileMenu, mobileMenu }) => {
             type="button"
             onClick={() => onCloseMobileMenu()}
           >
-            <CloseBtnSvg />
+            <AiOutlineClose className={styles.closeSvg} size={24} />
           </button>
         </div>
         <nav className={styles.navMobile} onClick={() => onCloseMobileMenu()}>
           <ul className={styles.list}>
             <li className={styles.item}>
               <a className={styles.link} href="/">
-                {t('header.goal')}
+                {t("header.goal")}
               </a>
             </li>
             <li className={styles.item}>
               <a className={styles.link} href="/#about">
-                {t('header.about')}
+                {t("header.about")}
               </a>
             </li>
             <li className={styles.item}>
               <a className={styles.link} href="/#important">
-                {t('header.important')}
+                {t("header.important")}
               </a>
             </li>
             <li className={styles.item}>
@@ -44,7 +42,7 @@ const MobileMenu = ({ setMobileMenu, mobileMenu }) => {
                 href="/#fundraising"
                 aria-label="Move to Fundraising section"
               >
-                {t('header.fundraising')}
+                {t("header.fundraising")}
               </a>
             </li>
           </ul>

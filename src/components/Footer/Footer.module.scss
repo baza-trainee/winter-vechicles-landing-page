@@ -1,0 +1,49 @@
+@import "../../styles/vars";
+
+.footerContainer {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 10px 0 20px 0;
+
+  @media (min-width: $tablet) {
+    gap: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 60px;
+  }
+
+  .footerTitle {
+    font-family: Dela Gothic One;
+    font-weight: $regular;
+    color: $primary-black-color;
+    letter-spacing: 0.35px;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 36px;
+      margin: 0 25%;
+    }
+  }
+
+  .shareButton {
+    margin: 0 auto;
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin-top: 3rem;
+
+    @media (min-width: $tablet) {
+      font-size: 14px;
+      margin-top: 0;
+    }
+  }
+}

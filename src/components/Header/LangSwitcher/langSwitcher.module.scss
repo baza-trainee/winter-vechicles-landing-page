@@ -1,88 +1,92 @@
-@import "../../../index.scss";
+@import "../../../styles/vars";
 
 .langWrapper {
-	position: relative;
-	cursor: pointer;
-	font-family: "Dela Gothic One", sans-serif;
-	text-transform: uppercase;
-	margin-left: 0;
+  position: relative;
+  cursor: pointer;
+  font-family: "Dela Gothic One", sans-serif;
+  text-transform: uppercase;
+  margin-left: 0;
 
-	@media screen and (min-width: $desktop) {
-		margin-left: 36px;
-	}
+  @media screen and (min-width: $desktop) {
+    margin-left: 36px;
+  }
 }
 
 .selectedLanguage {
-	display: flex;
-	align-items: center;
-	padding: 5px 10px;
-	color: $primary-white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  color: $primary-white-color;
 
-	transition-property: color;
-	transition:
-		color $transition-duration,
-		stroke $transition-duration;
+  transition-property: color;
+  transition: color $transition-duration;
 
-	&:hover,
-	&:focus {
-		color: $accent-orange-color;
+  &:hover,
+  &:focus {
+    color: $accent-orange-color;
+  }
 
-		& path {
-			stroke: currentColor;
-		}
-	}
-
-	@media screen and (min-width: $desktop) {
-		padding: 10px;
-	}
+  @media screen and (min-width: $desktop) {
+    padding: 10px;
+  }
 }
 
 .currentLang {
-	margin-right: 16px;
+	margin-right: 10px;
+
+	@media screen and (min-width: $tablet) {
+		margin-right: 26px;
+	}
 }
 
 .imgThumb {
-	padding: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 21px;
+	padding: 0 0 0 6px;
 
 	@media screen and (min-width: $tablet) {
-		padding: 10px;
+		font-size: 28px;
 	}
+
 }
 
 .imgThumbRotate {
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .changeLangWrapper {
-	position: absolute;
-	background-color: #131313;
-	width: 100%;
+  position: absolute;
+  background-color: #131313;
+  width: 100%;
 }
 
 .changLang {
-	display: block;
-	color: $primary-white-color;
-	padding: 5px 10px;
-	transition-property: color;
-	transition: color $transition-duration;
+  display: block;
+  color: $primary-white-color;
+  padding: 5px 10px;
+  transition-property: color;
+  transition: color $transition-duration;
 
-	@media screen and (min-width: $desktop) {
-		padding: 10px;
-	}
+  @media screen and (min-width: $desktop) {
+    padding: 10px;
+  }
 }
 
 .changLang:hover,
 .changLang:focus {
-	color: $accent-orange-color;
+  color: $accent-orange-color;
 }
 
 .currentLang,
 .changLang {
-	font-size: 16px;
-	line-height: 1.68;
+  font-size: 16px;
+  line-height: 1.68;
 
-	@media screen and (min-width: $tablet) {
-		font-size: 18px;
-		line-height: 1.5;
-	}
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }
