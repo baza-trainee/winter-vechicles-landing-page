@@ -16,8 +16,6 @@ Your support doesn't have to be limited to financial contributions. Spreading th
 
 - **Star this Repository:** Click the "Star" button at the top of this page to show your support.
 
-- **Fork and Contribute:** If you are a developer or designer, you can contribute to the project's code and design, making it more effective.
-
 - **Share on Social Media:** Help us reach a wider audience by sharing this fundraiser on your social media profiles.
 
 - **Tell Friends and Family:** The power of word of mouth is immense. Let your friends and family know about this meaningful initiative.
@@ -36,6 +34,7 @@ Our dedicated development team has been working tirelessly to make this fundrais
 - [Valera001](https://github.com/Valera001)
 - [maksymopanasenko](https://github.com/maksymopanasenko)
 - [tsvetanat](https://github.com/tsvetanat)
+- [jackal7819](https://github.com/jackal7819)
 
 ## Technologies Used
 
