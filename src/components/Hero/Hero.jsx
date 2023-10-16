@@ -10,36 +10,36 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <section className={style.hero}>
-        <Container>
-          <div className={style.hero__cover}>
-            <div className={style.hero__info}>
-              <h1 className={style.hero__title}>{t('hero.title')}</h1>
-              <span className={style.hero__label}>{t('hero.subcription')}</span>
-              <p className={style.hero__text}>
-                <span>
-                  {t('hero.our-goal')}
-                  <BsArrowRight
-                    preserveAspectRatio="none"
-                    className={style.hero__arrow}
-                  />
-                </span>
-                <span>{t('hero.sum')}</span>
-              </p>
-              <p className={style.hero__text}>{t('hero.for')}</p>
-            </div>
-            <div className={style.hero__buttonCover}>
-              <a href="https://www.monobank.com.ua/" /*!!Замінити лінк*/
-                target="_blank"
-                rel="noopener noreferrer">
-                <Button text={t("hero.btn")} />
-              </a>
-            </div>
+    <section className={style.hero}>
+      <Container>
+        <div className={style.heroCover}>
+          <div className={style.heroInfo}>
+            <h1 className={style.heroTitle}>{t('hero.title')}</h1>
+            <span className={style.heroLabel}>{t('hero.subcription')}</span>
+            <p className={style.heroText}>
+              <span>
+                {t('hero.our-goal')}
+                <BsArrowRight
+                  preserveAspectRatio="none"
+                  className={style.heroArrow}
+                />
+              </span>
+              <span>{t('hero.sum')}</span>
+            </p>
+            <p className={style.heroText}>{t('hero.for')}</p>
           </div>
-        </Container>
-      </section>
-    </>
+          <div className={style.heroButtonCover}>
+            <a
+              href="https://www.monobank.com.ua/" /*!!Замінити лінк*/
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button text={t('hero.btn')} />
+            </a>
+          </div>
+        </div>
+      </Container>
+    </section>
   );
 };
 

@@ -1,86 +1,84 @@
-.hero__text {
-  &:first-of-type {
-    span:last-child {
-      animation-name: changeFontSize;
-      animation-duration: 3500ms;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
+.heroText:first-of-type {
+  span:last-child {
+    animation-name: changeFontSize;
+    animation-duration: 3500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 
+    @keyframes changeFontSize {
+      0% {
+        font-size: 16px;
+      }
+
+      12.5% {
+        font-size: 16px;
+      }
+
+      25% {
+        font-size: 20px;
+      }
+
+      37.5% {
+        font-size: 20px;
+      }
+
+      50% {
+        font-size: 20px;
+      }
+
+      62.5% {
+        font-size: 20px;
+      }
+
+      75% {
+        font-size: 16px;
+      }
+
+      87.5% {
+        font-size: 16px;
+      }
+
+      100% {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: $tablet) {
       @keyframes changeFontSize {
         0% {
-          font-size: 16px;
+          font-size: 36px;
         }
 
         12.5% {
-          font-size: 16px;
+          font-size: 36px;
         }
 
         25% {
-          font-size: 20px;
+          font-size: 40px;
         }
 
         37.5% {
-          font-size: 20px;
+          font-size: 40px;
         }
 
         50% {
-          font-size: 20px;
+          font-size: 40px;
         }
 
         62.5% {
-          font-size: 20px;
+          font-size: 40px;
         }
 
         75% {
-          font-size: 16px;
+          font-size: 36px;
         }
 
         87.5% {
-          font-size: 16px;
+          font-size: 36px;
         }
 
         100% {
-          font-size: 16px;
-        }
-      }
-
-      @media screen and (min-width: $tablet) {
-        @keyframes changeFontSize {
-          0% {
-            font-size: 36px;
-          }
-
-          12.5% {
-            font-size: 36px;
-          }
-
-          25% {
-            font-size: 40px;
-          }
-
-          37.5% {
-            font-size: 40px;
-          }
-
-          50% {
-            font-size: 40px;
-          }
-
-          62.5% {
-            font-size: 40px;
-          }
-
-          75% {
-            font-size: 36px;
-          }
-
-          87.5% {
-            font-size: 36px;
-          }
-
-          100% {
-            font-size: 36px;
-          }
+          font-size: 36px;
         }
       }
     }
