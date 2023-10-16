@@ -3,9 +3,11 @@
 .logo {
 	margin-right: auto;
 	color: $primary-white-color;
-	font-family: "Dela Gothic One", sans-serif;
-	line-height: 1.5;
-	letter-spacing: 1px;
+	font-family: "Roboto Slab";
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1;
+	letter-spacing: 0;
 	text-transform: uppercase;
 	transition-property: color;
 	transition: color $transition-duration;
@@ -16,24 +18,15 @@
 	}
 
 	@media screen and (min-width: $tablet) {
-		font-size: 18px;
+		font-size: 22px;
 	}
 }
 
 .logo1 {
 	display: block;
-	margin-bottom: -9px;
-
-	@media screen and (min-width: $tablet) {
-		margin-bottom: -11px;
-	}
 }
 
 .spanWrapper {
 	display: flex;
 	align-items: center;
-}
-
-.spanLeft {
-	margin-right: -0.5px;
 }

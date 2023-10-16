@@ -3,6 +3,7 @@ import  HelpButton  from '../Button/HelpButton';
 import { ImgShown } from './imgShown';
 import styles from './AboutBrigade.module.scss';
 import { useTranslation } from 'react-i18next';
+import Button from '../Button/Button';
 
 const AboutBrigade = () => {
   const { t } = useTranslation();
@@ -10,9 +11,9 @@ const AboutBrigade = () => {
     <Container>
       <section id="about">
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>{t('about.title')}</h2>
-          <div className={styles.content}>
-            <div className={styles.aboutBrigadeText}>
+          <h2 className={styles.aboutTitle}>{t('about.title')}</h2>
+          <div className={styles.aboutContent}>
+            <div className={styles.aboutText}>
               <p>{t('about.text-1')}</p>
               <p>{t('about.text-2')}</p>
             </div>
@@ -21,7 +22,11 @@ const AboutBrigade = () => {
             </div>
           </div>
           <div className={styles.button}>
-            <HelpButton />
+            <a href="https://www.monobank.com.ua/" /*!!Замінити лінк*/
+              target="_blank"
+              rel="noopener noreferrer">
+              <Button text={t("hero.btn")} />
+            </a>
           </div>
         </div>
       </section>

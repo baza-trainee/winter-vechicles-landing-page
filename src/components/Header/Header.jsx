@@ -1,17 +1,20 @@
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import { FiMenu } from 'react-icons/fi';
+
 import Container from '../Container/Container';
 import LogoComponent from './LogoComponent/LogoComponent';
 import LangSwitcher from './LangSwitcher/LangSwitcher';
 import MobileMenu from './MobileMenu/MobileMenu';
-import styles from "./header.module.scss";
+
+import styles from './header.module.scss';
 
 const Header = () => {
   const { t } = useTranslation();
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
-  const onOpenMobileMenu = () => setMobileMenu(!mobileMenu);
+  const onOpenMobileMenu = () => setIsOpenMobileMenu(!isOpenMobileMenu);
 
   return (
     <header className={styles.header}>
@@ -21,40 +24,48 @@ const Header = () => {
           <nav className={styles.nav}>
             <ul className={styles.list}>
               <li className={styles.item}>
-                <a
+                <Link
                   className={styles.link}
-                  href="/"
+                  to="goal"
+                  smooth={true}
+                  duration={500}
                   aria-label="Move to Goal section"
                 >
-                  {t("header.goal")}
-                </a>
+                  {t('header.goal')}
+                </Link>
               </li>
               <li className={styles.item}>
-                <a
+                <Link
                   className={styles.link}
-                  href="/#about"
+                  to="about"
+                  smooth={true}
+                  duration={500}
                   aria-label="Move to About section"
                 >
-                  {t("header.about")}
-                </a>
+                  {t('header.about')}
+                </Link>
               </li>
               <li className={styles.item}>
-                <a
+                <Link
                   className={styles.link}
-                  href="/#important"
+                  to="important"
+                  smooth={true}
+                  duration={500}
                   aria-label="Move to Why it`s important section"
                 >
-                  {t("header.important")}
-                </a>
+                  {t('header.important')}
+                </Link>
               </li>
               <li className={styles.item}>
-                <a
+                <Link
                   className={styles.link}
-                  href="/#fundraising"
+                  to="fundraising"
+                  smooth={true}
+                  duration={500}
                   aria-label="Move to Fundraising section"
                 >
-                  {t("header.fundraising")}
-                </a>
+                  {t('header.fundraising')}
+                </Link>
               </li>
             </ul>
           </nav>
@@ -67,7 +78,10 @@ const Header = () => {
             <FiMenu />
           </button>
         </div>
-        <MobileMenu setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />
+        <MobileMenu
+          setIsOpenMobileMenu={setIsOpenMobileMenu}
+          isOpenMobileMenu={isOpenMobileMenu}
+        />
       </Container>
     </header>
   );
