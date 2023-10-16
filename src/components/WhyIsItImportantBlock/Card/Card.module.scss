@@ -8,7 +8,7 @@
   @media (min-width: $tablet) {
     flex-direction: column;
     align-items: flex-start;
-    width: 300px;
+    width: 332px;
   }
 
   @media (min-width: $desktop) {
@@ -16,26 +16,22 @@
     align-items: flex-start;
     width: 359px;
   }
+}
 
-  .image {
-    border-radius: 10px;
+.image {
+  border-radius: 10px;
+}
+.desc {
+  font-weight: $medium;
+  font-size: 16px;
+  line-height: $secondary-line-height;
+  padding: 24px 0 0;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
   }
-  .desc {
-    font-style: normal;
-    font-weight: $medium;
-    letter-spacing: 0.35px;
-    font-size: 16px;
-    line-height: $secondary-line-height;
-    padding: 24px 0;
 
-    @media (min-width: $tablet) {
-      font-size: 18px;
-      letter-spacing: 0.35px;
-    }
-
-    @media (min-width: $desktop) {
-      font-size: 20px;
-      letter-spacing: 0.35px;
-    }
+  @media (min-width: $desktop) {
+    font-size: 20px;
   }
 }

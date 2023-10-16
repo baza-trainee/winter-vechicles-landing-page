@@ -11,7 +11,7 @@ $accent-orange-color: #f29544;
 $accent-orange-color: #f29544;
 $dark-orange-color: #ab5408;
 
-// / Breakpoints
+// breakpoints
 $mobile: 320px;
 $tablet: 768px;
 $desktop: 1280px;
@@ -19,13 +19,22 @@ $desktop-wide: 1680px;
 
 // font-weight
 $regular: 400;
+$regular-extra: 500;
 $medium: 600;
 $bold: 700;
+$bold-extra: 800;
 $large: 900;
 
 // line-height
 $primary-line-height: 1.8;
 $secondary-line-height: 1.39;
+$triple-line-height: 1.5;
+$quadruple-line-height: 1.68;
+
 
 // transition
 $transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// font
+$font-montserrat: 'Montserrat', sans-serif;
+$font-roboto-slab: 'Roboto Slab', serif;

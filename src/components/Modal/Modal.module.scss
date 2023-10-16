@@ -38,7 +38,7 @@
 }
 
 .popupTitle {
-  font-family: "Dela Gothic One";
+  font-family: $font-roboto-slab;
   font-size: 1.5rem;
   font-weight: $regular;
   line-height: $primary-line-height;
@@ -60,19 +60,19 @@
 
 .popupText {
   max-width: 265px;
-  font-weight: 600;
-  line-height: 1.75;
+  font-weight: $medium;
+  line-height: $primary-line-height;
 }
 
 .popupSocial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    
-    @media screen and (min-width: 360px) {
-            gap: 32px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  @media screen and (min-width: 360px) {
+    gap: 32px;
+  }
 }
 
 .popupSocialLink {
@@ -113,7 +113,6 @@
   align-items: center;
   width: 236px;
   gap: 4px;
-  letter-spacing: 0.35px;
   transition: $transition-duration;
 
   &::after {

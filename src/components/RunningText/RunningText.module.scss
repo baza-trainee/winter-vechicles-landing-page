@@ -17,11 +17,10 @@
 }
 
 .runningText {
-  font-family: Dela Gothic One;
+  font-family: $font-roboto-slab;
   color: $primary-white-color;
   font-size: 16px;
   line-height: 50px;
-  letter-spacing: 0.35px;
   text-transform: uppercase;
   position: relative;
   @media (min-width: $tablet) {
@@ -48,15 +47,3 @@
   }
 }
 
-.container {
-  width: $mobile;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
-}

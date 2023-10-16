@@ -2,8 +2,8 @@
 
 .langWrapper {
 	position: relative;
-	font-family: "Roboto Slab";
-	font-weight: 700;
+	font-family: $font-roboto-slab;
+	font-weight: $bold;
 	text-transform: uppercase;
 	cursor: pointer;
 
@@ -36,8 +36,8 @@
 }
 
 .currentLang {
-	font-family: "Roboto Slab";
-	font-weight: 700px;
+	font-family: $font-roboto-slab;
+	font-weight: $bold;
 	text-transform: uppercase;
 	margin-right: 10px;
 
@@ -64,7 +64,7 @@
 
 .changeLangWrapper {
 	position: absolute;
-	background-color: #131313;
+	background-color:$primary-black-color;
 	width: 100%;
 }
 
@@ -88,7 +88,7 @@
 .currentLang,
 .changLang {
 	font-size: 16px;
-	line-height: 1.68;
+	line-height: $quadruple-line-height;
 
 	@media screen and (min-width: $tablet) {
 		font-size: 18px;
