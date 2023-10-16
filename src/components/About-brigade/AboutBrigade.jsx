@@ -1,9 +1,8 @@
 import Container from '../Container/Container';
-import  HelpButton  from '../Button/HelpButton';
-import { ImgShown } from './imgShown';
-import styles from './AboutBrigade.module.scss';
 import { useTranslation } from 'react-i18next';
 import Button from '../Button/Button';
+import { ImgShown } from './imgShown';
+import styles from './AboutBrigade.module.scss';
 
 const AboutBrigade = () => {
   const { t } = useTranslation();

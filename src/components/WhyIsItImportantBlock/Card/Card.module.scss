@@ -21,21 +21,17 @@
     border-radius: 10px;
   }
   .desc {
-    font-style: normal;
     font-weight: $medium;
-    letter-spacing: 0.35px;
     font-size: 16px;
     line-height: $secondary-line-height;
     padding: 24px 0;
 
     @media (min-width: $tablet) {
       font-size: 18px;
-      letter-spacing: 0.35px;
     }
 
     @media (min-width: $desktop) {
       font-size: 20px;
-      letter-spacing: 0.35px;
     }
   }
 }

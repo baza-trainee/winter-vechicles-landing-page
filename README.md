@@ -35,7 +35,6 @@ Our dedicated development team has been working tirelessly to make this fundrais
 - [maksymopanasenko](https://github.com/maksymopanasenko)
 - [tsvetanat](https://github.com/tsvetanat)
 - [Viktor Filippov](https://github.com/jackal7819)
-- [jackal7819](https://github.com/jackal7819)
 
 
 ## Technologies Used

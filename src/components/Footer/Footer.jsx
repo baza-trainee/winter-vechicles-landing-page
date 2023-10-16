@@ -1,10 +1,10 @@
-import styles from "./Footer.module.scss";
-import Modal from "../Modal/Modal";
-import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { createPortal } from 'react-dom';
-import Button from "../Button/Button";
+import { useTranslation } from "react-i18next";
 import { GoShareAndroid } from "react-icons/go";
+import Modal from "../Modal/Modal";
+import Button from "../Button/Button";
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
   const { t } = useTranslation();

@@ -39,10 +39,10 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	color: $primary-white-color;
-	font-family: "Roboto Slab";
-	font-weight: 700;
+	font-family: $font-roboto-slab;
+	font-weight: $bold;
 	font-size: 18px;
-	line-height: 1.5;
+	line-height: $triple-line-height;
 	transition-property: color;
 	transition: color $transition-duration;
 

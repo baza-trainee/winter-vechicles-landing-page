@@ -17,10 +17,9 @@
   }
 
   .footerTitle {
-    font-family: Dela Gothic One;
+    font-family: $font-roboto-slab;
     font-weight: $regular;
     color: $primary-black-color;
-    letter-spacing: 0.35px;
     text-align: center;
 
     @media (min-width: $tablet) {

@@ -35,9 +35,6 @@ const ProgressBar = () => {
           <div className={styles.img} style={{ marginLeft: margin }}>
             <img src={image} alt="heart" />
           </div>
-          <div className={styles.bar}>
-            <div className={styles.fill} style={{ width: width }}></div>
-          </div>
           <div className={styles.text}>
             <div className={styles.first}>
               <h3>{t('progressBar.already')}</h3>
@@ -45,6 +42,10 @@ const ProgressBar = () => {
                 'progressBar.sum-start'
               )}`}</h4>
             </div>
+            <div className={styles.bar}>
+              <div className={styles.fill} style={{ width: width }}></div>
+            </div>
+
             <div className={styles.second}>
               <h3>{t('progressBar.our-goal')}</h3>
               <h4>{t('progressBar.sum')}</h4>

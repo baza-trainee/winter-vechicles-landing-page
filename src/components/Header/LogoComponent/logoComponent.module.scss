@@ -3,11 +3,10 @@
 .logo {
 	margin-right: auto;
 	color: $primary-white-color;
-	font-family: "Roboto Slab";
-	font-weight: 700;
+	font-family: $font-roboto-slab;
+	font-weight: $bold;
 	font-size: 20px;
 	line-height: 1;
-	letter-spacing: 0;
 	text-transform: uppercase;
 	transition-property: color;
 	transition: color $transition-duration;
