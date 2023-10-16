@@ -39,16 +39,17 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	color: $primary-white-color;
-	font-family: "Dela Gothic One", sans-serif;
+	font-family: "Roboto Slab";
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.5;
 	transition-property: color;
 	transition: color $transition-duration;
-}
 
-.link:hover,
-.link:focus {
-	color: $accent-orange-color;
+	&:hover,
+	&:focus {
+		color: $accent-orange-color;
+	}
 }
 
 .burgerMenuOpen {

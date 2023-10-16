@@ -1,13 +1,13 @@
 @import "../../../styles/vars";
 
 .logo {
-	padding-top: 10px;
 	margin-right: auto;
 	color: $primary-white-color;
-	font-family: "Dela Gothic One", sans-serif;
+	font-family: "Roboto Slab";
+	font-weight: 700;
 	font-size: 20px;
-	line-height: 1px;
-	letter-spacing: 0.35px;
+	line-height: 1;
+	letter-spacing: 0;
 	text-transform: uppercase;
 	transition-property: color;
 	transition: color $transition-duration;
@@ -24,11 +24,6 @@
 
 .logo1 {
 	display: block;
-	margin-bottom: 11px;
-
-	@media screen and (min-width: $tablet) {
-		margin-bottom: 16px;
-	}
 }
 
 .spanWrapper {
