@@ -1,6 +1,8 @@
 @import "../../styles/vars";
 
+
 .wrapper {
+
   .title {
     @media (min-width: $mobile) {
       font-size: 16px;
@@ -57,7 +59,7 @@
       position: relative;
       overflow: hidden;
       height: 35px;
-      border-radius: 5px;
+      border-radius: 8px;
       background-color: $accent-orange-color;
     }
     .text {
@@ -96,6 +98,7 @@
       font-style: normal;
       font-weight: 700;
       color: $accent-orange-color;
+      
     }
   }
 }
