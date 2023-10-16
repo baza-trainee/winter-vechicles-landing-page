@@ -3,20 +3,12 @@
 @import "../../styles/animations";
 
 .hero {
-  max-width: $mobile;
   background-image: url("../../images/hero/hero-bg.jpg");
+  background-color: $grey-color;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 59%;
   margin: 0 auto;
-
-  @media (min-width: $tablet) {
-    max-width: $tablet;
-  }
-
-  @media (min-width: $desktop) {
-    max-width: none;
-  }
 }
 
 .heroCover {
