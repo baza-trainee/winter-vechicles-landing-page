@@ -1,4 +1,3 @@
-import Container from '../Container/Container';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import AboutBrigade from '../About-brigade/AboutBrigade';
@@ -16,16 +15,12 @@ function App() {
       <main>
         <Hero />
         <RunningText />
-        <ProgressBar/>
-        <AboutBrigade /> 
+        <ProgressBar />
+        <AboutBrigade />
         <RunningText />
         <WhyIsItImportantBlock />
       </main>
-      <footer>
-        <Container>
-          <Footer />
-        </Container>
-      </footer>
+      <Footer />
       <Scroll />
     </>
   );
