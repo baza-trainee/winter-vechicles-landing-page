@@ -6,14 +6,12 @@ const RunningText = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.container} >
       <Marquee autoFill={true} speed={80}>
         <div className={styles.runningBlock}>
           <p className={styles.runningText}>{t('running-line.support')}</p>
           <p className={styles.runningText}>{t('running-line.victory')}</p>
         </div>
       </Marquee>
-    </div>
   );
 };
 
