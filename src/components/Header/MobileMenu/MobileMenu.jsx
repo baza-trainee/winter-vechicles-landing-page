@@ -1,49 +1,77 @@
+import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import { AiOutlineClose } from 'react-icons/ai';
-import Container from '../../Container/Container';
-import styles from './mobileMenu.module.scss';
 
-const MobileMenu = ({ setMobileMenu, mobileMenu }) => {
+import Container from '../../Container/Container';
+
+import styles from './MobileMenu.module.scss';
+
+const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
   const { t } = useTranslation();
-  const onCloseMobileMenu = () => setMobileMenu(!mobileMenu);
 
   return (
-    <div className={`${styles.mobileMenu} ${mobileMenu && styles.isOpen}`}>
+    <div
+      className={`${styles.mobileMenu} ${isOpenMobileMenu && styles.isOpen}`}
+    >
       <Container>
         <div className={styles.mobileMenuContainer}>
           <button
             className={styles.mobileMenuCLoseBtn}
             type="button"
-            onClick={() => onCloseMobileMenu()}
+            onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
           >
             <AiOutlineClose className={styles.closeSvg} size={24} />
           </button>
         </div>
-        <nav className={styles.navMobile} onClick={() => onCloseMobileMenu()}>
+        <nav className={styles.navMobile}>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <a className={styles.link} href="/#goal">
-                {t('header.goal')}
-              </a>
-            </li>
-            <li className={styles.item}>
-              <a className={styles.link} href="/#about">
-                {t('header.about')}
-              </a>
-            </li>
-            <li className={styles.item}>
-              <a className={styles.link} href="/#important">
-                {t('header.important')}
-              </a>
-            </li>
-            <li className={styles.item}>
-              <a
+              <Link
                 className={styles.link}
-                href="/#fundraising"
+                to="goal"
+                smooth={true}
+                duration={500}
+                aria-label="Move to Goal section"
+                onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
+              >
+                {t('header.goal')}
+              </Link>
+            </li>
+            <li className={styles.item}>
+              <Link
+                className={styles.link}
+                to="about"
+                smooth={true}
+                duration={500}
+                aria-label="Move to About section"
+                onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
+              >
+                {t('header.about')}
+              </Link>
+            </li>
+            <li className={styles.item}>
+              <Link
+                className={styles.link}
+                to="important"
+                smooth={true}
+                duration={500}
+                aria-label="Move to Why it`s important section"
+                onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
+              >
+                {t('header.important')}
+              </Link>
+            </li>
+            <li className={styles.item}>
+              <Link
+                to="fundraising"
+                smooth={true}
+                duration={500}
+                className={styles.link}
                 aria-label="Move to Fundraising section"
+                onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
               >
                 {t('header.fundraising')}
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
