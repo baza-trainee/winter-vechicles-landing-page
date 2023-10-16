@@ -8,150 +8,147 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 59%;
-  margin: 0px auto 0px;
+  margin: 0 auto;
 
-  @media screen and (min-width: $tablet) {
+  @media (min-width: $tablet) {
     max-width: $tablet;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media (min-width: $desktop) {
     max-width: none;
   }
+}
 
-  &__cover {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 18px 0 24px;
-    row-gap: 45px;
+.heroCover {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 44px 0 36px;
+  row-gap: 6px;
 
-    @media screen and (min-width: $tablet) {
-      max-width: 486px;
-      padding: 60px 0 40px;
-      row-gap: 34px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      row-gap: 60px;
-      padding: 215px 0 105px;
-    }
+  @media (min-width: $tablet) {
+    max-width: 486px;
+    padding: 60px 0 40px;
+    row-gap: 34px;
   }
 
-  &__title {
-    color: $primary-white-color;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Dela Gothic One", sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: $regular;
-    line-height: 40px;
-    letter-spacing: 0.35px;
-    margin-bottom: 6px;
-
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 28px;
-      font-size: 40px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      font-size: 48px;
-    }
-  }
-
-  &__arrow {
-    display: block;
-
-    @media screen and (min-width: $tablet) {
-      height: 100%;
-      width: 31px;
-    }
-  }
-
-  &__label {
-    display: inline-block;
-    color: $primary-white-color;
-    font-family: "Dela Gothic One", sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 0.35px;
-    margin-bottom: 6px;
-    font-style: normal;
-
-    @media screen and (min-width: $tablet) {
-      font-size: 20px;
-      margin-bottom: 14px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      font-size: 24px;
-      margin-bottom: 28px;
-    }
-  }
-
-  &__text {
-    color: $primary-white-color;
-    font-size: 16px;
-    font-weight: $medium;
-    line-height: 24px;
-    letter-spacing: 0.35px;
-    margin-bottom: 0px;
-    font-style: normal;
-    column-gap: 20px;
-
-    @media screen and (min-width: $tablet) {
-      font-size: 18px;
-      line-height: 36px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      font-size: 20px;
-    }
-
-    &:first-of-type {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
-      margin-bottom: 6px;
-
-      @media screen and (min-width: $tablet) {
-        width: 520px;
-        align-items: flex-end;
-        column-gap: 34px;
-        margin-bottom: 14px;
-      }
-
-      @media screen and (min-width: $desktop) {
-        margin-bottom: 28px;
-      }
-
-      span:first-child {
-        display: flex;
-        column-gap: 10px;
-        align-items: center;
-
-        @media screen and (min-width: $tablet) {
-          column-gap: 34px;
-        }
-      }
-
-      span:last-child {
-        color: var(--Orange, #f29544);
-        font-family: "Dela Gothic One", sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: $regular;
-        line-height: 50px;
-        letter-spacing: 0.35px;
-      }
-
-      &__buttonCover {
-        & button {
-          width: 100%;
-          @media screen and (min-width: $tablet) {
-            width: 236px;
-          }
-        }
-      }
-    }
+  @media (min-width: $desktop) {
+    row-gap: 60px;
+    padding: 215px 0 105px;
   }
 }
+
+.heroTitle {
+  color: $primary-white-color;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: $regular;
+  line-height: 40px;
+  letter-spacing: 0.35px;
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 28px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 48px;
+  }
+}
+
+.heroLabel {
+  display: inline-block;
+  color: $primary-white-color;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+.heroText {
+  color: $primary-white-color;
+  font-size: 16px;
+  font-weight: $medium;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  margin-bottom: 0px;
+  column-gap: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+  }
+
+  span:first-child {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    @media (min-width: $tablet) {
+      column-gap: 34px;
+    }
+  }
+
+  span:last-child {
+    color: var(--Orange, #f29544);
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 16px;
+    font-weight: $regular;
+    line-height: 50px;
+    letter-spacing: 0.35px;
+  }
+}
+
+.heroText:first-of-type {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet) {
+    width: 520px;
+    align-items: flex-end;
+    column-gap: 34px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 28px;
+  }
+}
+
+.heroArrow {
+  display: block;
+
+  @media (min-width: $tablet) {
+    height: 100%;
+    width: 31px;
+  }
+}
+
+.heroButtonCover {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 236px;
+  }
+}
+
