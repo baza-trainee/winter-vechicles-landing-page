@@ -14,8 +14,8 @@ const LangSwitcher = () => {
 
   const languages = [
     { code: 'en', label: 'en' },
-    { code: 'ua', label: 'ua' },
     { code: 'pl', label: 'pl' },
+    { code: 'ua', label: 'ua' },
   ];
 
   //   useEffect(() => {
