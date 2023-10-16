@@ -28,7 +28,7 @@ const ProgressBar = () => {
   const formattedBalance = formatBalance(balance);
 
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <Container>
         <div className={styles.title}>{t('progressBar.Preparing')}</div>
         <div className={styles.ProgressBar}>
@@ -52,7 +52,7 @@ const ProgressBar = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

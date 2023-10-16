@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 10px 0 20px 0;
 
   @media (min-width: $tablet) {
     gap: 32px;
@@ -33,7 +32,11 @@
   }
 
   .shareButton {
-    margin: 0 auto;
+    width: 100%;
+    @media (min-width: $tablet) {
+      width: 236px;
+      margin: 0 auto;
+    }
   }
 
   .copyright {

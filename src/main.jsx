@@ -16,6 +16,7 @@ const queryClient = new QueryClient({
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    
     <Suspense fallback="...loading">
       <QueryClientProvider client={queryClient}>
         <App />

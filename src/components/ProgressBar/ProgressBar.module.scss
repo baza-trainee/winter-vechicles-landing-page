@@ -1,104 +1,101 @@
 @import "../../styles/vars";
 
-
 .wrapper {
+  padding: 40px 0 0;
+  @media (min-width: $tablet) {
+    padding: 80px 0 0;
+  }
 
-  .title {
+  @media (min-width: $desktop) {
+    padding: 100px 0 0;
+  }
+}
+
+.title {
+  text-align: center;
+  font-family: $font-roboto-slab;
+  font-weight: $regular;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 36px;
+  }
+}
+
+.img {
+  margin-bottom: 5px;
+  margin: 0;
+  img {
     @media (min-width: $mobile) {
-      font-size: 16px;
-      padding-top: 40px;
+      height: 60px;
+      width: 41px;
     }
 
     @media (min-width: $tablet) {
-      font-size: 24px;
-      padding-top: 70px;
+      height: 85px;
+      width: 70px;
     }
 
     @media (min-width: $desktop) {
-      font-size: 36px;
-      padding-top: 100px;
+      height: 109px;
+      width: 96px;
     }
-    text-align: center;
-
-    font-family: $font-roboto-slab;
-    font-weight: $regular;
-    padding-bottom: 24px;
+    margin: 0;
+    margin-bottom: 15px;
   }
-  .ProgressBar {
-    .img {
-      margin-bottom: 5px;
-      margin: 0;
-      img {
-        @media (min-width: $mobile) {
-          height: 60px;
-          width: 41px;
-        }
-
-        @media (min-width: $tablet) {
-          height: 85px;
-          width: 70px;
-        }
-
-        @media (min-width: $desktop) {
-          height: 109px;
-          width: 96px;
-        }
-        margin: 0;
-        margin-bottom: 15px;
-      }
-    }
-    .bar {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      height: 35px;
-      border-radius: 5px;
-      background-color: $grey-color;
-    }
-    .fill {
-      position: relative;
-      overflow: hidden;
-      height: 35px;
-      border-radius: 8px;
-      background-color: $accent-orange-color;
-    }
-    .text {
-      display: flex;
-      justify-content: space-between;
-      .second {
-        text-align: right;
-      }
-    }
-    .text h3 {
-      @media (min-width: $mobile) {
-        font-size: 12px;
-      }
-
-      @media (min-width: $tablet) {
-        font-size: 16px;
-      }
-
-      @media (min-width: $desktop) {
-        font-size: 16px;
-      }
-      font-weight: 600;
-    }
-    .text h4 {
-      @media (min-width: $mobile) {
-        font-size: 14px;
-      }
-
-      @media (min-width: $tablet) {
-        font-size: 18px;
-      }
-
-      @media (min-width: $desktop) {
-        font-size: 24px;
-      }
-      font-style: normal;
-      font-weight: 700;
-      color: $accent-orange-color;
-      
-    }
+}
+.bar {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  background-color: $grey-color;
+}
+.fill {
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+  border-radius: 8px;
+  background-color: $accent-orange-color;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  .second {
+    text-align: right;
   }
+}
+.text h3 {
+  @media (min-width: $mobile) {
+    font-size: 12px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+  }
+  font-weight: 600;
+}
+.text h4 {
+  @media (min-width: $mobile) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+  }
+  font-style: normal;
+  font-weight: 700;
+  color: $accent-orange-color;
 }
