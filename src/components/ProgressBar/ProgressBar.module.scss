@@ -42,7 +42,7 @@
     position: relative;
     @media (min-width: $mobile) {
       height: 60px;
-      width: 41px;
+      width: 46px;
     }
 
     @media (min-width: $tablet) {
@@ -124,14 +124,14 @@
       display: none;
     }
     .bar {
-      width: 67%;
+      width: 64%;
       margin-left: 5px;
       margin-right: 5px;
     }
   }
   @media (min-width: $desktop) {
     .bar{
-      width: 77%;
+      width: 74%;
       height: 45px;
     }
   }
