@@ -13,25 +13,19 @@ const Footer = () => {
   const handleOpenModal = () => setIsOpen(!isOpen);
   return (
     <Container>
-      <footer id="fundraising" className={styles.footerContainer}>
-          <h2 className={styles.footerTitle}>
-            {t("strength.title")}
-          </h2>
-          <h2 className={styles.footerTitle}>
-            {t("strength.sharing")}
-          </h2>
-          <Button 
+      <footer id="fundraising">
+        <div className={styles.footerContainer}>
+          <h2 className={styles.footerTitle}>{t('strength.title')}</h2>
+          <h2 className={styles.footerTitle}>{t('strength.sharing')}</h2>
+          <Button
             onClick={handleOpenModal}
-            text={t("strength.btn")}
-            icon={<GoShareAndroid size="30"/>}
+            text={t('strength.btn')}
+            icon={<GoShareAndroid size="30" />}
           />
-          {isOpen && createPortal(
-            <Modal onClose={handleOpenModal}/>,
-            document.body
-          )}
-          <p className={styles.footerCopyright}>
-            {t("footer")}
-          </p>
+          {isOpen &&
+            createPortal(<Modal onClose={handleOpenModal} />, document.body)}
+        </div>
+        <p className={styles.footerCopyright}>{t('footer')}</p>
       </footer>
     </Container>
   );
