@@ -2,7 +2,8 @@
 
 .about{
   padding: 40px 0 40px;
-    @media (min-width: $tablet) {
+    
+  @media (min-width: $tablet) {
   padding: 80px 0 80px;
   }
 
@@ -14,7 +15,7 @@
 .aboutTitle {
   font-family: $font-roboto-slab;
   font-size: 16px;
-  font-weight: $regular;
+  font-weight: $bold;
   line-height: 28px;
   letter-spacing: 0.35px;
   text-align: center;

@@ -12,8 +12,10 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
+  overflow-y: auto;
 }
 .popupContent {
+  overflow-y: auto;
   position: relative;
   background-color: $primary-white-color;
   width: 524px;

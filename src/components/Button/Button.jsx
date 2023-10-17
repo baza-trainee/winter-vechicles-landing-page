@@ -1,4 +1,3 @@
-import * as React from "react";
 import style from "./Button.module.scss";
 
 const Button = (props) => {
@@ -9,7 +8,7 @@ const Button = (props) => {
       onClick={props.onClick}
       disabled={props.disabled}
     >
-      <span className={style.button__content}>
+      <span className={style.buttonContent}>
         {props.text}
         {props.icon}
       </span>

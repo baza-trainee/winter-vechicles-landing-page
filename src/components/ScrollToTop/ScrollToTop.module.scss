@@ -8,13 +8,14 @@
   width: 80px;
   button {
     display: flex;
+    width: 55px;
+    height: 55px;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     border-style: solid;
     border-color: $accent-orange-color;
-    height: 55px;
-    width: 55px;
+    background-color: $primary-white-color;
     box-shadow: 0px 4px 4px $shadow-btn;
   }
   button:hover,
