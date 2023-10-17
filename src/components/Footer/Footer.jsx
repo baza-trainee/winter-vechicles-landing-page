@@ -4,13 +4,23 @@ import { useTranslation } from "react-i18next";
 import { GoShareAndroid } from "react-icons/go";
 import Container from "../Container/Container";
 import Button from "../Button/Button";
-import Modal from "../Modal/Modal";
+import Modal from "../modals/Modal/Modal";
 import styles from "./Footer.module.scss";
+import Overlay from "../Overlay/Overlay";
+import ThanksModal from "../modals/ThanksModal/ThanksModal";
 
 const Footer = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const response = false;
+
+  // useEffect(() => {
+  //   console.log('re');
+  //   setIsOpen(!isOpen)
+  // }, [response]);
+
   const handleOpenModal = () => setIsOpen(!isOpen);
+
   return (
     <Container>
       <footer id="fundraising">
@@ -23,7 +33,16 @@ const Footer = () => {
             icon={<GoShareAndroid size="30" />}
           />
           {isOpen &&
-            createPortal(<Modal onClose={handleOpenModal} />, document.body)}
+            createPortal(
+              <Overlay onClose={handleOpenModal} >
+                {
+                  response ?
+                  <ThanksModal /> :
+                  <Modal onClose={handleOpenModal} />
+                }
+              </Overlay>,
+              document.body
+            )}
         </div>
         <p className={styles.footerCopyright}>{t('footer')}</p>
       </footer>
