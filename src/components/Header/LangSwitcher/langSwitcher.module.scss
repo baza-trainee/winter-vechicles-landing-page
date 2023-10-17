@@ -18,7 +18,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 5px 10px;
+	padding: 4px 12px;
 
 	color: $primary-white-color;
 
@@ -39,7 +39,7 @@
 	font-family: $font-roboto-slab;
 	font-weight: $bold;
 	text-transform: uppercase;
-	margin-right: 10px;
+	margin-right: 12px;
 
 	@media screen and (min-width: $tablet) {
 		margin-right: 26px;
@@ -51,9 +51,10 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 21px;
-	padding: 0 0 0 6px;
+	padding: 6px;
 
 	@media screen and (min-width: $tablet) {
+		padding: 10px;
 		font-size: 28px;
 	}
 }
@@ -64,14 +65,14 @@
 
 .changeLangWrapper {
 	position: absolute;
-	background-color:$primary-black-color;
+	background-color: $primary-black-color;
 	width: 100%;
 }
 
 .changLang {
 	display: block;
 	color: $primary-white-color;
-	padding: 5px 10px;
+	padding: 4px 12px;
 	transition-property: color;
 	transition: color $transition-duration;
 
@@ -92,6 +93,6 @@
 
 	@media screen and (min-width: $tablet) {
 		font-size: 18px;
-		line-height: 1.5;
+		line-height: $triple-line-height;
 	}
 }
