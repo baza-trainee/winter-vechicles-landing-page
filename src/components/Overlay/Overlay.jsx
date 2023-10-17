@@ -1,4 +1,4 @@
-
+import { useEffect } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import styles from "./Overlay.module.scss";
 
@@ -12,6 +12,18 @@ const Overlay = ({ children, onClose }) => {
 
         onClose();
     };
+
+    useEffect(() => {
+        const handleKeyDown = e => {
+          if (e.keyCode === 27)onClose();
+        };
+    
+        document.addEventListener('keydown', handleKeyDown);
+    
+        return () => {
+          document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
 
     return (
         <div className={styles.overlay} onClick={handleModal}>
