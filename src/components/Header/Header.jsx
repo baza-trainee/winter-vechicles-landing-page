@@ -27,7 +27,6 @@ const Header = () => {
                 <Link
                   className={styles.link}
                   to="goal"
-                  smooth={true}
                   duration={500}
                   aria-label="Move to Goal section"
                 >
@@ -38,7 +37,6 @@ const Header = () => {
                 <Link
                   className={styles.link}
                   to="about"
-                  smooth={true}
                   duration={500}
                   aria-label="Move to About section"
                 >
@@ -49,7 +47,6 @@ const Header = () => {
                 <Link
                   className={styles.link}
                   to="important"
-                  smooth={true}
                   duration={500}
                   aria-label="Move to Why it`s important section"
                 >
@@ -60,7 +57,6 @@ const Header = () => {
                 <Link
                   className={styles.link}
                   to="fundraising"
-                  smooth={true}
                   duration={500}
                   aria-label="Move to Fundraising section"
                 >
