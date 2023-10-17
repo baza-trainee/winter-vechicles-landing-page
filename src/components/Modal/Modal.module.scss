@@ -82,6 +82,8 @@
   img {
     height: 56px;
     width: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 4px 4px 0px rgba(0, 0, 0, 0.03), 0px 10px 6px 0px rgba(0, 0, 0, 0.02), 0px 17px 7px 0px rgba(0, 0, 0, 0.01), 0px 27px 7px 0px rgba(0, 0, 0, 0.00);
   }
 
   &:hover,
@@ -113,7 +115,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 236px;
+  max-width: 236px;
   gap: 4px;
   transition: $transition-duration;
 
