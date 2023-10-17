@@ -7,6 +7,9 @@
   bottom: 175px;
   width: 80px;
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     border-style: solid;
     border-color: $accent-orange-color;
@@ -24,6 +27,7 @@
     transition: $transition-duration;
   }
   .arrow {
+    display: flex;
     color: $accent-orange-color;
   }
   @media (min-width: $desktop) {

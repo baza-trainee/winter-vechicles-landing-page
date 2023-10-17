@@ -1,5 +1,5 @@
 import Container from '../Container/Container';
-import { fetchAccountBalance } from '../../fetchAccountBalance';
+import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
 import image from '../../images/progress-bar/img.png';
 import styles from './ProgressBar.module.scss';
 import { useQuery } from '@tanstack/react-query';
@@ -28,7 +28,7 @@ const ProgressBar = () => {
   const formattedBalance = formatBalance(balance);
 
   return (
-    <section className={styles.wrapper}>
+    <section id='goal' className={styles.wrapper}>
       <Container>
         <div className={styles.title}>{t('progressBar.Preparing')}</div>
         <div className={styles.ProgressBar}>
