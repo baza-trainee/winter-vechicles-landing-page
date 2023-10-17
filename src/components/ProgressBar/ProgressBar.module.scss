@@ -24,14 +24,25 @@
     font-size: 36px;
   }
 }
-
+.imgcontainer {
+  display: flex;
+  margin: 0 auto;
+  @media (min-width: $tablet) {
+    width: 460px;
+  }
+  @media (min-width: $desktop) {
+    width: 862px;
+    margin-left: 110px;
+  }
+}
 .img {
   margin-bottom: 5px;
   margin: 0;
   img {
+    position: relative;
     @media (min-width: $mobile) {
       height: 60px;
-      width: 41px;
+      width: 46px;
     }
 
     @media (min-width: $tablet) {
@@ -98,4 +109,30 @@
   font-style: normal;
   font-weight: 700;
   color: $accent-orange-color;
+}
+.container {
+  .first1{
+    display: none;
+  }
+  @media (min-width: $tablet){
+    display: flex;
+    align-items: center;
+    .first1{
+      display: block;
+    }
+    .first2{
+      display: none;
+    }
+    .bar {
+      width: 64%;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  @media (min-width: $desktop) {
+    .bar{
+      width: 74%;
+      height: 45px;
+    }
+  }
 }
