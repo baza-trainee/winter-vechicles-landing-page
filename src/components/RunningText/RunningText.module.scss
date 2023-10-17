@@ -21,13 +21,15 @@
   color: $primary-white-color;
   font-size: 16px;
   line-height: 50px;
+  font-weight: 700;
   text-transform: uppercase;
   position: relative;
   @media (min-width: $tablet) {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 800;
   }
   @media (min-width: $desktop) {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   &::before {
