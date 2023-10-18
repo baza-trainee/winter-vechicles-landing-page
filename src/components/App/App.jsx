@@ -20,7 +20,7 @@ function App() {
         <RunningText />
         <WhyIsItImportantBlock />
       </main>
-      <Footer />
+      <Footer />      
       <Scroll />
     </>
   );
