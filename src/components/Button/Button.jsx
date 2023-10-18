@@ -1,41 +1,43 @@
-import { useState } from "react";
-import style from "./Button.module.scss";
-import Overlay from "../Overlay/Overlay";
-import Modal from "../modals/Modal/Modal";
-import ThanksModal from "../modals/ThanksModal/ThanksModal";
+import { useState } from 'react';
+import style from './Button.module.scss';
+import Overlay from '../Overlay/Overlay';
+import Modal from '../modals/Modal/Modal';
+import ThanksModal from '../modals/ThanksModal/ThanksModal';
 import { createPortal } from 'react-dom';
 
-const Button = (props) => {
+const Button = props => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpenModal = () => setIsOpen(!isOpen);
+  const handleOpenModal = () => {
+    setIsOpen(!isOpen);
+    document.body.classList.toggle('modal-open');
+  };
 
   return (
     <>
-        <button
-                type={props.type || "button"}
-                className={`${style.button} ${props.className}`}
-                onClick={handleOpenModal}
-                disabled={props.disabled}
-        >
-            <span className={style.buttonContent}>
-                {props.text}
-                {props.icon}
-            </span>
-        </button>
+      <button
+        type={props.type || 'button'}
+        className={`${style.button} ${props.className}`}
+        onClick={handleOpenModal}
+        disabled={props.disabled}
+      >
+        <span className={style.buttonContent}>
+          {props.text}
+          {props.icon}
+        </span>
+      </button>
 
-        {isOpen &&
-            createPortal(
-                <Overlay isOpen={isOpen} onClose={handleOpenModal} >
-                    {
-                        props.share ?
-                        <Modal onClose={handleOpenModal} /> :
-                        <ThanksModal />
-                    }
-                </Overlay>,
-                document.body
-            )
-        }
+      {isOpen &&
+        createPortal(
+          <Overlay isOpen={isOpen} onClose={handleOpenModal}>
+            {props.share ? (
+              <Modal onClose={handleOpenModal} />
+            ) : (
+              <ThanksModal />
+            )}
+          </Overlay>,
+          document.body
+        )}
     </>
   );
 };

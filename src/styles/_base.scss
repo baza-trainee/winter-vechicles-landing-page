@@ -1,27 +1,29 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: $regular;
-  line-height: $primary-line-height;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: $regular;
+	line-height: $primary-line-height;
 
-  color: $primary-black-color;
-  background-color: $primary-white-color;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-y: scroll;
-  overflow-x: hidden;
+	color: $primary-black-color;
+	background-color: $primary-white-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	&.modal-open {
+		overflow: hidden;
+	}
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 h1,
@@ -31,37 +33,38 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  transition: color 250ms linear;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: color 250ms linear;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 address {
-  font-style: normal;
+	font-style: normal;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 button {
-  cursor: pointer;
+	padding: 0;
+	cursor: pointer;
 }
