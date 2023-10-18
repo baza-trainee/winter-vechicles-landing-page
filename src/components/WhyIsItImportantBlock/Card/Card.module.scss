@@ -25,13 +25,16 @@
   font-weight: $medium;
   font-size: 16px;
   line-height: $secondary-line-height;
-  padding: 24px 0 0;
+  padding: 24px 0;
+  letter-spacing: 0.35px;
 
   @media (min-width: $tablet) {
     font-size: 18px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop) {
     font-size: 20px;
+    letter-spacing: 0.6px;
   }
 }
