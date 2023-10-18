@@ -1,6 +1,7 @@
 import Container from '../Container/Container';
 import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
-import image from '../../images/progress-bar/img.png';
+import car from '../../images/progress-bar/car.svg';
+import heart from '../../images/progress-bar/heart.svg';
 import styles from './ProgressBar.module.scss';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
@@ -34,7 +35,9 @@ const ProgressBar = () => {
         <div className={styles.ProgressBar}>
           <div className={styles.imgcontainer}>
           <div className={styles.img} style={{ marginLeft: margin }}>
-            <img src={image} alt="heart" />
+            <div className={styles.heart}>
+            <img src={heart} alt="heart" style={{maxWidth: "100%"}}/></div>
+            <img src={car} alt="car" />
           </div></div>
           <div className={styles.container}>
           <div className={styles.text}>

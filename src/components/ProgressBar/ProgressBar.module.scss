@@ -35,27 +35,48 @@
     margin-left: 110px;
   }
 }
+.heart{
+  @media (min-width: $mobile) {
+    width: 36px;
+    margin-bottom: -10px;
+  }
+  @media (min-width: $tablet) {
+    height: 50px;
+    width: 90px;
+    margin-bottom: 0px;
+    padding-left: -15px;
+    }
+  @media (min-width: $desktop) {
+    height: 65px;
+    width: 90px;
+    margin-bottom: 0;
+  }
+}
 .img {
   margin-bottom: 5px;
   margin: 0;
+  .imges{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
   img {
     position: relative;
     @media (min-width: $mobile) {
-      height: 60px;
+      height: 45px;
       width: 46px;
+      margin-bottom: 0px
     }
-
     @media (min-width: $tablet) {
-      height: 85px;
-      width: 70px;
-    }
-
+      height: 50px;
+      width: 90px;
+      margin-bottom: 0px
+      }
     @media (min-width: $desktop) {
-      height: 109px;
+      height: 65px;
       width: 96px;
+      margin-bottom: 0;
     }
-    margin: 0;
-    margin-bottom: 15px;
   }
 }
 .bar {
