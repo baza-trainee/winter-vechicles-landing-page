@@ -22,7 +22,7 @@ const AboutBrigade = () => {
           </div>
           <div className={styles.button}>
             <a
-              href="https://www.monobank.com.ua/" /*!!Замінити лінк*/
+              href="https://send.monobank.ua/jar/3E5FfsfiRd" /*!!Замінити лінк*/
               target="_blank"
               rel="noopener noreferrer"
             >
