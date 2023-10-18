@@ -7,8 +7,7 @@ import styles from './LangSwitcher.module.scss';
 const LangSwitcher = () => {
   const { t, i18n } = useTranslation();
 
-  //   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   const [isOpenChangeLangWrapper, setIsOpenLangSwitcher] = useState(false);
 

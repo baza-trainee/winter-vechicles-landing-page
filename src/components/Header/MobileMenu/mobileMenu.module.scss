@@ -56,6 +56,10 @@
 	&:focus .closeSvg {
 		color: $accent-orange-color;
 	}
+
+	@media screen and (min-width: $tablet) and (max-width: $desktop) {
+		right: -24px;
+	}
 }
 
 .list {
@@ -85,5 +89,10 @@
 	&:hover,
 	&:focus {
 		color: $accent-orange-color;
+	}
+
+	@media screen and (min-width: $tablet) and (max-width: $desktop) {
+		font-size: 18px;
+		line-height: $triple-line-height;
 	}
 }

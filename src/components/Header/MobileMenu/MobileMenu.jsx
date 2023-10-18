@@ -29,7 +29,6 @@ const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
               <Link
                 className={styles.link}
                 to="goal"
-                smooth={true}
                 duration={500}
                 aria-label="Move to Goal section"
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
@@ -41,7 +40,6 @@ const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
               <Link
                 className={styles.link}
                 to="about"
-                smooth={true}
                 duration={500}
                 aria-label="Move to About section"
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
@@ -53,7 +51,6 @@ const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
               <Link
                 className={styles.link}
                 to="important"
-                smooth={true}
                 duration={500}
                 aria-label="Move to Why it`s important section"
                 onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
@@ -64,7 +61,6 @@ const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
             <li className={styles.item}>
               <Link
                 to="fundraising"
-                smooth={true}
                 duration={500}
                 className={styles.link}
                 aria-label="Move to Fundraising section"
