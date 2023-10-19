@@ -22,13 +22,13 @@ const Scroll = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <>
       {ScrollToTop && (
         <button type="button" className={styles.button} onClick={ScrollUp}>
           <PiArrowUpLight className={styles.arrow} />
         </button>
       )}
-    </div>
+    </>
   );
 };
 
