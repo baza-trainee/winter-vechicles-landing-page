@@ -22,11 +22,11 @@ const Button = (props) => {
                 {props.text}
                 {props.icon}
             </span>
-        </button>
+        </button> 
 
         {isOpen &&
             createPortal(
-                <Overlay isOpen={isOpen} onClose={handleOpenModal} >
+                <Overlay onClose={handleOpenModal} share={props.share} >
                     {
                         props.share ?
                         <Modal onClose={handleOpenModal} /> :

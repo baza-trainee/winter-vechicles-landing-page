@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
+import cn from "classnames";
 import styles from "./Overlay.module.scss";
 
-const Overlay = ({ children, onClose }) => {
+const Overlay = ({ children, onClose, share }) => {
 
     const handleModal = e => {
         if (
@@ -27,7 +28,7 @@ const Overlay = ({ children, onClose }) => {
 
     return (
         <div className={styles.overlay} onClick={handleModal}>
-            <div className={styles.popupBody}>
+            <div className={cn(styles.popupBody, {[styles.popupBodyWide]: !share}) } >
                 <AiOutlineClose className={styles.popupClose} />
                 {children}
             </div>

@@ -39,49 +39,53 @@ const Modal = ({ onClose }) => {
   return (
     <div className={styles.popupContent}>
       <h3 className={styles.popupTitle}>{t('modal.title')}</h3>
-      <p className={styles.popupText}>{t('modal.text-send')}</p>
-      <div className={styles.popupSocial}>
-        <a
-          href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-            currentUrl
-          )}`}
-          className={styles.popupSocialLink}
-        >
-          <img src={facebook} alt="facebook" />
-        </a>
-        <a
-          href={`https://t.me/share/url?url=${encodeURIComponent(
-            currentUrl
-          )}`}
-          className={styles.popupSocialLink}
-        >
-          <img src={telegram} alt="telegram" />
-        </a>
-        <a href="#" className={styles.popupSocialLink}>
-          {/* need to solve */}
-          <img src={instagram} alt="instagram" />
-        </a>
-        <a
-          href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-            currentUrl
-          )}`}
-          className={styles.popupSocialLink}
-        >
-          <img src={linkedin} alt="linkedin" />
-        </a>
-      </div>
-      <p className={styles.popupText}>{t('modal.text-copy')}</p>
-      <div className={styles.popupCopy}>
-        <button className={styles.popupCopyText} onClick={copyToClipboard}>
-          {t('modal.btnCopy')}
-          <GoShareAndroid size="24" />
-        </button>
-        {isCopied && (
-          <p className={`${styles.popupText} ${styles.popupCopied}`}>
-            {t('modal.copied')}
-            <FaCheck style={{ color: '#25B946' }} size="24" />
-          </p>
-        )}
+      <div className={styles.popupInfo}>
+        <p className={styles.popupText}>{t('modal.text-send')}</p>
+        <div className={styles.popupSocial}>
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+              currentUrl
+            )}`}
+            className={styles.popupSocialLink}
+          >
+            <img src={facebook} alt="facebook" />
+          </a>
+          <a
+            href={`https://t.me/share/url?url=${encodeURIComponent(
+              currentUrl
+            )}`}
+            className={styles.popupSocialLink}
+          >
+            <img src={telegram} alt="telegram" />
+          </a>
+          <a
+            href={`https://wa.me/?text=${encodeURIComponent(
+              currentUrl
+            )}`}
+            className={styles.popupSocialLink}
+          >
+            <img src={instagram} alt="instagram" />
+          </a>
+          <a
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+              currentUrl
+            )}`}
+            className={styles.popupSocialLink}
+          >
+            <img src={linkedin} alt="linkedin" />
+          </a>
+        </div>
+        <p className={styles.popupText}>{t('modal.text-copy')}</p>
+          <button className={styles.popupCopyText} onClick={copyToClipboard}>
+            {t('modal.btnCopy')}
+            <GoShareAndroid size="24" />
+          </button>
+          {isCopied && (
+            <p className={`${styles.popupText} ${styles.popupCopied}`}>
+              {t('modal.copied')}
+              <FaCheck style={{ color: '#25B946' }} size="24" />
+            </p>
+          )}
       </div>
     </div>
   );
