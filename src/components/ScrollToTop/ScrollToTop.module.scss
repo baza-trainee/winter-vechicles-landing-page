@@ -6,10 +6,16 @@
   z-index: 50;
   bottom: 65px;
   width: 80px;
+  @media (min-width: $tablet) {
+    right: 15px;
+  }
+  @media (min-width: $desktop) {
+    right: 20px;
+  }
   button {
     display: flex;
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -31,6 +37,12 @@
   .arrow {
     display: flex;
     color: $accent-orange-color;
+  }
+  @media (min-width: $tablet) {
+    button {
+      height: 75px;
+      width: 75px;
+    }
   }
   @media (min-width: $desktop) {
     button {
