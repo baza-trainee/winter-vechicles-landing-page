@@ -16,8 +16,8 @@
   line-height: 28px;
   padding-bottom: 40px;
 
-  @media screen and (min-width: 360px) {
-    margin: 0 15px;
+  @media screen and (min-width: 380px) {
+    
     gap: 32px;
   }
 }
@@ -41,7 +41,7 @@
     background-color: $primary-grey-color;
 
   }
-  @media screen and (min-width: 360px) {   
+  @media screen and (min-width: 380px) {   
     margin-bottom: 16px;
     &::after{
       bottom: -15px;
@@ -61,7 +61,7 @@
   align-items: center;
   gap: 10px;
 
-  @media screen and (min-width: 360px) {
+  @media screen and (min-width: 380px) {
     gap: 32px;
   }
 }
