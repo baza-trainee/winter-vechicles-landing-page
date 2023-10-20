@@ -1,14 +1,17 @@
-import { useState } from "react";
-import style from "./Button.module.scss";
-import Overlay from "../Overlay/Overlay";
-import Modal from "../modals/Modal/Modal";
-import ThanksModal from "../modals/ThanksModal/ThanksModal";
+import { useState } from 'react';
+import style from './Button.module.scss';
+import Overlay from '../Overlay/Overlay';
+import Modal from '../modals/Modal/Modal';
+import ThanksModal from '../modals/ThanksModal/ThanksModal';
 import { createPortal } from 'react-dom';
 
-const Button = (props) => {
+const Button = props => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpenModal = () => setIsOpen(!isOpen);
+  const handleOpenModal = () => {
+    setIsOpen(!isOpen);
+    document.body.classList.toggle('modal-open');
+  };
 
   return (
     <>
