@@ -1,41 +1,53 @@
 @import "../../styles/vars";
 
-.container {
-  position: sticky;
-  float: right;
-  z-index: 50;
-  bottom: 65px;
-  width: 80px;
-  button {
-    display: flex;
-    width: 48px;
-    height: 48px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $accent-orange-color;
-    background-color: $primary-white-color;
-    box-shadow: 0px 4px 4px $shadow-btn;
-  }
-  button:hover,
-  :focus,
-  :active {
-    .arrow {
-      color: $primary-white-color;
-    }
-    background-color: $accent-orange-color;
-    transition: $transition-duration;
-  }
-  .arrow {
-    display: flex;
-    color: $accent-orange-color;
-  }
-  @media (min-width: $desktop) {
-    button {
-      height: 75px;
-      width: 75px;
-    }
-  }
+.button {
+	position: fixed;
+	z-index: 50;
+	right: 16px;
+	bottom: 68px;
+
+	display: flex;
+	width: 48px;
+	height: 48px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 1px solid $accent-orange-color;
+	color: $accent-orange-color;
+	background-color: $primary-white-color;
+	box-shadow: $shadow-btn-scroll-to-top;
+	transition-property: color, background-color;
+	transition:
+		color $transition-duration,
+		background-color $transition-duration;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $primary-white-color;
+		background-color: $accent-orange-color;
+	}
+
+	@media screen and (min-width: $tablet) {
+		right: 20px;
+		bottom: 50px;
+
+		width: 75px;
+		height: 75px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		right: 40px;
+		bottom: 55px;
+	}
+}
+
+.arrow {
+	width: 26px;
+	height: 22px;
+
+	@media screen and (min-width: $tablet) {
+		width: 38px;
+		height: 34px;
+	}
 }
