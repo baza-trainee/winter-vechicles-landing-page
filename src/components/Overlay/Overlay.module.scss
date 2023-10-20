@@ -4,10 +4,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   padding: 0 16px;
-  background-color: rgba(217, 217, 217, 0.6);
+  background-color: rgba(51, 51, 51, 0.80);
   color: $primary-black-color;
   display: flex;
   align-items: center;
@@ -19,8 +19,10 @@
 .popupBody {
     position: relative;
     width: 524px;
-    overflow: hidden;
-    border-radius: 8px;
+}
+
+.popupBodyWide {
+  width: 786px;
 }
 
 .popupClose {
