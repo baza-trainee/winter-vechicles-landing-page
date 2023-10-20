@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  
   text-align: center;
   border-radius: 8px;
   font-size: 16px;
@@ -22,9 +22,13 @@
   font-size: 24px;
   font-weight: $regular;
   line-height: $primary-line-height;
-  padding: 49px 0 9px;
+  padding: 49px 0 0;
   width: 100%;
   border-bottom: 1px solid $primary-grey-color;
+
+  @media screen and (min-width: $tablet) {
+    padding: 49px 0 9px;
+  }
 }
 .popupInfo {
   display: flex;
