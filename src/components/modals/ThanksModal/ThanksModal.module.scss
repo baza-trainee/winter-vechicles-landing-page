@@ -1,27 +1,32 @@
 @import "../../../styles/vars";
 
 .popupContent {
-    border-radius: 8px;
-    max-height: 98vh;
-    overflow-y: auto;
-    width: 100%;
-    padding: 123px 0;
-    background: linear-gradient(0deg, rgba(245, 245, 245, 0.54) 0%, rgba(245, 245, 245, 0.54) 100%), url('../../../images/hero/hero-bg.jpg') center/cover no-repeat;
+  border-radius: 8px;
+  max-height: 98vh;
+  overflow-y: auto;
+  width: 100%;
+  padding: 123px 0;
+  background: linear-gradient(
+      0deg,
+      rgba(245, 245, 245, 0.54) 0%,
+      rgba(245, 245, 245, 0.54) 100%
+    ),
+    url("../../../images/hero/hero-bg.jpg") center/cover no-repeat;
 
-    @media screen and (min-width: $tablet) {
-        padding: 201px 0;
-    }
-    @media screen and (min-width: $desktop) {
-        padding: 229px 0;
-    }
+  @media screen and (min-width: $tablet) {
+    padding: 201px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 229px 0;
+  }
 }
 .popupText {
-    font-family: Roboto Slab;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.17;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.70);
-    padding: 74px 33px;
-    position: relative;
+  font-family: Roboto Slab;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 74px 33px;
+  position: relative;
 }

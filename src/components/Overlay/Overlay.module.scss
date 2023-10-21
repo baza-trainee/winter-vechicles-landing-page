@@ -7,7 +7,7 @@
   right: 0;
   bottom: 0;
   padding: 0 16px;
-  background-color: rgba(51, 51, 51, 0.80);
+  background-color: rgba(51, 51, 51, 0.8);
   color: $primary-black-color;
   display: flex;
   align-items: center;
@@ -17,8 +17,8 @@
 }
 
 .popupBody {
-    position: relative;
-    width: 524px;
+  position: relative;
+  width: 524px;
 }
 
 .popupBodyWide {
@@ -26,9 +26,9 @@
 }
 
 .popupClose {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    cursor: pointer;
-    font-size: 20px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 20px;
 }

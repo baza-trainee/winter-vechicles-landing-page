@@ -1,12 +1,8 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { GoShareAndroid } from "react-icons/go";
-import Container from "../Container/Container";
-import Button from "../Button/Button";
-import Modal from "../modals/Modal/Modal";
-import styles from "./Footer.module.scss";
-import Overlay from "../Overlay/Overlay";
-import ThanksModal from "../modals/ThanksModal/ThanksModal";
+import { useTranslation } from 'react-i18next';
+import { GoShareAndroid } from 'react-icons/go';
+import Container from '../Container/Container';
+import Button from '../Button/Button';
+import styles from './Footer.module.scss';
 
 const Footer = () => {
   const { t } = useTranslation();

@@ -1,14 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
-
 import styles from './LangSwitcher.module.scss';
 
 const LangSwitcher = () => {
   const { t, i18n } = useTranslation();
-
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-
   const [isOpenChangeLangWrapper, setIsOpenLangSwitcher] = useState(false);
 
   const languages = [

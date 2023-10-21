@@ -6,7 +6,6 @@ import WhyIsItImportantBlock from '../WhyIsItImportantBlock/WhyIsItImportantBloc
 import Scroll from '../ScrollToTop/ScrollToTop';
 import RunningText from '../RunningText/RunningText';
 import ProgressBar from '../ProgressBar/ProgressBar';
-import './App.module.scss';
 
 function App() {
   return (

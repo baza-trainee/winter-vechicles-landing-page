@@ -1,79 +1,79 @@
 @import "../../styles/vars";
 
 .header {
-	background-color: $primary-black-color;
+  background-color: $primary-black-color;
 
-	@media screen and (min-width: $mobile) and (max-width: 767.98px) {
-		padding: 16px 0;
-	}
+  @media screen and (min-width: $mobile) and (max-width: 767.98px) {
+    padding: 16px 0;
+  }
 
-	@media screen and (min-width: $tablet) {
-		padding: 5px 0;
-	}
+  @media screen and (min-width: $tablet) {
+    padding: 5px 0;
+  }
 }
 
 .containerHeader {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .list {
-	display: none;
+  display: none;
 
-	@media screen and (min-width: $desktop) {
-		display: flex;
-	}
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 
-	.item + .item {
-		margin-left: 36px;
-	}
+  .item + .item {
+    margin-left: 36px;
+  }
 }
 
 .link {
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: $primary-white-color;
-	font-family: $font-roboto-slab;
-	font-weight: $bold;
-	font-size: 18px;
-	line-height: $triple-line-height;
-	transition-property: color;
-	transition: color $transition-duration;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $primary-white-color;
+  font-family: $font-roboto-slab;
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: $triple-line-height;
+  transition-property: color;
+  transition: color $transition-duration;
 
-	&:hover,
-	&:focus {
-		color: $accent-orange-color;
-	}
+  &:hover,
+  &:focus {
+    color: $accent-orange-color;
+  }
 }
 
 .burgerMenuOpen {
-	font-size: 24px;
-	padding: 8px 0;
-	line-height: 0;
-	margin-left: 8px;
-	border: none;
-	color: $primary-white-color;
-	background-color: transparent;
-	transition-property: color;
-	transition: color $transition-duration;
+  font-size: 24px;
+  padding: 8px 0;
+  line-height: 0;
+  margin-left: 8px;
+  border: none;
+  color: $primary-white-color;
+  background-color: transparent;
+  transition-property: color;
+  transition: color $transition-duration;
 
-	&:hover,
-	&:focus {
-		color: $accent-orange-color;
-	}
+  &:hover,
+  &:focus {
+    color: $accent-orange-color;
+  }
 
-	@media screen and (min-width: $tablet) {
-		font-size: 32px;
-		margin-left: 60px;
-	}
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    margin-left: 60px;
+  }
 
-	@media screen and (min-width: $desktop) {
-		display: none;
-	}
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }

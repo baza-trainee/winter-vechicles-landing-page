@@ -35,7 +35,7 @@
     margin-left: 110px;
   }
 }
-.heart{
+.heart {
   @media (min-width: $mobile) {
     width: 36px;
     margin-bottom: -10px;
@@ -45,7 +45,7 @@
     width: 90px;
     margin-bottom: 0px;
     padding-left: -15px;
-    }
+  }
   @media (min-width: $desktop) {
     height: 65px;
     width: 90px;
@@ -55,7 +55,7 @@
 .img {
   margin-bottom: 5px;
   margin: 0;
-  .imges{
+  .imges {
     display: flex;
     flex-direction: column;
     padding-bottom: 0px;
@@ -65,13 +65,13 @@
     @media (min-width: $mobile) {
       height: 45px;
       width: 46px;
-      margin-bottom: 0px
+      margin-bottom: 0px;
     }
     @media (min-width: $tablet) {
       height: 50px;
       width: 90px;
-      margin-bottom: 0px
-      }
+      margin-bottom: 0px;
+    }
     @media (min-width: $desktop) {
       height: 65px;
       width: 96px;
@@ -132,16 +132,16 @@
   color: $accent-orange-color;
 }
 .container {
-  .first1{
+  .first1 {
     display: none;
   }
-  @media (min-width: $tablet){
+  @media (min-width: $tablet) {
     display: flex;
     align-items: center;
-    .first1{
+    .first1 {
       display: block;
     }
-    .first2{
+    .first2 {
       display: none;
     }
     .bar {
@@ -151,7 +151,7 @@
     }
   }
   @media (min-width: $desktop) {
-    .bar{
+    .bar {
       width: 74%;
       height: 45px;
     }

@@ -1,15 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-
 import { FaCheck } from 'react-icons/fa6';
 import { GoShareAndroid } from 'react-icons/go';
-
 import facebook from '../../../images/modal/fb.svg';
 import telegram from '../../../images/modal/tg.svg';
 import instagram from '../../../images/modal/instagram.svg';
 import linkedin from '../../../images/modal/linkedin.svg';
-
 import styles from './Modal.module.scss';
 
 const Modal = ({ onClose }) => {
@@ -59,9 +56,7 @@ const Modal = ({ onClose }) => {
             <img src={telegram} alt="telegram" />
           </a>
           <a
-            href={`https://wa.me/?text=${encodeURIComponent(
-              currentUrl
-            )}`}
+            href={`https://wa.me/?text=${encodeURIComponent(currentUrl)}`}
             className={styles.popupSocialLink}
           >
             <img src={instagram} alt="instagram" />
@@ -76,16 +71,16 @@ const Modal = ({ onClose }) => {
           </a>
         </div>
         <p className={styles.popupText}>{t('modal.text-copy')}</p>
-          <button className={styles.popupCopyText} onClick={copyToClipboard}>
-            {t('modal.btnCopy')}
-            <GoShareAndroid size="24" />
-          </button>
-          {isCopied && (
-            <p className={`${styles.popupText} ${styles.popupCopied}`}>
-              {t('modal.copied')}
-              <FaCheck style={{ color: '#25B946' }} size="24" />
-            </p>
-          )}
+        <button className={styles.popupCopyText} onClick={copyToClipboard}>
+          {t('modal.btnCopy')}
+          <GoShareAndroid size="24" />
+        </button>
+        {isCopied && (
+          <p className={`${styles.popupText} ${styles.popupCopied}`}>
+            {t('modal.copied')}
+            <FaCheck style={{ color: '#25B946' }} size="24" />
+          </p>
+        )}
       </div>
     </div>
   );

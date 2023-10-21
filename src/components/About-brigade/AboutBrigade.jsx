@@ -1,5 +1,5 @@
-import Container from '../Container/Container';
 import { useTranslation } from 'react-i18next';
+import Container from '../Container/Container';
 import Button from '../Button/Button';
 import { ImgShown } from './imgShown';
 import styles from './AboutBrigade.module.scss';
@@ -22,7 +22,7 @@ const AboutBrigade = () => {
           </div>
           <div className={styles.button}>
             <a
-              href="https://send.monobank.ua/jar/3E5FfsfiRd" /*!!Замінити лінк*/
+              href="https://send.monobank.ua/jar/3E5FfsfiRd"
               target="_blank"
               rel="noopener noreferrer"
             >

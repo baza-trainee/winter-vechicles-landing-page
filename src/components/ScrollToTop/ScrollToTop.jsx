@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PiArrowUpLight } from 'react-icons/pi';
 import styles from './ScrollToTop.module.scss';
+
 const Scroll = () => {
   const [ScrollToTop, setScrollToTop] = useState(false);
 
