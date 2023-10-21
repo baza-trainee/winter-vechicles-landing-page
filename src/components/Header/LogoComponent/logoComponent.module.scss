@@ -9,12 +9,6 @@
   line-height: 1;
   text-transform: uppercase;
   transition-property: color;
-  transition: color $transition-duration;
-
-  &:hover,
-  &:focus {
-    color: $accent-orange-color;
-  }
 
   @media screen and (min-width: $tablet) {
     font-size: 22px;

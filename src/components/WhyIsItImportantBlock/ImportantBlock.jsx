@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next';
 import Card from './Card/Card';
 import Container from '../Container/Container';
 import { data } from './data';
-import styles from './WhyIsItImportantBlock.module.scss';
+import styles from './ImportantBlock.module.scss';
 
-const WhyIsItImportantBlock = () => {
+const ImportantBlock = () => {
   const { t } = useTranslation();
   return (
     <section className={styles.wrapper} id="important">
@@ -24,4 +24,4 @@ const WhyIsItImportantBlock = () => {
     </section>
   );
 };
-export default WhyIsItImportantBlock;
+export default ImportantBlock;

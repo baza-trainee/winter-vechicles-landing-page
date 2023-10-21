@@ -1,6 +1,6 @@
-import impBlock1 from '../../images/whyImportant/impBlock-1.jpg';
-import impBlock2 from '../../images/whyImportant/impBlock-2.jpg';
-import impBlock3 from '../../images/whyImportant/impBlock-3.jpg';
+import impBlock1 from '../../images/important/impBlock-1.jpg';
+import impBlock2 from '../../images/important/impBlock-2.jpg';
+import impBlock3 from '../../images/important/impBlock-3.jpg';
 
 export const data = [
   {
