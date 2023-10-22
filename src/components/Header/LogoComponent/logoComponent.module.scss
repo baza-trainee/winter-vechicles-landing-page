@@ -1,31 +1,25 @@
 @import "../../../styles/vars";
 
 .logo {
-	margin-right: auto;
-	color: $primary-white-color;
-	font-family: $font-roboto-slab;
-	font-weight: $bold;
-	font-size: 20px;
-	line-height: 1;
-	text-transform: uppercase;
-	transition-property: color;
-	transition: color $transition-duration;
+  margin-right: auto;
+  color: $primary-white-color;
+  font-family: $font-roboto-slab;
+  font-weight: $bold;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  transition-property: color;
 
-	&:hover,
-	&:focus {
-		color: $accent-orange-color;
-	}
-
-	@media screen and (min-width: $tablet) {
-		font-size: 22px;
-	}
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+  }
 }
 
 .logo1 {
-	display: block;
+  display: block;
 }
 
 .spanWrapper {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }

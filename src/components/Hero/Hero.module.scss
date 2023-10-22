@@ -1,5 +1,4 @@
 @import "../../styles/vars";
-@import "../../styles/base";
 @import "../../styles/animations";
 
 .hero {
@@ -89,18 +88,26 @@
     display: flex;
     column-gap: 10px;
     align-items: center;
-
     @media (min-width: $tablet) {
       column-gap: 34px;
     }
   }
 
   span:last-child {
-    color: var(--Orange, #f29544);
+    color: $accent-orange-color;
     font-family: $font-roboto-slab;
     font-size: 16px;
     font-weight: $regular;
     line-height: 50px;
+    animation-name: changeFontSize;
+    animation-duration: 3500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+    @media (min-width: $tablet) {
+      animation-name: changeFontSizeTablet;
+    }
+
   }
 }
 

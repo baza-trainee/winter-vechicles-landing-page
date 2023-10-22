@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { PiArrowUpLight } from 'react-icons/pi';
 import styles from './ScrollToTop.module.scss';
+
 const Scroll = () => {
   const [ScrollToTop, setScrollToTop] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 800) {
+      if (window.scrollY > 400) {
         setScrollToTop(true);
       } else {
         setScrollToTop(false);

@@ -2,19 +2,19 @@
 
 .logoSvg,
 .logoSvgMobile {
-	.path {
-		fill: currentColor;
-	}
+  .path {
+    fill: currentColor;
+  }
 }
 
 .logoSvg {
-	@media screen and (max-width: 767.98px) {
-		display: none;
-	}
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 
 .logoSvgMobile {
-	@media screen and (min-width: $tablet) {
-		display: none;
-	}
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }

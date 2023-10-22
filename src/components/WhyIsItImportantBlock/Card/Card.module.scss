@@ -1,39 +1,39 @@
 @import "../../../styles/vars";
 
 .card {
-	display: flex;
-	flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 
-	@media (min-width: $tablet) {
-		width: 332px;
-		flex-direction: column;
-	}
+  @media (min-width: $tablet) {
+    width: 332px;
+    flex-direction: column;
+  }
 
-	@media (min-width: $desktop) {
-		width: 359px;
-	}
+  @media (min-width: $desktop) {
+    width: 359px;
+  }
 }
 
 .desc {
-	font-weight: $medium;
-	font-size: 16px;
-	line-height: $triple-line-height;
-	margin-bottom: 24px;
+  font-weight: $medium;
+  font-size: 16px;
+  line-height: $triple-line-height;
+  margin-bottom: 24px;
 
-	@media (min-width: $tablet) {
-		font-size: 18px;
-		line-height: 2;
-		margin-top: 24px;
-		margin-bottom: 0;
-	}
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
 
-	@media (min-width: $desktop) {
-		font-size: 20px;
-		line-height: $primary-line-height;
-		margin-top: 32px;
-	}
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: $primary-line-height;
+    margin-top: 32px;
+  }
 }
 
 .image {
-	border-radius: 8px;
+  border-radius: 8px;
 }

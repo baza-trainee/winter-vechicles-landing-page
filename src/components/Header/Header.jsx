@@ -2,12 +2,10 @@ import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import { FiMenu } from 'react-icons/fi';
-
 import Container from '../Container/Container';
 import LogoComponent from './LogoComponent/LogoComponent';
 import LangSwitcher from './LangSwitcher/LangSwitcher';
 import MobileMenu from './MobileMenu/MobileMenu';
-
 import styles from './header.module.scss';
 
 const Header = () => {

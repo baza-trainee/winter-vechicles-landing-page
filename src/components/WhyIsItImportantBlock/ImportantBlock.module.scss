@@ -1,0 +1,57 @@
+@import "../../styles/vars";
+
+.wrapper {
+  padding: 40px 0;
+
+  @media (min-width: $tablet) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 0;
+  }
+}
+
+.title {
+  font-family: $font-roboto-slab;
+  font-size: 16px;
+  font-weight: $medium;
+  line-height: 1.75;
+  margin-bottom: 24px;
+  color: $primary-black-color;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 2.08;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 36px;
+    line-height: $secondary-line-height;
+    margin-bottom: 60px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    gap: 24px;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: space-between;
+    gap: 20px;
+  }
+}

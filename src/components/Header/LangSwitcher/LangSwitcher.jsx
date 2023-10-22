@@ -1,14 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
-
 import styles from './LangSwitcher.module.scss';
 
 const LangSwitcher = () => {
   const { t, i18n } = useTranslation();
-
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-
   const [isOpenChangeLangWrapper, setIsOpenLangSwitcher] = useState(false);
 
   const languages = [
@@ -16,22 +13,6 @@ const LangSwitcher = () => {
     { code: 'pl', label: 'pl' },
     { code: 'ua', label: 'ua' },
   ];
-
-  //   useEffect(() => {
-  //     const closeLangWrapper = () => {
-  //       setIsOpenLangSwitcher(true);
-  //       console.log(setIsOpenLangSwitcher);
-  //       console.log(isOpenChangeLangWrapper);
-  //     };
-
-  //     if (isOpenChangeLangWrapper) {
-  //       document.addEventListener('click', closeLangWrapper);
-  //     }
-
-  //     return () => {
-  //       document.removeEventListener('click', closeLangWrapper);
-  //     };
-  //   }, [isOpenChangeLangWrapper]);
 
   const onLangWrapperClick = () =>
     setIsOpenLangSwitcher(!isOpenChangeLangWrapper);
