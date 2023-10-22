@@ -1,21 +1,16 @@
-const apiKey = 'u3AulkpZFI1lIuGsik6vuPsVWqN7GoWs6o_MO2sdf301';
-const apiUrl = 'https://api.monobank.ua/personal/client-info';
-
 export const fetchAccountBalance = async () => {
-    // const response = await fetch(apiUrl, {
-    //     method: 'GET',
-    //     headers: {
-    //         'X-Token': apiKey,
-    //     },
-    // });
+  const response = await fetch(import.meta.env.VITE_API_URL, {
+    method: 'GET',
+    headers: {
+      'X-Token': import.meta.env.VITE_API_KEY,
+    },
+  });
 
-    // if (!response.ok) {
-    //     throw new Error('Network response was not ok');
-    // }
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
+  }
 
-    // const data = await response.json();
-    // const balance = Math.floor(
-    //     (data.accounts[0].balance - data.accounts[0].creditLimit) / 100
-    // );
-    // return balance;
+  const data = await response.json();
+  const balance = Math.floor(data.jars[0].balance / 100);
+  return balance;
 };
