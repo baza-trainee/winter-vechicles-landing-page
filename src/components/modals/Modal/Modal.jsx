@@ -1,19 +1,18 @@
-import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { FaCheck } from 'react-icons/fa6';
 import { GoShareAndroid } from 'react-icons/go';
 import facebook from '../../../images/modal/fb.svg';
 import telegram from '../../../images/modal/tg.svg';
-import instagram from '../../../images/modal/instagram.svg';
 import linkedin from '../../../images/modal/linkedin.svg';
+import whatsApp from '../../../images/modal/whatsApp.svg';
 import styles from './Modal.module.scss';
 
 const Modal = ({ onClose }) => {
   const { t } = useTranslation();
   const [isCopied, setIsCopied] = useState(false);
-  // const currentUrl = window.location.href; //original URL
-  const currentUrl = 'https://baza-trainee.tech/'; // testing URL
+  const currentUrl = window.location.href; 
 
   const copyToClipboard = () => {
     if (isCopied) return;
@@ -59,7 +58,7 @@ const Modal = ({ onClose }) => {
             href={`https://wa.me/?text=${encodeURIComponent(currentUrl)}`}
             className={styles.popupSocialLink}
           >
-            <img src={instagram} alt="instagram" />
+            <img src={whatsApp} alt="whatsApp" />
           </a>
           <a
             href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
