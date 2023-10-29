@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import { AiOutlineClose } from 'react-icons/ai';
 import Container from '../../Container/Container';
-import styles from './MobileMenu.module.scss';
+import styles from './MobileMenu2.module.scss';
 
 const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
   const { t } = useTranslation();

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { LogoSvg, LogoSvgMobile } from './LogoSvg/LogoSvg';
-import styles from './LogoComponent.module.scss';
+import styles from './LogoComponent2.module.scss';
 
 const LogoComponent = () => {
   const { t } = useTranslation();

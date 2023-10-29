@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
-import styles from './LangSwitcher.module.scss';
+import styles from './LangSwitcher2.module.scss';
 
 const LangSwitcher = () => {
   const { t, i18n } = useTranslation();
