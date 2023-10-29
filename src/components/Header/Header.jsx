@@ -6,7 +6,7 @@ import Container from '../Container/Container';
 import LogoComponent from './LogoComponent/LogoComponent';
 import LangSwitcher from './LangSwitcher/LangSwitcher';
 import MobileMenu from './MobileMenu/MobileMenu';
-import styles from './header.module.scss';
+import styles from './Header.module.scss';
 
 const Header = () => {
   const { t } = useTranslation();
