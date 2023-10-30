@@ -3,7 +3,7 @@
 .popupContent {
   border-radius: 8px;
   max-height: 98vh;
-  overflow-y: auto;
+  overflow: hidden;
   width: 100%;
   padding: 123px 0;
   background: linear-gradient(
