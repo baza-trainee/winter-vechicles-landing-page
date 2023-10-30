@@ -135,7 +135,9 @@
   font-weight: 700;
   color: $accent-orange-color;
 }
+
 .container {
+  justify-content: space-between;
   .first1 {
     display: none;
   }
