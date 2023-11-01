@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { AiOutlineClose } from 'react-icons/ai';
 import cn from 'classnames';
 import styles from './Overlay.module.scss';
@@ -35,5 +36,11 @@ const Overlay = ({ children, onClose, share }) => {
     </div>
   );
 };
+
+Overlay.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClose: PropTypes.func,
+  share: PropTypes.bool,
+}
 
 export default Overlay;

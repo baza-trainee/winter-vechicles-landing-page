@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
+import PropTypes from 'prop-types';
 import Overlay from '../Overlay/Overlay';
 import Modal from '../modals/Modal/Modal';
 import ThanksModal from '../modals/ThanksModal/ThanksModal';
@@ -9,8 +10,13 @@ const Button = props => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenModal = () => {
+    if(isOpen) {
+      document.body.classList.remove('modal-open');
+    } else {
+      document.body.classList.add('modal-open');
+    }
+
     setIsOpen(!isOpen);
-    document.body.classList.toggle('modal-open');
   };
 
   return (
@@ -41,5 +47,14 @@ const Button = props => {
     </>
   );
 };
+
+Button.propTypes = {
+    type: PropTypes.string,
+    className: PropTypes.string,
+    disabled: PropTypes.bool,
+    text: PropTypes.string.isRequired,
+    icon: PropTypes.object,
+    share: PropTypes.bool,
+}
 
 export default Button;
