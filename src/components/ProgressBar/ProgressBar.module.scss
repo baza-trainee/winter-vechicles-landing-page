@@ -13,6 +13,7 @@
 }
 
 .title {
+  font-size: 16px;
   text-align: center;
   font-family: $font-roboto-slab;
   font-weight: $medium;
@@ -94,9 +95,14 @@
 .fill {
   position: relative;
   overflow: hidden;
-  height: 45px;
-  border-radius: 8px;
+  height: 35px;
+  border-radius: 6px;
   background-color: $accent-orange-color;
+
+  @media (min-width: $desktop) {
+    height: 45px;
+    border-radius: 8px;
+  }
 }
 .text {
   display: flex;
@@ -106,9 +112,7 @@
   }
 }
 .text h3 {
-  @media (min-width: $mobile) {
-    font-size: 12px;
-  }
+  font-size: 12px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
@@ -120,9 +124,7 @@
   font-weight: 600;
 }
 .text h4 {
-  @media (min-width: $mobile) {
-    font-size: 14px;
-  }
+  font-size: 14px;
 
   @media (min-width: $tablet) {
     font-size: 18px;
